@@ -10,7 +10,7 @@
       "sound" : {
          "type"  : "sound_effect",
          "track" : "tmc:sounds:wing_flap",
-         "loop"  : true,
+         "loop"  : false,
          "duration"     : 100,
          "start_time"   : 50,
          "min_distance" : 20,
