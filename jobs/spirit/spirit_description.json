@@ -1,0 +1,22 @@
+{
+   "name"           : "Spirit",
+   "job_id"         : "spirit",
+   "alias"          : "tmc:jobs:spirit",
+   "controller"     : "tmc:class:spirit",
+   "description"    : "Creature of the forest",
+   "requirements"   : "You need to be born for it",
+   "default_stance" : "passive",
+
+   "abilities" : "file(spirit_abilities)",
+
+   "roles" : "spirit_job",
+   "task_groups" : [
+      "stonehearth:task_group:harvest"
+   ],
+
+   "level_data" : {
+      "0" : {
+         "title" : "Spirit"
+      }
+   }
+}
