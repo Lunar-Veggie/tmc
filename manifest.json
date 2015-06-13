@@ -5,6 +5,8 @@
       "version"     : 1
    },
 
+   "server_init_script" : "file(tmc_server)",
+
    "aliases" : {
       "kingdoms:forest_myth" : "file(data/populations/forest_myth_population.json)",
       "kingdoms:air_myth"    : "file(data/populations/air_myth_population.json)",
