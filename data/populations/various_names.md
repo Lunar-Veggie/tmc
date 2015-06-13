@@ -1,0 +1,35 @@
+_Golem names_
+"Gorlo",
+"Burgle",
+"Guludar",
+"Geroldo",
+"Grompy",
+"Thump",
+"Gneiss",
+"Pluton",
+"Basaltus",
+"Feld",
+"Magma",
+"Grant",
+"Flint",
+"Stone",
+"Teit",
+"Ite",
+"Shale",
+"Pahoe",
+"Tofarr",
+"Grombo",
+"Drimado",
+"Drummer",
+"Barger",
+"Burnern",
+"Sargum",
+"Seragurm",
+"Murmag",
+"Destrogy",
+"Endrom",
+"Titanus" (:/)
+
+
+_Other names_
+"Nim"
