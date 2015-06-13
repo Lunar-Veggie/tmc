@@ -1,0 +1,19 @@
+{
+   "mixins" : "file(../pillar.json)",
+   "type"   : "entity",
+
+   "components" : {
+      "model_variants" : {
+         "default" : {
+            "models" : [
+               "file(pillar_1.qb)"
+            ]
+         }
+      },
+      "region_collision_shape" : {
+         "region_from_model" : {
+            "model" : "file(pillar_1.qb)"
+         }
+      }
+   }
+}
