@@ -1,0 +1,55 @@
+{
+   "kingdom_name" : "Forest mythology",
+   "kingdom_id"   : "forest_myth",
+
+   "roles" : {
+      "dryad" : {
+         "male" : {
+            "uri" : ["tmc:forest:dryad"],
+            "given_names" : [
+               "Myra",
+               "Yulima",
+               "Drimda",
+               "Nella",
+               "Silva",
+               "Lily"
+            ]
+         },
+         "surnames" : [
+            "Green",
+            "Sprout",
+            "Stumpling",
+            "Lime",
+            "Vine",
+            "Grassling",
+            "Leafey"
+         ]
+      },
+      "golem" : {
+         "male" : {
+            "uri" : ["tmc:forest:golem"],
+            "given_names" : [
+               "Gorem",
+               "Stompy",
+               "Gromp",
+               "Trump",
+               "Godor"
+            ]
+         }
+      }
+   },
+
+   "town_pieces" : {
+      "optional_prefix" : [
+         "Nope, "
+      ],
+      "town_name" : [
+         "Nah"
+      ],
+      "suffix" : [
+         ", Don't think so"
+      ]
+   },
+
+   "task_groups" : {}
+}

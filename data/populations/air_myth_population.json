@@ -1,0 +1,47 @@
+{
+   "kingdom_name" : "Air mythology",
+   "kingdom_id"   : "air_myth",
+
+   "roles" : {
+      "harpy" : {
+         "male" : {
+            "uri" : ["tmc:air:harpy"],
+            "given_names" : [
+               "Visschich",
+               "Ezerex",
+               "Reeph",
+               "Yirelling",
+               "Goush",
+               "Ovun",
+               "Omnaraht",
+               "Divshiph"
+            ]
+         },
+         "surnames" : [
+            "Whuohll",
+            "Evhuinn",
+            "Lirrow",
+            "Logiht",
+            "Thunajh",
+            "Havarvarht",
+            "Aeaeriun",
+            "Trufolioud",
+            "Sveferch"
+         ]
+      }
+   },
+
+   "town_pieces" : {
+      "optional_prefix" : [
+         "Nope, "
+      ],
+      "town_name" : [
+         "Nah"
+      ],
+      "suffix" : [
+         ", Don't think so"
+      ]
+   },
+
+   "task_groups" : {}
+}
