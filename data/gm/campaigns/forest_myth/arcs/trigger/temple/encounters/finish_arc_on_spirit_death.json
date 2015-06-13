@@ -1,0 +1,26 @@
+{
+   "type"           : "encounter",
+   "encounter_type" : "dialog_tree",
+   "rarity"         : "common",
+
+   "in_edge" : "finish_arc_on_spirit_death",
+
+   "dialog_tree_info" : {
+      "start_node" : "msg1",
+      "nodes" : {
+         "msg1" : {
+            "bulletin" : {
+               "title"        : "%name(forest_temple.boss) is Defeated!",
+               "dialog_title" : "%name(forest_temple.boss)",
+               "portrait"     : "file(images/dryad_portrait.png)",
+               "message"      : "Can't... let Nature... lose...",
+               "choices" : {
+                  "stonehearth:ok" : {
+                     "out_edge" : "arc:finish"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

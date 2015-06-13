@@ -1,0 +1,15 @@
+{
+   "type" : "camp_piece",
+
+   "entities" : {
+      "pillar_2" : {
+         "uri" : "tmc:decorations:forest_myth:pillar_2",
+         "force_iconic" : false,
+         "location" : {
+            "x" : 0,
+            "y" : 0,
+            "z" : 0
+         }
+      }
+   }
+}

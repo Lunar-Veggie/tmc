@@ -1,0 +1,13 @@
+{
+   "type"           : "encounter",
+   "encounter_type" : "wait_for_net_worth",
+   "rarity"         : "common",
+
+   "in_edge"  : "start",
+   "out_edge" : "create_forest_temple",
+
+   "wait_for_net_worth_info" : {
+      "threshold" : 500,
+      "interval"  : "1h"
+   }
+}

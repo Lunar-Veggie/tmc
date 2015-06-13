@@ -1,0 +1,59 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "create_camp",
+   "rarity" : "common",
+
+   "in_edge"  : "create_goblin_raiding_camp",
+   "out_edge" : ["spawn_goblin_raiders", "wait_for_goblin_campfire_destruction"],
+
+   "create_camp_info" : {
+      "npc_player_id" : "goblins",
+      "amenity_with_player" : "hostile",
+      "ctx_entity_registration_path" : "goblin_raiding_camp",
+
+      "radius" : 6,
+      "keep_grass" : true,
+
+      "spawn_range" : {
+         "min" : 200,
+         "max" : 250
+      },
+
+      "boss" : {
+         "from_population" : {
+            "job" : "stonehearth:jobs:footman",
+            "min" : 1,
+            "max" : 1,
+            "location" : { "x": 0, "z": 0 },
+            "range" : 3
+         },
+         "unit_info" : {
+            "description" : "Leader of the goblin squad"
+         },
+         "equipment" : {
+            "weapon"    : ["stonehearth:weapons:stone_maul", "stonehearth:weapons:iron_mace"],
+            "armor"     : ["stonehearth:monsters:goblins:outfits:maurauder"]
+         },
+         "attributes" : {
+            "max_health" : 60,
+            "health"     : 60
+         },
+         "combat_leash_range" : 30,
+         "loot_drops" : {
+            "items" : [
+               {"uri" : "stonehearth:refined:silver_ingot", "weight" : 2 },
+               {"uri" : "stonehearth:refined:gold_ingot", "weight" : 2 },
+               {"uri" : "stonehearth:refined:steel_ingot", "weight" : 2 },
+               {"uri" : "stonehearth:toys:plushie_toy_rabbit", "weight" : 1 }
+            ]
+         }
+      },
+
+      "pieces" : {
+         "campfire" : {
+            "info" : "file(goblin_camp/goblin_campfire.json)",
+            "position" : { "x": 1, "y": 2 }
+         }
+      }
+   }
+}

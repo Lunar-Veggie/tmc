@@ -1,0 +1,13 @@
+{
+   "type"           : "encounter",
+   "encounter_type" : "wait_for_event",
+   "rarity"         : "common",
+
+   "in_edge"  : "wait_for_spirit_death",
+   "out_edge" : "finish_arc_on_spirit_death",
+
+   "wait_for_event_info" : {
+      "source" : "forest_temple.npc_boss_entity",
+      "event"  : "radiant:entity:pre_destroy"
+   }
+}

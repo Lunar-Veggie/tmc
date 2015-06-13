@@ -1,0 +1,21 @@
+{
+   "type"   : "arc",
+   "rarity" : "common",
+
+   "encounters" : {
+      "wait to start"          : "file(encounters/wait_to_start.json)",
+      "create forest temple 1" : "file(encounters/create_forest_temple_1.json)",
+
+      "wait to issue quest" : "file(encounters/wait_to_issue_quest.json)",
+      "defend against goblin raiders quest" : "file(encounters/defend_against_goblin_raiders_quest.json)",
+
+      "wait for spirit death"      : "file(encounters/wait_for_spirit_death.json)",
+      "finish arc on spirit death" : "file(encounters/finish_arc_on_spirit_death.json)",
+
+      "create goblin raiding camp" : "file(encounters/create_goblin_raiding_camp.json)",
+      "spawn goblin raiders" : "file(encounters/spawn_goblin_raiders.json)",
+      "goblin raid" : "file(encounters/goblin_raid.json)",
+      "wait for goblin campfire destruction" : "file(encounters/wait_for_goblin_campfire_destruction.json)",
+      "destroy goblin stockpiles" : "file(encounters/destroy_goblin_stockpiles.json)"
+   }
+}

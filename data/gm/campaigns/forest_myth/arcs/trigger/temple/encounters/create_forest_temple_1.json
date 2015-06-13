@@ -1,0 +1,66 @@
+{
+   "type"           : "encounter",
+   "encounter_type" : "create_camp",
+   "rarity"         : "common",
+
+   "in_edge"  : "create_forest_temple",
+   "out_edge" : ["wait_to_issue_quest", "wait_for_spirit_death"],
+
+   "create_camp_info" : {
+      "npc_player_id" : "forest_myth",
+      "amenity_with_player" : "neutral",
+      "ctx_entity_registration_path" : "forest_temple",
+
+      "radius"     : 20,
+      "keep_grass" : true,
+
+      "spawn_range" : {
+         "min" : 120,
+         "max" : 150
+      },
+
+      "boss" : {
+         "from_population" : {
+            "role" : "dryad",
+            "job"  : "tmc:jobs:spirit",
+            "location" : { "x" : 5, "z" : -8 }
+         },
+
+         "combat_leash_range" : 20,
+
+         "attributes" : {
+            "max_health" : 70,
+            "health"     : 70
+         }
+      },
+
+      "script" : "file(forest_temple/forest_temple.lua)",
+
+      "pieces" : {
+         "tree" : {
+            "info"     : "file(forest_temple/tree.json)",
+            "position" : { "x" :   0, "y" :   0 }
+         },
+         "pillar_1" : {
+            "info"     : "file(forest_temple/pillar_1.json)",
+            "position" : { "x" : -17, "y" :   0 }
+         },
+         "pillar_2" : {
+            "info"     : "file(forest_temple/pillar_2.json)",
+            "position" : { "x" :   0, "y" : -17 }
+         },
+         "pillar_3" : {
+            "info"     : "file(forest_temple/pillar_3.json)",
+            "position" : { "x" :  17, "y" :   0 }
+         },
+         "pillar_4" : {
+            "info"     : "file(forest_temple/pillar_4.json)",
+            "position" : { "x" :   0, "y" :  17 }
+         },
+         "stockpile" : {
+            "info"     : "file(forest_temple/stockpile.json)",
+            "position" : { "x" : -13, "y" : -13 }
+         }
+      }
+   }
+}

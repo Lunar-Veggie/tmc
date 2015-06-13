@@ -1,0 +1,12 @@
+{
+   "type"           : "encounter",
+   "encounter_type" : "wait",
+   "rarity"         : "common",
+
+   "in_edge"  : "wait_to_issue_quest",
+   "out_edge" : "issue_quest",
+
+   "wait_info" : {
+      "duration" : "1h"
+   }
+}

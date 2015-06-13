@@ -1,0 +1,9 @@
+{
+   "type" : "camp_piece",
+
+   "script" : "file(stockpile.lua)",
+   "script_info" : {
+      "stockpile_contents" : "stonehearth:resources:stone:hunk_of_stone",
+      "stockpile_size"     : { "w" : 3, "h" : 3 }
+   }
+}
