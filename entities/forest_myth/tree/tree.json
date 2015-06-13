@@ -1,0 +1,26 @@
+{
+   "mixins" : "stonehearth:mixins:destructable_object",
+   "type"   : "entity",
+
+   "components" : {
+      "unit_info" : {
+         "name"        : "A tree",
+         "description" : ""
+      },
+      "render_info" : {
+         "scale" : 1
+      },
+      "model_variants" : {
+         "default" : {
+            "models" : [
+               "file(tree.qb)"
+            ]
+         }
+      },
+      "region_collision_shape" : {
+         "region_from_model" : {
+            "model" : "file(tree.qb)"
+         }
+      }
+   }
+}
