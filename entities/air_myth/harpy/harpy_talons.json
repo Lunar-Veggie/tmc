@@ -1,0 +1,44 @@
+{
+   "type"   : "entity",
+   "mixins" : "stonehearth:mixins:item_properties",
+
+   "components" : {
+      "unit_info" : {
+         "name"        : "Talons of the harpy",
+         "description" : ""
+      },
+
+      "stonehearth:equipment_piece" : {
+         "slot"   : "mainhand",
+         "ilevel" : 0,
+         "roles"  : "combat"
+      }
+   },
+
+   "entity_data" : {
+      "stonehearth:combat:weapon_data" : {
+         "base_damage" : 10,
+         "reach"       : 1.0
+      },
+
+      "stonehearth:combat:melee_attacks" : [
+         {
+            "name"         : "combat_attack",
+            "active_frame" : 18,
+            "cooldown"     : 8000,
+            "priority"     : 1
+         }
+      ],
+      "stonehearth:combat:armor_data" : {
+         "base_damage_reduction" : 2
+      },
+      "stonehearth:combat:melee_defenses" : [
+         {
+            "name"         : "combat_dodge",
+            "active_frame" : 17,
+            "cooldown"     : 11000,
+            "priority"     : 1
+         }
+      ]
+   }
+}
