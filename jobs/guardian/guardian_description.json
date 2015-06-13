@@ -1,0 +1,16 @@
+{
+   "name"           : "Guardian",
+   "job_id"         : "guardian",
+   "alias"          : "tmc:jobs:guardian",
+   "controller"     : "tmc:class:guardian",
+   "description"    : "Dedicating its life to protect something",
+   "requirements"   : "It's not something you can become; you have to be chosen for it",
+   "default_stance" : "aggressive",
+
+   "abilities" : "file(guardian_abilities)",
+
+   "equipment" : {
+   },
+
+   "roles" : "guardian_job combat"
+}

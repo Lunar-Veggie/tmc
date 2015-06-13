@@ -1,0 +1,13 @@
+{
+   "type" : "entity",
+
+   "components" : {
+      "stonehearth:equipment_piece" : {
+         "injected_ai" : {
+            "actions" : [
+            ]
+         },
+         "injected_buffs" : [ "stonehearth:buffs:defender" ]
+      }
+   }
+}
