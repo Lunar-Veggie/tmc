@@ -1,0 +1,56 @@
+{
+   "info" : {
+      "name"        : "The Mythical Creatures",
+      "description" : "Adds creatures from various mythologies",
+      "version"     : 1
+   },
+
+   "aliases" : {
+      "kingdoms:forest_myth" : "file(data/populations/forest_myth_population.json)",
+      "kingdoms:air_myth"    : "file(data/populations/air_myth_population.json)",
+
+      "forest:dryad"      : "file(entities/forest_myth/dryad)",
+      "forest:golem"      : "file(entities/forest_myth/golem)",
+      "forest:mandragora" : "file(entities/forest_myth/mandragora)",
+
+      "air:harpy" : "file(entities/air_myth/harpy)",
+
+      "skeletons:golem"      : "file(data/rigs/golem)",
+      "skeletons:mandragora" : "file(data/rigs/mandragora)",
+      "skeletons:harpy"      : "file(data/rigs/harpy)",
+
+      "weapons:golem_stone_hands" : "file(entities/forest_myth/golem/golem_stone_hands.json)",
+      "weapons:mandragora_voice"  : "file(entities/forest_myth/mandragora/mandragora_voice.json)",
+      "weapons:harpy_talons"      : "file(entities/air_myth/harpy/harpy_talons.json)",
+
+      "decorations:garden_gnome" : "file(entities/decorations/garden_gnome)",
+
+      "decorations:forest_myth:tree"     : "file(entities/forest_myth/tree)",
+      "decorations:forest_myth:pillar_1" : "file(entities/forest_myth/pillars/pillar_1)",
+      "decorations:forest_myth:pillar_2" : "file(entities/forest_myth/pillars/pillar_2)",
+      "decorations:forest_myth:pillar_3" : "file(entities/forest_myth/pillars/pillar_3)",
+      "decorations:forest_myth:pillar_4" : "file(entities/forest_myth/pillars/pillar_4)",
+
+      "jobs:guardian" : "file(jobs/guardian/guardian_description.json)",
+      "jobs:spirit"   : "file(jobs/spirit/spirit_description.json)",
+
+      "actions:sleep_on_ground_naturally" : "file(ai/actions/sleep_on_ground_naturally_action.lua)",
+
+      "sounds:mandragora_scream" : "file(data/sounds/effects/mandragora_scream.wav)",
+      "sounds:wing_flap" : "file(data/sounds/effects/wing_flap.wav)"
+   },
+
+   "controllers" : {
+      "class:guardian" : "file(jobs/guardian/guardian.lua)",
+      "class:spirit"   : "file(jobs/spirit/spirit.lua)"
+   },
+
+   "mixintos" : {
+      "/stonehearth/data/npc_index.json"   : [ "file(data/npc_index.json)" ],
+      "/stonehearth/data/gm/gm_index.json" : [ "file(data/gm/gm_index.json)" ],
+
+      "/stonehearth/data/gm/campaigns/ambient_threats/ambient_threats_campaign.json" : [ "file(data/gm/campaigns/ambient_threats/ambient_threats_campaign.json)" ],
+
+      "/stonehearth/data/gm/campaigns/trader/arcs/caravan_shops_arc.json" : [ "file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)" ]
+   }
+}
