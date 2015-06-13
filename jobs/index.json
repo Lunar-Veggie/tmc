@@ -1,0 +1,10 @@
+{
+   "jobs" : {
+      "tmc:jobs:guardian" : {
+         "description" : "tmc:jobs:guardian"
+      },
+      "tmc:jobs:forest_spirit" : {
+         "description" : "tmc:jobs:forest_spirit"
+      }
+   }
+}
