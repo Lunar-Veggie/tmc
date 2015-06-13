@@ -1,0 +1,41 @@
+{
+   "type"   : "entity",
+   "mixins" : "stonehearth:mixins:item_properties",
+
+   "components" : {
+      "unit_info" : {
+         "name"        : "The voice of the Mandragora",
+         "description" : ""
+      },
+
+      "stonehearth:equipment_piece" : {
+         "slot"   : "mainhand",
+         "ilevel" : 0,
+         "roles"  : "combat"
+      }
+   },
+
+   "entity_data" : {
+      "stonehearth:combat:weapon_data" : {
+         "base_damage" : 15,
+         "reach"       : 1.0
+      },
+
+      "stonehearth:combat:melee_attacks" : [
+         {
+            "name"         : "combat_scream_attack",
+            "active_frame" : 17,
+            "cooldown"     : 5000,
+            "priority"     : 1
+         }
+      ],
+      "stonehearth:combat:melee_defenses" : [
+         {
+            "name"         : "combat_dodge",
+            "active_frame" : 8,
+            "cooldown"     : 10000,
+            "priority"     : 1
+         }
+      ]
+   }
+}
