@@ -1,0 +1,131 @@
+{
+   "type"   : "entity",
+   "mixins" : "stonehearth:mixins:mob",
+
+   "components" : {
+      "render_info" : {
+         "animation_table" : "tmc:skeletons:golem",
+         "color_map"       : "file(materials/golem_color_map.json)",
+         "material_maps"   : ["file(materials/golem_material_map.json)"],
+         "scale"           : 0.12
+      },
+      "model_variants" : {
+         "default" : {
+            "models" : [
+               "file(golem.qb)"
+            ]
+         }
+      },
+
+      "unit_info" : {
+         "name"        : "A Golem",
+         "description" : "An ancient guardian of the Dryads"
+      },
+
+      "stonehearth:material" : {
+         "tags" : "stone"
+      },
+
+      "stonehearth:ai" : {
+         "actions" : [
+            "stonehearth:actions:idle:look_around",
+            "stonehearth:actions:wander",
+            "stonehearth:actions:wander_within_leash",
+            "stonehearth:actions:wander_when_bored",
+            "stonehearth:actions:choose_point_around_leash",
+            "stonehearth:actions:wait_for_attribute_above",
+            "stonehearth:actions:wait_for_attribute_below",
+            "stonehearth:actions:chase_entity",
+            "stonehearth:actions:set_posture",
+            "stonehearth:actions:free_time:dispatcher",
+
+            "stonehearth:actions:combat",
+            "stonehearth:actions:combat:attack_after_cooldown",
+            "stonehearth:actions:combat:attack:melee",
+            "stonehearth:actions:combat:attack:melee_adjacent",
+            "stonehearth:actions:combat:defend_dispatcher",
+            "stonehearth:actions:combat:defend:melee",
+            "stonehearth:actions:combat:idle_dispatcher",
+            "stonehearth:actions:combat:idle:ready",
+            "stonehearth:actions:combat:idle:shuffle",
+            "stonehearth:actions:combat:panic_dispatcher",
+            "stonehearth:actions:combat:panic_watcher",
+            "stonehearth:actions:combat:stop_panicking",
+            "stonehearth:actions:combat:hit_stun",
+            "stonehearth:actions:combat:create_engage_callback",
+            "stonehearth:actions:combat:get_primary_target",
+            "stonehearth:actions:combat:get_melee_range",
+            "stonehearth:actions:combat:set_global_attack_cooldown",
+            "stonehearth:actions:combat:wait_for_global_attack_cooldown"
+         ]
+      },
+
+      "stonehearth:observers" : {
+         "observers" : [
+            "stonehearth:observers:aggro",
+            "stonehearth:observers:find_target",
+            "stonehearth:observers:free_time"
+         ]
+      },
+
+      "stonehearth:attributes" : {
+         "max_health" : {
+            "type"  : "basic",
+            "value" : 200
+         },
+         "health" : {
+            "type"     : "variable",
+            "equation" : "max_health"
+         },
+         "speed" : {
+            "type"  : "basic",
+            "value" : 20
+         },
+         "menace" : {
+            "type"  : "basic",
+            "value" : 60
+         },
+         "courage" : {
+            "type"  : "basic",
+            "value" : 99999
+         }
+      },
+
+      "stonehearth:job" : {
+         "starting_level_title"       : "Apprentice __job_name__",
+         "default_level_title"        : "Level __level_number__ __job_name__",
+         "default_level_announcement" : "__name__ has achieved __job_name__ Level __level_number__!",
+         "xp_equation_for_next_level" : "next_level ^ 2 * 100",
+         "levels_between_attribute_increase" : 10,
+         "level_data" : {
+            "general_description_desc" : "Max HP increased!",
+            "attribute_up_desc" : "All attributes increased!"
+         }
+      },
+
+      "stonehearth:combat_state" : {
+         "stance" : "aggressive"
+      },
+
+      "stonehearth:equipment" : {
+      },
+
+      "sensor_list" : {
+         "sensors" : {
+            "sight" : {
+               "radius" : 20
+            }
+         }
+      }
+   },
+
+   "entity_data" : {
+      "stonehearth:entity_radius" : 1.5,
+      "stonehearth:entity_reach"  : 2.0,
+
+      "stonehearth:observers:avoid_threatening_entities" : {
+         "min_avoidance_distance" : 16,
+         "max_avoidance_distance" : 16
+      }
+   }
+}

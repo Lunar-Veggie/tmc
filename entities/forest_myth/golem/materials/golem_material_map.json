@@ -1,0 +1,5 @@
+{
+   "tmc:constructs:glowing_core" : {
+      "render_material" : "materials/glowy_voxel.material.json"
+   }
+}

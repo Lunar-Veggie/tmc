@@ -1,0 +1,65 @@
+{
+   "type"   : "entity",
+   "mixins" : "stonehearth:mixins:item_properties",
+
+   "components" : {
+      "unit_info" : {
+         "name"        : "Golem's Stone Hands",
+         "description" : "Use to bring some hard fisticuffing",
+         "icon"        : "file(hand.png)"
+      },
+
+      "stonehearth:equipment_piece" : {
+         "slot"   : "mainhand",
+         "ilevel" : 0,
+         "roles"  : "combat"
+      }
+   },
+
+   "entity_data" : {
+      "stonehearth:combat:weapon_data" : {
+         "base_damage" : 18,
+         "reach"       : 2.3
+      },
+
+      "stonehearth:combat:melee_attacks" : [
+         {
+            "name"         : "combat_smack",
+            "active_frame" : 43,
+            "cooldown"     : 10000,
+            "priority"     : 1
+         },
+         {
+            "name"         : "combat_swing",
+            "active_frame" : 56,
+            "cooldown"     : 10000,
+            "priority"     : 1
+         },
+         {
+            "name"         : "combat_smash_attack",
+            "active_frame" : 61,
+            "cooldown"     : 24000,
+            "priority"     : 3,
+            "bonus_dmg_multiplier" : 0.6
+         },
+         {
+            "name"         : "combat_clap_attack",
+            "active_frame" : 71,
+            "cooldown"     : 22000,
+            "priority"     : 2,
+            "bonus_dmg_multiplier" : 0.7
+         }
+      ],
+      "stonehearth:combat:armor_data" : {
+         "base_damage_reduction" : 7
+      },
+      "stonehearth:combat:melee_defenses" : [
+         {
+            "name"         : "combat_block",
+            "active_frame" : 18,
+            "cooldown"     : 1000,
+            "priority"     : 0
+         }
+      ]
+   }
+}
