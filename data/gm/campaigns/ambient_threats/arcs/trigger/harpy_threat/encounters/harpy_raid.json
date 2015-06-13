@@ -33,13 +33,14 @@
                "from_population" : {
                   "role" : "harpy",
                   "location" : { "x": 3, "z": 3 },
-                  "min"   : 0,
+                  "min"   : 1,
                   "max"   : 2,
                   "range" : 20
                },
 
                "equipment" : {
-                  "weapon" : [ "tmc:weapons:harpy_talons" ]
+                  "weapon"    : [ "tmc:weapons:harpy_talons" ],
+                  "abilities" : "stonehearth:abilities:wolf_rider_abilities"
                }
             }
          }
