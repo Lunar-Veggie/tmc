@@ -1,0 +1,15 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "destroy_entity",
+
+   "in_edge" : "destroy_harpies",
+
+   "destroy_entity_info" : {
+      "target_entities" : ["harpy_raid.raiders"],
+      "random_delay" : {
+         "min" : 60,
+         "max" : 100
+      },
+      "continue_always" : true
+   }
+}

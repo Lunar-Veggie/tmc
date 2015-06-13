@@ -1,0 +1,14 @@
+{
+   "type"   : "arc",
+   "rarity" : "common",
+
+   "encounters" : {
+      "wait for day three" : "file(encounters/wait_for_day_three.json)",
+      "harpies at dawn" : "file(encounters/mountain_harpies.json)",
+      "generate mountain harpies" : "file(encounters/generate_mountain_harpies.json)",
+      "randomize spawn" : "file(encounters/randomize_spawn.json)",
+      "harpy raid" : "file(encounters/harpy_raid.json)",
+      "wait for night" : "file(encounters/wait_for_night.json)",
+      "destroy harpies" : "file(encounters/destroy_harpies.json)"
+   }
+}
