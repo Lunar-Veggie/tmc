@@ -1,0 +1,17 @@
+{
+   "type"   : "entity",
+   "mixins" : "stonehearth:mixins:item_properties",
+
+   "components" : {
+      "item" : {
+         "category" : "decoration"
+      },
+      "model_variants" : {
+         "default" : {
+            "models" : [
+               "file(garden_gnome.qb)"
+            ]
+         }
+      }
+   }
+}
