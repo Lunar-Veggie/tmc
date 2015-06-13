@@ -8,18 +8,14 @@
          "loop"       : true
       },
       "sound" : {
-         "type" : "sound_effect",
+         "type"  : "sound_effect",
+         "track" : "tmc:sounds:wing_flap",
+         "loop"  : false,
          "duration"     : 100,
          "start_time"   : 50,
-         "min_distance" : 15,
-         "falloff"      : 3.6,
-         "volume"       : 10,
-         "track" : {
-            "type" : "one_of",
-            "items" : [
-               "tmc:sounds:wing_flap"
-            ]
-         }
+         "min_distance" : 20,
+         "falloff"      : 20,
+         "volume"       : 30
       }
    }
 }
