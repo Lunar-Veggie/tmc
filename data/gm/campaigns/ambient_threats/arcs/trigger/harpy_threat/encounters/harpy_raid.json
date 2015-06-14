@@ -37,7 +37,10 @@
                   "max"   : 2,
                   "range" : 20
                },
-
+               "attributes" : {
+                  "raid_timeout_minutes" : 120,
+                  "raid_timeout_variance_minutes" : 120
+               },
                "equipment" : {
                   "weapon"    : [ "tmc:weapons:harpy_talons" ],
                   "abilities" : "stonehearth:abilities:wolf_rider_abilities"
