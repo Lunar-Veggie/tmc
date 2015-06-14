@@ -1,7 +1,0 @@
-{
-   "arcs" : {
-      "trigger" : {
-         "harpy_threat" : "file(arcs/trigger/harpy_threat/harpy_threat_arc.json)"
-      }
-   }
-}

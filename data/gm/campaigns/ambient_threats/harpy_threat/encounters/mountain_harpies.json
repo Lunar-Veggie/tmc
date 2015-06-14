@@ -1,0 +1,11 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "wait",
+
+   "in_edge"  : "mountain_harpies",
+   "out_edge" : "setup_harpies",
+
+   "wait_info" : {
+      "duration" : "2h+4h"
+   }
+}

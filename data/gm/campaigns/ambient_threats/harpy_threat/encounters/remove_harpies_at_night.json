@@ -2,7 +2,7 @@
    "type" : "encounter",
    "encounter_type" : "wait_for_time_of_day",
 
-   "in_edge"  : "wait_for_night",
+   "in_edge"  : "remove_harpies_at_night",
    "out_edge" : "destroy_harpies",
 
    "wait_for_time_of_day_info" : {

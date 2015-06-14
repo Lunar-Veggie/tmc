@@ -4,11 +4,11 @@
    "rarity" : "common",
 
    "in_edge"  : "harpy_raid",
-   "out_edge" : "wait_for_night",
+   "out_edge" : "remove_harpies_at_night",
 
    "create_mission_info" : {
       "spawn_range" : {
-         "min" : 50,
+         "min" : 80,
          "max" : 160
       },
 

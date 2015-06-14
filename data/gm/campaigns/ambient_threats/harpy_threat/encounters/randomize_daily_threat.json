@@ -1,0 +1,9 @@
+{
+   "random_out_edge_info" : {
+      "out_edges" : {
+         "mountain_harpies" : {
+            "weight" : 2
+         }
+      }
+   }
+}
