@@ -1,6 +1,7 @@
 {
    "kingdom_name" : "Air mythology",
    "kingdom_id"   : "air_myth",
+   "amenity_to_strangers" : "hostile",
 
    "roles" : {
       "harpy" : {

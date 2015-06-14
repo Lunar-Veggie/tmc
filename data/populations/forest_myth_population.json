@@ -1,6 +1,7 @@
 {
    "kingdom_name" : "Forest mythology",
    "kingdom_id"   : "forest_myth",
+   "amenity_to_strangers" : "neutral",
 
    "roles" : {
       "dryad" : {
