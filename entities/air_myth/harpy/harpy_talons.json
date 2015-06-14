@@ -17,7 +17,7 @@
 
    "entity_data" : {
       "stonehearth:combat:weapon_data" : {
-         "base_damage" : 10,
+         "base_damage" : 14,
          "reach"       : 1.0
       },
 
@@ -25,7 +25,7 @@
          {
             "name"         : "combat_attack",
             "active_frame" : 18,
-            "cooldown"     : 8000,
+            "cooldown"     : 2500,
             "priority"     : 1
          }
       ],
