@@ -4,7 +4,7 @@
    "rarity" : "common",
 
    "in_edge"  : "create_goblin_raiding_camp",
-   "out_edge" : ["spawn_goblin_raiders", "wait_for_goblin_campfire_destruction"],
+   "out_edge" : ["fight_off_goblin_raiders_dialog", "spawn_goblin_raiders", "wait_for_goblin_boss_death"],
 
    "create_camp_info" : {
       "npc_player_id" : "goblins",
@@ -28,11 +28,11 @@
             "range" : 3
          },
          "unit_info" : {
-            "description" : "Leader of the goblin squad"
+            "description" : "Leader of the mighty goblin squad"
          },
          "equipment" : {
-            "weapon"    : ["stonehearth:weapons:stone_maul", "stonehearth:weapons:iron_mace"],
-            "armor"     : ["stonehearth:monsters:goblins:outfits:maurauder"]
+            "weapon" : ["stonehearth:weapons:stone_maul", "stonehearth:weapons:bronze_sword"],
+            "armor"  : ["stonehearth:monsters:goblins:outfits:footman"]
          },
          "attributes" : {
             "max_health" : 60,
@@ -41,10 +41,10 @@
          "combat_leash_range" : 30,
          "loot_drops" : {
             "items" : [
-               {"uri" : "stonehearth:refined:silver_ingot", "weight" : 2 },
-               {"uri" : "stonehearth:refined:gold_ingot", "weight" : 2 },
-               {"uri" : "stonehearth:refined:steel_ingot", "weight" : 2 },
-               {"uri" : "stonehearth:toys:plushie_toy_rabbit", "weight" : 1 }
+               { "uri" : "stonehearth:refined:silver_ingot", "weight" : 3 },
+               { "uri" : "stonehearth:refined:gold_ingot", "weight" : 3 },
+               { "uri" : "stonehearth:refined:steel_ingot", "weight" : 3 },
+               { "uri" : "stonehearth:toys:plushie_toy_rabbit", "weight" : 1 }
             ]
          }
       },
@@ -53,6 +53,10 @@
          "campfire" : {
             "info" : "file(goblin_camp/goblin_campfire.json)",
             "position" : { "x": 1, "y": 2 }
+         },
+         "stockpile" : {
+            "info" : "file(goblin_camp/goblin_stockpile.json)",
+            "position" : { "x": -2, "y": -1 }
          }
       }
    }

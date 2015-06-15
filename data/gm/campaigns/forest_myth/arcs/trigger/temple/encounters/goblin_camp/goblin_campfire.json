@@ -1,13 +1,10 @@
 {
    "type" : "camp_piece",
 
-   "script" : "goblin_raiders.lua",
+   "script"      : "file(goblin_raiders.lua)",
    "script_info" : {
-      "npc_player_id" : "goblins",
-      "ctx_entity_registration_path" : "goblin_raiding_camp",
-      "entity_name" : "goblin_raiding_camp",
-      "target_player_id" : "forest_myth",
-      "target_player_camp" : "forest_temple"
+      "npc_player_id"    : "goblins",
+      "target_player_id" : "forest_myth"
    },
 
    "entities" : {
@@ -39,17 +36,43 @@
             "armor"  : ["stonehearth:monsters:goblins:outfits:footman"]
          },
          "unit_info" : {
-            "description" : "Camp guard"
+            "description" : "Defender of the hearth"
          },
          "combat_leash_range" : 30,
          "loot_drops" : {
             "items" : [
-               {"uri" : "", "weight" : 5 },
-               {"uri" : "stonehearth:rabbit_jerky", "weight" : 2 },
-               {"uri" : "stonehearth:squirrel_jerky", "weight" : 2 },
-               {"uri" : "stonehearth:racoon_jerky", "weight" : 2 },
-               {"uri" : "stonehearth:red_fox_jerky", "weight" : 2 },
-               {"uri" : "stonehearth:monsters:goblins:skull_trophy", "weight" : 2 }
+               { "uri" : "", "weight" : 5 },
+               { "uri" : "stonehearth:rabbit_jerky", "weight" : 2 },
+               { "uri" : "stonehearth:squirrel_jerky", "weight" : 2 },
+               { "uri" : "stonehearth:racoon_jerky", "weight" : 2 },
+               { "uri" : "stonehearth:red_fox_jerky", "weight" : 2 },
+               { "uri" : "stonehearth:monsters:goblins:skull_trophy", "weight" : 2 }
+            ]
+         }
+      },
+      "workers" : {
+         "from_population" : {
+            "job" : "stonehearth:jobs:worker",
+            "min" : 1,
+            "max" : 1,
+            "location" : { "x": 0, "z": 0 },
+            "range" : 3
+         },
+         "equipment" : {
+            "weapon" : ["stonehearth:mining_pick", "stonehearth:worker_hammer"]
+         },
+         "unit_info" : {
+            "description" : "All-important hearth maintainer"
+         },
+         "combat_leash_range" : 30,
+         "loot_drops" : {
+            "items" : [
+               { "uri" : "", "weight" : 5 },
+               { "uri" : "stonehearth:rabbit_jerky", "weight" : 1 },
+               { "uri" : "stonehearth:squirrel_jerky", "weight" : 1 },
+               { "uri" : "stonehearth:racoon_jerky", "weight" : 1 },
+               { "uri" : "stonehearth:red_fox_jerky", "weight" : 1 },
+               { "uri" : "stonehearth:monsters:goblins:skull_trophy", "weight" : 1 }
             ]
          }
       }

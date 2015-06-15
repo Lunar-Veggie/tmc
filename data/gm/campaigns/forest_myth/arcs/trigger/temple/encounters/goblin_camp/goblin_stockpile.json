@@ -1,0 +1,12 @@
+{
+   "type" : "camp_piece",
+
+   "script" : "file(goblin_stockpile.lua)",
+   "script_info" : {
+      "npc_player_id" : "goblins",
+      "ctx_entity_registration_path" : "goblin_raiding_camp",
+      "stockpile_size" : { "w" : 2, "h" : 3 },
+      "stockpile_contents" : "stonehearth:resources:wood:oak_log",
+      "entity_name" : "general_stockpile"
+   }
+}

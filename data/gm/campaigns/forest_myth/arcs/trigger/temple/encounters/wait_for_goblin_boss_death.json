@@ -2,11 +2,11 @@
    "type" : "encounter",
    "encounter_type" : "wait_for_event",
 
-   "in_edge"  : "wait_for_goblin_campfire_destruction",
+   "in_edge"  : "wait_for_goblin_boss_death",
    "out_edge" : "destroy_goblin_stockpiles",
 
    "wait_for_event_info" : {
-      "source" : "goblin_raider_camp.entities.campfire",
+      "source" : "goblin_raiding_camp.boss",
       "event"  : "radiant:entity:pre_destroy"
    }
 }

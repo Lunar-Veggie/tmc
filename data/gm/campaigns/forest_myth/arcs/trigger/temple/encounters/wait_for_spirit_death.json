@@ -7,7 +7,7 @@
    "out_edge" : "finish_arc_on_spirit_death",
 
    "wait_for_event_info" : {
-      "source" : "forest_temple.npc_boss_entity",
+      "source" : "forest_temple.boss",
       "event"  : "radiant:entity:pre_destroy"
    }
 }

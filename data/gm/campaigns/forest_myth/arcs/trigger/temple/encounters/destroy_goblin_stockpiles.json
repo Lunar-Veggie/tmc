@@ -3,10 +3,10 @@
    "encounter_type" : "destroy_entity",
 
    "in_edge"  : "destroy_goblin_stockpiles",
-   "out_edge" : "",
+   "out_edge" : ["goblin_raiders_quest_successful_dialog", "quest_successful"],
 
    "destroy_entity_info" : {
-      "target_entities" : ["goblin_raider_camp.entities.general_stockpile"],
+      "target_entities" : ["goblin_raiding_camp.entities.general_stockpile"],
       "continue_always" : true
    }
 }

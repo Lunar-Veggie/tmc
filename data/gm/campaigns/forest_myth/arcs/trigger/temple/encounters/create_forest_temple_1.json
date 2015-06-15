@@ -15,8 +15,8 @@
       "keep_grass" : true,
 
       "spawn_range" : {
-         "min" : 120,
-         "max" : 150
+         "min" : 180,
+         "max" : 220
       },
 
       "boss" : {

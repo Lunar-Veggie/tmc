@@ -1,0 +1,38 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "dialog_tree",
+   "rarity" : "common",
+
+   "in_edge" : "goblin_raiders_quest_successful_dialog",
+
+   "dialog_tree_info" : {
+      "start_node" : "msg1",
+      "nodes" : {
+         "msg1" : {
+            "bulletin" : {
+               "title" : "A releaved dryad approaches",
+               "dialog_title" : "%name(forest_temple.boss)",
+               "portrait" : "file(images/dryad_portrait.png)",
+               "message" : "Thank you so much! Now we can sleep easily knowing there's a friend of mother nature around.",
+               "choices" : {
+                  "stonehearth:next" : {
+                     "next_node" : "msg2"
+                  }
+               }
+            }
+         },
+         "msg2" : {
+            "bulletin" : {
+               "title" : "A releaved dryad approaches",
+               "dialog_title" : "%name(forest_temple.boss)",
+               "portrait" : "file(images/dryad_portrait.png)",
+               "message" : "Please, take this small thing as part of our thanks.",
+               "choices" : {
+                  "stonehearth:ok" : {
+                  }
+               }
+            }
+         }
+      }
+   }
+}

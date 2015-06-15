@@ -2,11 +2,11 @@
    "type" : "encounter",
    "encounter_type" : "generator",
 
-   "in_edge" : "spawn_raiders",
+   "in_edge" : "spawn_goblin_raiders",
 
    "generator_info" : {
       "delay" : "19h+4h",
-      "source_entity" : "create_raider_camp.entities.campfire",
+      "source_entity" : "goblin_raiding_camp.entities.campfire",
       "spawn_edge" : "goblin_raid"
    }
 }
