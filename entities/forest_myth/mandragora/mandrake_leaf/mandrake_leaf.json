@@ -1,0 +1,27 @@
+{
+   "type": "entity",
+
+   "components": {
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(mandrake_leaf.qb)"
+            ]
+         }
+      },
+      "render_info" : {
+         "scale" : 0.1
+      },
+      "mob" : {
+         "model_origin" : { "x": -0.05, "y": 0, "z": 0.05 }
+      },
+      "unit_info": {
+         "name": "Mandrake Leaf",
+         "description": "Ingredient used in healing medicine or herbal tea",
+         "icon" : "file()"
+      },
+      "stonehearth:material" : {
+         "tags" :  "mandrake leaf"
+      }
+   }
+}
