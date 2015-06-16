@@ -52,10 +52,10 @@
       "/stonehearth/data/gm/gm_index.json" : [ "file(data/gm/gm_index.json)" ],
 
       "/stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json" : [
-         "file(data/gm/campaigns/ambient_threats/harpy_threat/harpy_threat_arc.json)"
+         "file(data/gm/campaigns/ambient_threats/ambient_threats_arc.json)"
       ],
       "/stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_daily_threat.json" : [
-         "file(data/gm/campaigns/ambient_threats/harpy_threat/encounters/randomize_daily_threat.json)"
+         "file(data/gm/campaigns/ambient_threats/encounters/randomize_daily_threat.json)"
       ],
 
       "/stonehearth/data/gm/campaigns/trader/arcs/caravan_shops_arc.json" : [ "file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)" ]
