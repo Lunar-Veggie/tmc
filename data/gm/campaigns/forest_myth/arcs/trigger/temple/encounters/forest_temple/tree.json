@@ -25,7 +25,7 @@
          },
 
          "equipment" : {
-            "weapon" : [ "tmc:weapons:golem_stone_hands" ]
+            "weapon" : [ "tmc:forest:golem:stone_hands" ]
          }
       }
    }

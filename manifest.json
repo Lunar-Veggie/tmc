@@ -13,19 +13,18 @@
 
       "amenities" : "file(data/amenities.json)",
 
-      "forest:dryad"      : "file(entities/forest_myth/dryad)",
-      "forest:golem"      : "file(entities/forest_myth/golem)",
+      "forest:dryad" : "file(entities/forest_myth/dryad)",
+      "forest:golem" : "file(entities/forest_myth/golem)",
+      "forest:golem:stone_hands" : "file(entities/forest_myth/golem/golem_stone_hands.json)",
       "forest:mandragora" : "file(entities/forest_myth/mandragora)",
+      "forest:mandragora:voice" : "file(entities/forest_myth/mandragora/mandragora_voice.json)",
 
       "air:harpy" : "file(entities/air_myth/harpy)",
+      "air:harpy:talons" : "file(entities/air_myth/harpy/harpy_talons.json)",
 
       "skeletons:golem"      : "file(data/rigs/golem)",
       "skeletons:mandragora" : "file(data/rigs/mandragora)",
       "skeletons:harpy"      : "file(data/rigs/harpy)",
-
-      "weapons:golem_stone_hands" : "file(entities/forest_myth/golem/golem_stone_hands.json)",
-      "weapons:mandragora_voice"  : "file(entities/forest_myth/mandragora/mandragora_voice.json)",
-      "weapons:harpy_talons"      : "file(entities/air_myth/harpy/harpy_talons.json)",
 
       "decorations:garden_gnome" : "file(entities/decorations/garden_gnome)",
 
