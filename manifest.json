@@ -11,6 +11,8 @@
       "kingdoms:forest_myth" : "file(data/populations/forest_myth_population.json)",
       "kingdoms:air_myth"    : "file(data/populations/air_myth_population.json)",
 
+      "amenities" : "file(data/amenities.json)",
+
       "forest:dryad"      : "file(entities/forest_myth/dryad)",
       "forest:golem"      : "file(entities/forest_myth/golem)",
       "forest:mandragora" : "file(entities/forest_myth/mandragora)",

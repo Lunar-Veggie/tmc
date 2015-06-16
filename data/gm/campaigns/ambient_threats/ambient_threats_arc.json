@@ -1,7 +1,6 @@
 {
    "encounters" : {
       "mountain harpies"        : "file(encounters/harpy_threat/mountain_harpies.json)",
-      "setup harpies"           : "file(encounters/harpy_threat/setup_harpies.json)",
       "harpy raid"              : "file(encounters/harpy_threat/harpy_raid.json)",
       "remove harpies at night" : "file(encounters/harpy_threat/remove_harpies_at_night.json)",
       "destroy harpies"         : "file(encounters/harpy_threat/destroy_harpies.json)"

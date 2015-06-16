@@ -1,9 +1,10 @@
 {
    "type" : "encounter",
    "encounter_type" : "wait",
+   "rarity" : "common",
 
    "in_edge"  : "mountain_harpies",
-   "out_edge" : "setup_harpies",
+   "out_edge" : "harpy_raid",
 
    "wait_info" : {
       "duration" : "2h+4h"

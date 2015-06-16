@@ -1,0 +1,7 @@
+{
+   "forest_myth" : {
+      "friendly" : [ "air_myth" ],
+      "neutral"  : [],
+      "hostile"  : [ "goblins" ]
+   }
+}
