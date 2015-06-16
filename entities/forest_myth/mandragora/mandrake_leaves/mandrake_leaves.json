@@ -5,7 +5,7 @@
       "model_variants": {
          "default": {
             "models": [
-               "file(mandrake_leaf.qb)"
+               "file(mandrake_leaves.qb)"
             ]
          }
       },
@@ -16,12 +16,25 @@
          "model_origin" : { "x": -0.05, "y": 0, "z": 0.05 }
       },
       "unit_info": {
-         "name": "Mandrake Leaf",
+         "name": "Mandrake Leaves",
          "description": "Ingredient used in healing medicine or herbal tea",
          "icon" : "file()"
       },
       "stonehearth:material" : {
-         "tags" :  "mandrake leaf"
+         "tags" :  "mandrake leaves"
+      }
+   },
+
+   "entity_data" : {
+      "stonehearth:net_worth" : {
+         "value_in_gold" : 30,
+         "rarity" : "common",
+         "shop_info" : {
+            "buyable" : false,   
+            "sellable" : true,
+            "shopkeeper_level" : 1,
+            "shopkeeper_type" : "caravan"
+         }
       }
    }
 }
