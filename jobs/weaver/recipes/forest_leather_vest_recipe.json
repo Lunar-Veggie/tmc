@@ -14,13 +14,13 @@
          "count" : 3
       },
       {
-         "material" : "tmc_thread forest_resource",
+         "uri" : "tmc:resources:magical_forest_thread",
          "count" : 1
       }
-  ],
-  "produces": [
+   ],
+   "produces": [
       {
          "item":"tmc:armor:forest_leather_vest"
       }
-  ]
+   ]
 }
