@@ -41,6 +41,8 @@
 
       "actions:sleep_on_ground_naturally" : "file(ai/actions/sleep_on_ground_naturally_action.lua)",
 
+      "effects:forest_magic_glow" : "file(data/effects/forest_magic_glow)",
+
       "sounds:mandragora_scream" : "file(data/sounds/effects/mandragora_scream.wav)",
       "sounds:wing_flap" : "file(data/sounds/effects/wing_flap.wav)"
    },
