@@ -28,6 +28,8 @@
 
       "decorations:garden_gnome" : "file(entities/decorations/garden_gnome)",
 
+      "resource:magical_forest_thread" : "file(entities/resource/magical_forest_thread)",
+	
       "decorations:forest_myth:tree"     : "file(entities/forest_myth/tree)",
       "decorations:forest_myth:pillar_1" : "file(entities/forest_myth/pillars/pillar_1)",
       "decorations:forest_myth:pillar_2" : "file(entities/forest_myth/pillars/pillar_2)",
