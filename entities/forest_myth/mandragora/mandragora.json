@@ -90,7 +90,7 @@
          },
          "menace" : {
             "type"  : "basic",
-            "value" : 30
+            "value" : 25
          },
          "courage" : {
             "type"  : "basic",

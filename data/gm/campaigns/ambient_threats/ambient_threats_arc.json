@@ -3,6 +3,9 @@
       "mountain harpies"        : "file(encounters/harpy_threat/mountain_harpies.json)",
       "harpy raid"              : "file(encounters/harpy_threat/harpy_raid.json)",
       "remove harpies at night" : "file(encounters/harpy_threat/remove_harpies_at_night.json)",
-      "destroy harpies"         : "file(encounters/harpy_threat/destroy_harpies.json)"
+      "destroy harpies"         : "file(encounters/harpy_threat/destroy_harpies.json)",
+
+      "wild mandragoras" : "file(encounters/mandragora_threat/wild_mandragoras.json)",
+      "wandering mandragoras" : "file(encounters/mandragora_threat/wandering_mandragoras.json)"
    }
 }

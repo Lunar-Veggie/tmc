@@ -4,22 +4,14 @@ The Mythical Creatures
 
 TODO:
 
-- Make goblins spawned through dryad campaign to attack the dryad only
 - Remove the harpy ambient threat, unless they only spawn on the mountains (maybe have them be rescuable by a quest instead)
-
+- If the player harvests the ancient great tree, then the forest_myth faction becomes hostile against you
 
 
 Dryad quest ideas:
 
 - rescue harpy from goblins
 - request stone to repair golem
-
-
-
-Golem:
-
-- They're connected to the pillars, if the pillars are destroyed; so are the golems.
-- The golems just wander around the temple, attacking anyonw who's coming too close.
 
 
 

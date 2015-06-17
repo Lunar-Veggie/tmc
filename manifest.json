@@ -33,11 +33,11 @@
 
       "decorations:garden_gnome" : "file(entities/decorations/garden_gnome)",
 
-      "decorations:forest_myth:tree"     : "file(entities/forest_myth/tree)",
-      "decorations:forest_myth:pillar_1" : "file(entities/forest_myth/pillars/pillar_1)",
-      "decorations:forest_myth:pillar_2" : "file(entities/forest_myth/pillars/pillar_2)",
-      "decorations:forest_myth:pillar_3" : "file(entities/forest_myth/pillars/pillar_3)",
-      "decorations:forest_myth:pillar_4" : "file(entities/forest_myth/pillars/pillar_4)",
+      "decorations:forest_myth:great_ancient_tree" : "file(entities/forest_myth/great_ancient_tree)",
+      "decorations:forest_myth:ancient_pillar_1" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_1)",
+      "decorations:forest_myth:ancient_pillar_2" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_2)",
+      "decorations:forest_myth:ancient_pillar_3" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_3)",
+      "decorations:forest_myth:ancient_pillar_4" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_4)",
 
       "jobs:guardian" : "file(jobs/guardian/guardian_description.json)",
       "jobs:spirit"   : "file(jobs/spirit/spirit_description.json)",
