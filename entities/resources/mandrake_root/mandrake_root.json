@@ -1,10 +1,11 @@
 {
-   "type": "entity",
+   "type"   : "entity",
+   "mixins" : "stonehearth:mixins:item_properties",
 
-   "components": {
-      "model_variants": {
-         "default": {
-            "models": [
+   "components" : {
+      "model_variants" : {
+         "default" : {
+            "models" : [
                "file(mandrake_root.qb)"
             ]
          }
@@ -15,16 +16,16 @@
       "mob" : {
          "model_origin" : { "x": -0.05, "y": 0, "z": 0.05 }
       },
-      "unit_info": {
-         "name": "Mandrake Root",
-         "description": "Potent ingredient for healing medicine",
+      "unit_info" : {
+         "name" : "Mandrake Root",
+         "description" : "Potent ingredient for healing medicine",
          "icon" : "file(mandrake_root.png)"
       },
-      "item": {
-         "category": "resources",
+      "item" : {
+         "category" : "resources"
       },
       "stonehearth:material" : {
-         "tags" :  "mandrake root plant resource"
+         "tags" : "mandrake root plant resource"
       }
    },
 
@@ -33,7 +34,7 @@
          "value_in_gold" : 60,
          "rarity" : "common",
          "shop_info" : {
-            "buyable" : false,   
+            "buyable" : false,
             "sellable" : true,
             "shopkeeper_level" : 1,
             "shopkeeper_type" : "caravan"
