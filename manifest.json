@@ -50,6 +50,10 @@
       "sounds:wing_flap" : "file(data/sounds/effects/wing_flap.wav)"
    },
 
+   "components" : {
+      "soul_keeper" : "file(components/soul_keeper/soul_keeper_component.lua)"
+   },
+
    "controllers" : {
       "class:guardian" : "file(jobs/guardian/guardian.lua)",
       "class:spirit"   : "file(jobs/spirit/spirit.lua)"
