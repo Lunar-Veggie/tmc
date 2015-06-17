@@ -30,6 +30,8 @@
 
       "resources:magical_forest_thread" : "file(entities/resources/magical_forest_thread)",
       "resources:harpy_feather" : "file(entities/resources/harpy_feather)",
+      "resources:mandrake_root" : "file(entities/resources/mandrake_root)",
+      "resources:mandrake_leaves" : "file(entities/resources/mandrake_leaves)",
 
       "decorations:garden_gnome" : "file(entities/decorations/garden_gnome)",
 
