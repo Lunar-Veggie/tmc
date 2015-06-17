@@ -2,12 +2,6 @@
    "type": "entity",
 
    "components": {
-      "item": {
-         "category": "resources",
-      },
-      "stonehearth:material" : {
-         "tags" : "resource plant"
-      },
       "model_variants": {
          "default": {
             "models": [
@@ -24,10 +18,13 @@
       "unit_info": {
          "name": "Mandrake Leaves",
          "description": "Ingredient used in healing medicine or herbal tea",
-         "icon" : "file(mandrake_leavs.png)"
+         "icon" : "file(mandrake_leaves.png)"
+      },
+      "item": {
+         "category": "resources",
       },
       "stonehearth:material" : {
-         "tags" :  "mandrake leaves"
+         "tags" :  "mandrake leaves plant resource"
       }
    },
 

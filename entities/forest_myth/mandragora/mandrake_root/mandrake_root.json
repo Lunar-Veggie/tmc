@@ -2,12 +2,6 @@
    "type": "entity",
 
    "components": {
-      "item": {
-         "category": "resources",
-      },
-      "stonehearth:material" : {
-         "tags" : "resource plant"
-      },
       "model_variants": {
          "default": {
             "models": [
@@ -26,8 +20,11 @@
          "description": "Potent ingredient for healing medicine",
          "icon" : "file(mandrake_root.png)"
       },
+      "item": {
+         "category": "resources",
+      },
       "stonehearth:material" : {
-         "tags" :  "mandrake root"
+         "tags" :  "mandrake root plant resource"
       }
    },
 
