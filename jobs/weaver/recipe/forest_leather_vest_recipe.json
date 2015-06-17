@@ -1,0 +1,26 @@
+{
+   "type":"recipe",
+
+   "work_units"  : 7,
+   "recipe_name" : "Forest Leather Vest",
+   "description" : "Hardened leather with the magic of the Forest imbedded in it.",
+   "flavor"      : "even smells like grass!",
+   "portrait"    : "/tmc/entities/armor/forest_leather_vest/forest_leather_vest.png",
+   "level_requirement" : 3,
+
+   "ingredients": [
+      {
+         "material" : "leather resource",
+         "count" : 3
+      },
+      {
+         "material" : "tmc_thread forest_resource",
+         "count" : 1
+      }
+  ],
+  "produces": [
+      {
+         "item":"tmc:armor:forest_leather_vest"
+      }
+  ]
+}
