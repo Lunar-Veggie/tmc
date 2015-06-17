@@ -2,6 +2,12 @@
    "type": "entity",
 
    "components": {
+      "item": {
+         "category": "resources",
+      },
+      "stonehearth:material" : {
+         "tags" : "resource plant"
+      },
       "model_variants": {
          "default": {
             "models": [
@@ -18,7 +24,7 @@
       "unit_info": {
          "name": "Mandrake Root",
          "description": "Potent ingredient for healing medicine",
-         "icon" : "file()"
+         "icon" : "file(mandrake_root.png)"
       },
       "stonehearth:material" : {
          "tags" :  "mandrake root"
@@ -27,7 +33,7 @@
 
    "entity_data" : {
       "stonehearth:net_worth" : {
-         "value_in_gold" : 30,
+         "value_in_gold" : 60,
          "rarity" : "common",
          "shop_info" : {
             "buyable" : false,   
