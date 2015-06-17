@@ -3,7 +3,7 @@
 
    "entities" : {
       "pillar_2" : {
-         "uri" : "tmc:decorations:forest_myth:ancient_pillar_2",
+         "uri" : "tmc:decorations:forest_myth:pillar_2",
          "force_iconic" : false,
          "location" : {
             "x" : 0,

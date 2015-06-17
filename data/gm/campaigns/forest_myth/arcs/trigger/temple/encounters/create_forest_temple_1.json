@@ -37,8 +37,8 @@
       "script" : "file(forest_temple/forest_temple.lua)",
 
       "pieces" : {
-         "great_ancient_tree" : {
-            "info"     : "file(forest_temple/great_ancient_tree.json)",
+         "tree" : {
+            "info"     : "file(forest_temple/tree.json)",
             "position" : { "x" :   0, "y" :   0 }
          },
          "pillar_1" : {

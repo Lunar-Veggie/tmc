@@ -1,0 +1,44 @@
+{
+   "type" : "camp_piece",
+
+   "entities" : {
+      "great_ancient_tree" : {
+         "uri" : "tmc:decorations:forest_myth:great_ancient_tree",
+         "force_iconic" : false,
+         "location" : {
+            "x" : 0,
+            "y" : 0,
+            "z" : 0
+         }
+      }
+   },
+
+   "citizens" : {
+      "guards" : {
+         "from_population" : {
+            "role"     : "golem",
+            "job"      : "tmc:jobs:guardian",
+            "min"      : 2,
+            "max"      : 2,
+            "location" : { "x" : 9, "z" : -5 },
+            "range"    : 10
+         },
+
+         "equipment" : {
+            "weapon" : [ "tmc:forest:golem:stone_hands" ]
+         },
+
+         "loot_drops" : {
+            "items" : [
+               { "uri" : "stonehearth:resources:stone:hunk_of_stone", "weight" : 5 },
+               { "uri" : "stonehearth:resources:coal:lump_of_coal",   "weight" : 1 },
+               { "uri" : "stonehearth:resources:copper:ore",          "weight" : 1 },
+               { "uri" : "stonehearth:resources:tin:ore",             "weight" : 1 },
+               { "uri" : "stonehearth:resources:iron:ore",            "weight" : 1 },
+               { "uri" : "stonehearth:resources:silver:ore",          "weight" : 1 },
+               { "uri" : "stonehearth:resources:gold:ore",            "weight" : 1 }
+            ]
+         }
+      }
+   }
+}
