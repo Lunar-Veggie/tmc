@@ -10,9 +10,7 @@
       "script" : "file(quests/fight_off_goblin_raiders.lua)",
       "data"   : {
          "rewards" : {
-            "stonehearth:resources:wood:oak_log" : 2,
-            "stonehearth:resources:stone:hunk_of_stone" : 3,
-            "stonehearth:resources:coal:lump_of_coal" : 1
+            "tmc:resources:magical_forest_thread" : 1
          }
       }
    }

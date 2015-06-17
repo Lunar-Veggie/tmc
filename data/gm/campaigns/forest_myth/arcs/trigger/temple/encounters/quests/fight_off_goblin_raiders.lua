@@ -17,9 +17,7 @@ end
 
 function GoblinRaidersQuest:_quest_finished(args)
    if args.successful then
-      local ctx = self._sv.ctx
       self:_get_rewards(self._sv.quest_data.rewards)
-      stonehearth.player:set_amenity(ctx.npc_player_id, ctx.player_id, 'friendly')
    end
 end
 
