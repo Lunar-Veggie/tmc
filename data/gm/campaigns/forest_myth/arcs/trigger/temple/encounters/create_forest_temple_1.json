@@ -38,7 +38,7 @@
 
       "pieces" : {
          "tree" : {
-            "info"     : "file(forest_temple/tree.json)",
+            "info"     : "file(forest_temple/great_ancient_tree.json)",
             "position" : { "x" :   0, "y" :   0 }
          },
          "pillar_1" : {
