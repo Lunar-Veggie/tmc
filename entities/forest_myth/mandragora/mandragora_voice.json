@@ -25,7 +25,7 @@
          {
             "name"         : "combat_scream_attack",
             "active_frame" : 17,
-            "cooldown"     : 1500,
+            "cooldown"     : 5000,
             "priority"     : 1
          }
       ],
