@@ -56,7 +56,8 @@
    },
 
    "mixintos" : {
-      "/stonehearth/jobs/weaver/recipes/recipes.json"  : ["file(jobs/weaver/recipes/recipes.json)"
+      "/stonehearth/jobs/weaver/recipes/recipes.json" : [ "file(jobs/weaver/recipes/recipes.json)" ],
+
       "/stonehearth/data/npc_index.json"   : [ "file(data/npc_index.json)" ],
       "/stonehearth/data/gm/gm_index.json" : [ "file(data/gm/gm_index.json)" ],
 
