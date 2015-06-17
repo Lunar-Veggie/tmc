@@ -13,17 +13,15 @@
             ]
          }
       },
-      "unit_info" : {
-         "name" : "Magical Forest Thread",
-         "description" : "A magical thread that has the power or the forest.",
-         "icon" : "file(magical_forest_thread.png)"
-
-
-      },
       "effect_list" : {
          "effects" : [
             "tmc:effects:forest_magic_glow"
          ]
+      },
+      "unit_info" : {
+         "name" : "Magical Forest Thread",
+         "description" : "A magical thread that has the power or the forest.",
+         "icon" : "file(magical_forest_thread.png)"
       },
 
       "stonehearth:material" : {
