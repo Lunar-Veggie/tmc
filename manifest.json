@@ -10,6 +10,7 @@
    "aliases" : {
       "kingdoms:forest_myth" : "file(data/populations/forest_myth_population.json)",
       "kingdoms:air_myth"    : "file(data/populations/air_myth_population.json)",
+      "kingdoms:wild_creatures" : "file(data/populations/tmc_wild_creatures.json)",
 
       "amenities" : "file(data/amenities.json)",
 

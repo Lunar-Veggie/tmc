@@ -4,5 +4,8 @@
    },
    "air_myth" : {
       "kingdom" : "tmc:kingdoms:air_myth"
+   },
+   "tmc_wild_creatures" : {
+      "kingdom" : "tmc:kingdoms:wild_creatures"
    }
 }

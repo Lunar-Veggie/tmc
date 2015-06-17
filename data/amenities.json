@@ -3,5 +3,10 @@
       "friendly" : [ "air_myth" ],
       "neutral"  : [],
       "hostile"  : [ "goblins" ]
+   },
+   "tmc_wild_creatures" : {
+      "friendly" : [ "forest_myth", "air_myth" ],
+      "neutral"  : [],
+      "hostile"  : []
    }
 }
