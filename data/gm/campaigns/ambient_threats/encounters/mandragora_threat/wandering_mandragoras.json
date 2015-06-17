@@ -1,0 +1,38 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "script",
+   "rarity" : "common",
+
+   "in_edge" : "wandering_mandragoras",
+
+   "script_info" : {
+      "script" : "file(spawn_mandragoras.lua)",
+      "data"   : {
+         "entity_uri" : "tmc:forest:mandragora",
+         "npc_player_id" : "tmc_wild_creatures",
+
+         "location" : { "x" : 0, "y" : 0, "z" : 0 },
+         "range"    : 20,
+         "combat_leash_range" : 30,
+
+         "spawn_range" : {
+            "min" : 250,
+            "max" : 400
+         },
+         "spawn_amount" : {
+            "min" : 1,
+            "max" : 2
+         },
+
+         "equipment" : {
+            "weapon" : [ "tmc:forest:mandragora:voice" ]
+         },
+         "loot_drops" : {
+            "items" : [
+               { "uri" : "tmc:resources:mandrake_leaves", "weight" : 3 },
+               { "uri" : "tmc:resources:mandrake_root",   "weight" : 1 }
+            ]
+         }
+      }
+   }
+}
