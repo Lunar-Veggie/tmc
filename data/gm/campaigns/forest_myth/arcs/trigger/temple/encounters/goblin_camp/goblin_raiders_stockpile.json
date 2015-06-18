@@ -5,8 +5,9 @@
    "script_info" : {
       "npc_player_id" : "goblins",
       "ctx_entity_registration_path" : "goblin_raiding_camp",
-      "stockpile_size" : { "w" : 2, "h" : 3 },
+      "stockpile_size" : { "w" : 5, "h" : 5 },
       "stockpile_contents" : "stonehearth:resources:wood:oak_log",
+      "stockpile_contents_amount" : { "w" : 1, "h" : 3 },
       "entity_name" : "general_stockpile"
    }
 }

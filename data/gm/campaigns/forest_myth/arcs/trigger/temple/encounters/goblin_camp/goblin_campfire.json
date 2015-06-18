@@ -41,11 +41,11 @@
          "combat_leash_range" : 30,
          "loot_drops" : {
             "items" : [
-               { "uri" : "", "weight" : 5 },
-               { "uri" : "stonehearth:rabbit_jerky", "weight" : 2 },
-               { "uri" : "stonehearth:squirrel_jerky", "weight" : 2 },
-               { "uri" : "stonehearth:racoon_jerky", "weight" : 2 },
-               { "uri" : "stonehearth:red_fox_jerky", "weight" : 2 },
+               { "uri" : "",                                          "weight" : 5 },
+               { "uri" : "stonehearth:rabbit_jerky",                  "weight" : 2 },
+               { "uri" : "stonehearth:squirrel_jerky",                "weight" : 2 },
+               { "uri" : "stonehearth:racoon_jerky",                  "weight" : 2 },
+               { "uri" : "stonehearth:red_fox_jerky",                 "weight" : 2 },
                { "uri" : "stonehearth:monsters:goblins:skull_trophy", "weight" : 2 }
             ]
          }
@@ -67,11 +67,11 @@
          "combat_leash_range" : 30,
          "loot_drops" : {
             "items" : [
-               { "uri" : "", "weight" : 5 },
-               { "uri" : "stonehearth:rabbit_jerky", "weight" : 1 },
-               { "uri" : "stonehearth:squirrel_jerky", "weight" : 1 },
-               { "uri" : "stonehearth:racoon_jerky", "weight" : 1 },
-               { "uri" : "stonehearth:red_fox_jerky", "weight" : 1 },
+               { "uri" : "",                                          "weight" : 5 },
+               { "uri" : "stonehearth:rabbit_jerky",                  "weight" : 1 },
+               { "uri" : "stonehearth:squirrel_jerky",                "weight" : 1 },
+               { "uri" : "stonehearth:racoon_jerky",                  "weight" : 1 },
+               { "uri" : "stonehearth:red_fox_jerky",                 "weight" : 1 },
                { "uri" : "stonehearth:monsters:goblins:skull_trophy", "weight" : 1 }
             ]
          }

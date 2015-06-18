@@ -31,8 +31,13 @@ end
 function Stockpile:_create_stockpile(location, w, h)
    local stockpile = stonehearth.inventory:get_inventory(self._ctx.npc_player_id):create_stockpile(location, Point2(w,h))
    local contents = self._sv.piece.info.script_info.stockpile_contents
+
    if contents then
-      radiant.terrain.place_entity_cluster(contents, location, w-1, h-1)
+      local contents_amount = self._sv.piece.info.script_info.stockpile_contents_amount
+      w = contents_amount and contents_amount.w or w-1
+      h = contents_amount and contents_amount.h or h-1
+
+      radiant.terrain.place_entity_cluster(contents, location, w, h)
    end
    return stockpile
 end
