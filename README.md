@@ -6,12 +6,13 @@ TODO:
 
 - Remove the harpy ambient threat, unless they only spawn on the mountains (maybe have them be rescuable by a quest instead)
 - If the player harvests the ancient great tree, then the forest_myth faction becomes hostile against you
+- The golems use up hunk of stones to heal themselves
 
 
 Dryad quest ideas:
 
 - rescue harpy from goblins
-- request stone to repair golem
+- request stone for golem
 
 
 
