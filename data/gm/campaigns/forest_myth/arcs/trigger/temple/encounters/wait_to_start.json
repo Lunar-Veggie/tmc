@@ -8,6 +8,6 @@
 
    "wait_for_net_worth_info" : {
       "threshold" : 500,
-      "interval"  : "1h"
+      "interval"  : "8h"
    }
 }

@@ -7,6 +7,6 @@
    "out_edge" : "issue_quest",
 
    "wait_info" : {
-      "duration" : "1h"
+      "duration" : "48h"
    }
 }
