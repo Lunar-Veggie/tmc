@@ -1,0 +1,37 @@
+{
+   "type"   : "entity",
+   "mixins" : "stonehearth:mixins:destructable_object",
+
+   "components" : {
+      "unit_info" : {
+         "name" : "A harpy cage",
+         "description" : "It stops you from flying away; how inconvenient"
+      },
+      "render_info" : {
+         "scale" : 0.2
+      },
+      "model_variants" : {
+         "default" : {
+            "models" : [
+               "file(harpy_cage.qb)"
+            ]
+         }
+      },
+      "region_collision_shape" : {
+         "region" : [
+            {
+               "min" : { "x" : -4, "y" : 0,  "z" : -3 },
+               "max" : { "x" :  3, "y" : 1,  "z" :  4 }
+            }
+         ]
+      },
+      "destination" : {
+         "region" : [
+            {
+               "min" : { "x" : -4, "y" : 0, "z" : -3 },
+               "max" : { "x" :  3, "y" : 1, "z" :  4 }
+            }
+         ]
+      }
+   }
+}

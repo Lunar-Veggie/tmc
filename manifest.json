@@ -42,6 +42,8 @@
       "decorations:forest_myth:ancient_pillar_3" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_3)",
       "decorations:forest_myth:ancient_pillar_4" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_4)",
 
+      "objects:harpy_cage" : "file(entities/objects/harpy_cage)",
+
       "jobs:guardian" : "file(jobs/guardian/guardian_description.json)",
       "jobs:spirit"   : "file(jobs/spirit/spirit_description.json)",
 
