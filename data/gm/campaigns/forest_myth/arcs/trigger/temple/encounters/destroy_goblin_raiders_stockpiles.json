@@ -2,8 +2,7 @@
    "type" : "encounter",
    "encounter_type" : "destroy_entity",
 
-   "in_edge"  : "destroy_goblin_stockpiles",
-   "out_edge" : ["goblin_raiders_quest_successful_dialog", "quest_successful"],
+   "in_edge" : "destroy_goblin_raiders_stockpiles",
 
    "destroy_entity_info" : {
       "target_entities" : ["goblin_raiding_camp.entities.general_stockpile"],

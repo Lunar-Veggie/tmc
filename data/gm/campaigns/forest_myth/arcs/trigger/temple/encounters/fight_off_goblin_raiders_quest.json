@@ -4,7 +4,7 @@
    "rarity" : "common",
 
    "in_edge"  : "issue_quest",
-   "out_edge" : "create_goblin_raiding_camp",
+   "out_edge" : ["fight_off_goblin_raiders_dialog", "create_goblin_raiding_camp"],
 
    "script_info" : {
       "script" : "file(quests/fight_off_goblin_raiders.lua)",

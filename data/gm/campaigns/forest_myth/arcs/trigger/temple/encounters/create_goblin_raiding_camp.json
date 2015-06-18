@@ -4,7 +4,7 @@
    "rarity" : "common",
 
    "in_edge"  : "create_goblin_raiding_camp",
-   "out_edge" : ["fight_off_goblin_raiders_dialog", "spawn_goblin_raiders", "wait_for_goblin_boss_death"],
+   "out_edge" : ["spawn_goblin_raiders", "wait_for_goblin_boss_death"],
 
    "create_camp_info" : {
       "npc_player_id" : "goblins",
@@ -47,6 +47,8 @@
             ]
          }
       },
+
+      "script" : "file(goblin_camp/goblin_raiders.lua)",
 
       "pieces" : {
          "campfire" : {

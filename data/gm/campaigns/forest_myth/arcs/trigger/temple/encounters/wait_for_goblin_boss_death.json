@@ -3,7 +3,7 @@
    "encounter_type" : "wait_for_event",
 
    "in_edge"  : "wait_for_goblin_boss_death",
-   "out_edge" : "destroy_goblin_stockpiles",
+   "out_edge" : ["goblin_raiders_success_dialog", "quest_successful", "destroy_goblin_raiders_stockpiles"],
 
    "wait_for_event_info" : {
       "source" : "goblin_raiding_camp.boss",

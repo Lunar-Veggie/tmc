@@ -1,12 +1,6 @@
 {
    "type" : "camp_piece",
 
-   "script"      : "file(goblin_raiders.lua)",
-   "script_info" : {
-      "npc_player_id"    : "goblins",
-      "target_player_id" : "forest_myth"
-   },
-
    "entities" : {
       "campfire" : {
          "uri" : "stonehearth:decoration:firepit_skulls",
@@ -23,33 +17,6 @@
       }
    },
    "citizens" : {
-      "footmen" : {
-         "from_population" : {
-            "job" : "stonehearth:jobs:footman",
-            "min" : 1,
-            "max" : 2,
-            "location" : { "x": 0, "z": 0 },
-            "range" : 3
-         },
-         "equipment" : {
-            "weapon" : ["stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul"],
-            "armor"  : ["stonehearth:monsters:goblins:outfits:footman"]
-         },
-         "unit_info" : {
-            "description" : "Defender of the hearth"
-         },
-         "combat_leash_range" : 30,
-         "loot_drops" : {
-            "items" : [
-               { "uri" : "",                                          "weight" : 5 },
-               { "uri" : "stonehearth:rabbit_jerky",                  "weight" : 2 },
-               { "uri" : "stonehearth:squirrel_jerky",                "weight" : 2 },
-               { "uri" : "stonehearth:racoon_jerky",                  "weight" : 2 },
-               { "uri" : "stonehearth:red_fox_jerky",                 "weight" : 2 },
-               { "uri" : "stonehearth:monsters:goblins:skull_trophy", "weight" : 2 }
-            ]
-         }
-      },
       "workers" : {
          "from_population" : {
             "job" : "stonehearth:jobs:worker",
@@ -59,7 +26,7 @@
             "range" : 3
          },
          "equipment" : {
-            "weapon" : ["stonehearth:mining_pick", "stonehearth:worker_hammer"]
+            "weapon" : [ "stonehearth:mining_pick", "stonehearth:worker_hammer" ]
          },
          "unit_info" : {
             "description" : "All-important hearth maintainer"

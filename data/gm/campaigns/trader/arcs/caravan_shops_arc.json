@@ -1,5 +1,5 @@
 {
-	"encounters" : {
-		"gnome shop" : "file(encounters/gnome_shop.json)"
-	}
+   "encounters" : {
+      "gnome shop" : "file(encounters/gnome_shop.json)"
+   }
 }

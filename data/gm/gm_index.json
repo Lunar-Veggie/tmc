@@ -1,7 +1,7 @@
 {
-	"campaigns" : {
-		"mythologies" : {
-			"forest_mythology" : "file(campaigns/forest_myth/forest_myth_campaign.json)"
-		}
-	}
+   "campaigns" : {
+      "mythologies" : {
+         "forest_mythology" : "file(campaigns/forest_myth/forest_myth_campaign.json)"
+      }
+   }
 }
