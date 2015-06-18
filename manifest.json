@@ -56,7 +56,8 @@
    },
 
    "components" : {
-      "soul_keeper" : "file(components/soul_keeper/soul_keeper_component.lua)"
+      "soul_keeper" : "file(components/soul_keeper/soul_keeper_component.lua)",
+      "animation" : "file(components/animation/animation_component.lua)"
    },
 
    "controllers" : {

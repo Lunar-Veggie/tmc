@@ -12,25 +12,24 @@ end
 function ForestTempleScript:_setup_soul_connection(ctx)
    -- Get a hold of all the entities which has the soul keeper component attached to them
    local soul_keepers = {}
-   local index = 1
    for id,entity in pairs(ctx.forest_temple.entities) do
 
       if entity:get_component('tmc:soul_keeper') then
-         soul_keepers[index] = entity
-         index = index + 1
+         entity:get_component('tmc:soul_keeper'):set_id(id)
+         soul_keepers[id] = entity
       end
    end
 
-   -- Set all the guards to be connected to each soul keeper
-   --TODO: perhaps some check to see if there are too many guards to assign to soul keepers, not needed now though.
-   index = rng:get_int(1, #soul_keepers)
-   for id,guard_entity in pairs(ctx.forest_temple.citizens.guards) do
+   -- Set all the guards who have the animation component to be connected to every soul keeper
+   for type,citizen_type in pairs(ctx.forest_temple.citizens) do
 
-      while not soul_keepers[index] do
-         index = rng:get_int(1, #soul_keepers)
+      for id,citizen in pairs(citizen_type) do
+
+         local animation_comp = citizen:get_component('tmc:animation')
+         if animation_comp then
+            animation_comp:set_soul_keepers(soul_keepers)
+         end
       end
-      soul_keepers[index]:get_component('tmc:soul_keeper'):set_target_soul(guard_entity)
-      soul_keepers[index] = nil
    end
 end
 

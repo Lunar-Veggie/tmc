@@ -26,6 +26,8 @@
          "tags" : "stone"
       },
 
+      "tmc:animation" : {},
+
       "stonehearth:ai" : {
          "actions" : [
             "stonehearth:actions:idle:look_around",
@@ -107,8 +109,7 @@
          "stance" : "aggressive"
       },
 
-      "stonehearth:equipment" : {
-      },
+      "stonehearth:equipment" : {},
 
       "sensor_list" : {
          "sensors" : {
