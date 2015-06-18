@@ -6,7 +6,7 @@ TODO:
 
 - Remove the harpy ambient threat, unless they only spawn on the mountains (maybe have them be rescuable by a quest instead)
 - If the player harvests the ancient great tree, then the forest_myth faction becomes hostile against you
-- The golems use up hunk of stones to heal themselves
+- The golems are gonna be invisible. If the pillars are destroyed then the golems become inactive, and then they will have to be rebuilt for the golems to become active again
 
 
 Dryad quest ideas:
