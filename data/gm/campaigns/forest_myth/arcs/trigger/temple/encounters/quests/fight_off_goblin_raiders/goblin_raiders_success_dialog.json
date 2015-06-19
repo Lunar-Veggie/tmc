@@ -12,7 +12,7 @@
             "bulletin" : {
                "title" : "A relieved dryad approaches",
                "dialog_title" : "%name(forest_temple.boss)",
-               "portrait" : "file(images/dryad_portrait.png)",
+               "portrait" : "file(../../images/dryad_portrait.png)",
                "message" : "Thank you so much! Now we can sleep easily knowing there's a friend of mother nature around.",
                "choices" : {
                   "stonehearth:next" : {
@@ -25,7 +25,7 @@
             "bulletin" : {
                "title" : "A relieved dryad approaches",
                "dialog_title" : "%name(forest_temple.boss)",
-               "portrait" : "file(images/dryad_portrait.png)",
+               "portrait" : "file(../../images/dryad_portrait.png)",
                "message" : "Please, take this small thing as part of our thanks.",
                "choices" : {
                   "stonehearth:ok" : {

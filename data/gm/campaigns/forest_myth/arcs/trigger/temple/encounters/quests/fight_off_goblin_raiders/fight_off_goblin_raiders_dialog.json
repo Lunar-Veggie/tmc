@@ -12,7 +12,7 @@
             "bulletin" : {
                "title" : "A panicked dryad seeks assistance",
                "dialog_title" : "%name(forest_temple.boss)",
-               "portrait" : "file(images/dryad_portrait.png)",
+               "portrait" : "file(../../images/dryad_portrait.png)",
                "message" : "Help! Goblins have come to destroy our home!",
                "choices" : {
                   "stonehearth:next" : {
@@ -25,7 +25,7 @@
             "bulletin" : {
                "title" : "A panicked dryad seeks assistance",
                "dialog_title" : "%name(forest_temple.boss)",
-               "portrait" : "file(images/dryad_portrait.png)",
+               "portrait" : "file(../../images/dryad_portrait.png)",
                "message" : "We need help as we can't do anything that leaves our home unprotected.",
                "choices" : {
                   "stonehearth:next" : {
@@ -38,7 +38,7 @@
             "bulletin" : {
                "title" : "A panicked dryad seeks assistance",
                "dialog_title" : "%name(forest_temple.boss)",
-               "portrait" : "file(images/dryad_portrait.png)",
+               "portrait" : "file(../../images/dryad_portrait.png)",
                "message" : "Please help...",
                "choices" : {
                   "stonehearth:ok" : {

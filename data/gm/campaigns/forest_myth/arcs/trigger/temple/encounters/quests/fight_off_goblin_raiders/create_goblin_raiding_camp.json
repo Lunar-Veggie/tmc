@@ -48,15 +48,15 @@
          }
       },
 
-      "script" : "file(goblin_camp/goblin_raiders.lua)",
+      "script" : "file(../../goblin_camp/goblin_raiders.lua)",
 
       "pieces" : {
          "campfire" : {
-            "info" : "file(goblin_camp/goblin_campfire.json)",
+            "info" : "file(../../goblin_camp/goblin_campfire.json)",
             "position" : { "x": 1, "y": 2 }
          },
          "stockpile" : {
-            "info" : "file(goblin_camp/goblin_raiders_stockpile.json)",
+            "info" : "file(../../goblin_camp/goblin_raiders_stockpile.json)",
             "position" : { "x": -2, "y": -1 }
          }
       }

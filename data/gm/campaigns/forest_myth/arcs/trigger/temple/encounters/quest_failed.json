@@ -1,0 +1,12 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "script",
+
+   "in_edge"  : "quest_failed",
+   "out_edge" : "wait_to_issue_quest",
+
+   "script_info" : {
+      "script" : "file(quests/failed.lua)",
+      "data"   : {}
+   }
+}

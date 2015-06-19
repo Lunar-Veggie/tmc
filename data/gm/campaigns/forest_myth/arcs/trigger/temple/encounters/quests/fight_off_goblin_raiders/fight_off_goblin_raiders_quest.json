@@ -7,7 +7,7 @@
    "out_edge" : ["fight_off_goblin_raiders_dialog", "create_goblin_raiding_camp"],
 
    "script_info" : {
-      "script" : "file(quests/fight_off_goblin_raiders.lua)",
+      "script" : "file(fight_off_goblin_raiders.lua)",
       "data"   : {
          "rewards" : {
             "tmc:resources:magical_forest_thread" : 1

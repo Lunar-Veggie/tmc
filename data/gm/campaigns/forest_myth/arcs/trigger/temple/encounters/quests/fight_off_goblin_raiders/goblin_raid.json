@@ -6,7 +6,7 @@
    "in_edge" : "goblin_raid",
 
    "script_info" : {
-      "script" : "file(goblin_camp/pillage_target.lua)",
+      "script" : "file(pillage_target.lua)",
       "data"   : {
          "offset" : { "x" : 0, "y" : 0, "z" : 0 },
 
@@ -34,8 +34,8 @@
                   "raid_timeout_variance_minutes" : 60
                },
                "equipment" : {
-                  "weapon" : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul" ],
-                  "armor"  : [ "stonehearth:monsters:goblins:outfits:footman" ],
+                  "weapon"    : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul" ],
+                  "armor"     : [ "stonehearth:monsters:goblins:outfits:footman" ],
                   "abilities" : "stonehearth:abilities:wolf_rider_abilities"
                },
                "loot_drops" : {
