@@ -29,6 +29,7 @@
                "message" : "Please, take this small thing as part of our thanks.",
                "choices" : {
                   "stonehearth:ok" : {
+                     "out_edge" : "quest_successful"
                   }
                }
             }
