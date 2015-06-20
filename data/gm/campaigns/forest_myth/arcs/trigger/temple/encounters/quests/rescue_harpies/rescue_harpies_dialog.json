@@ -13,7 +13,7 @@
                "title" : "The Dryad needs your help!",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "The Harpies is in Danger!",
+               "message" : "The harpies is in Danger!",
                "choices" : {
                   "stonehearth:next" : {
                      "next_node" : "msg2"
