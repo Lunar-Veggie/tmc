@@ -114,7 +114,7 @@
       "sensor_list" : {
          "sensors" : {
             "sight" : {
-               "radius" : 20
+               "radius" : 64
             }
          }
       }
