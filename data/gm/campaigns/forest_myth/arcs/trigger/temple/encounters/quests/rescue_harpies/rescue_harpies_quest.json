@@ -10,7 +10,7 @@
       "script" : "file(rescue_harpies.lua)",
       "data"   : {
          "rewards" : {
-            "tmc:resources:magical_forest_thread" : 1
+            "tmc:resources:harpy_feather" : 1
          }
       }
    }

@@ -10,10 +10,10 @@
       "nodes" : {
          "msg1" : {
             "bulletin" : {
-               "title" : "A dryad HERP DERP",
+               "title" : "The Dryad needs your help!",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "herrow",
+               "message" : "The Harpy is in Dageger!",
                "choices" : {
                   "stonehearth:next" : {
                      "next_node" : "msg2"
@@ -23,10 +23,10 @@
          },
          "msg2" : {
             "bulletin" : {
-               "title" : "A dryad HERP DERP",
+               "title" : "The Dryad needs your help!",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "harpies r gonna get eaten!",
+               "message" : "Goblins have captured her!",
                "choices" : {
                   "stonehearth:next" : {
                      "next_node" : "msg3"
@@ -36,10 +36,10 @@
          },
          "msg3" : {
             "bulletin" : {
-               "title" : "A dryad HERP DERP",
+               "title" : "The Dryad needs your help!",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "save them? kthxbai",
+               "message" : "Could you pleas help them?",
                "choices" : {
                   "stonehearth:ok" : {
                   }

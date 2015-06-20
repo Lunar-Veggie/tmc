@@ -18,8 +18,8 @@
          "offset" : { "x" : 0, "y" : 0, "z" : 0 },
 
          "sighted_bulletin" : {
-            "title" : "The harpies are escaping!",
-            "message" : "The harpies are escaping!"
+            "title" : "The harpies are now Free!",
+            "message" : "The Harpies are flying away with joy!"
          },
 
          "members" : {
