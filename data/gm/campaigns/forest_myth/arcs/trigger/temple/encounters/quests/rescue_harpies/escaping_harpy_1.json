@@ -1,0 +1,39 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "create_mission",
+   "rarity" : "common",
+
+   "in_edge" : "escaping_harpy_1",
+
+   "create_mission_info" : {
+      "spawn_range" : {
+         "min" : 50,
+         "max" : 60
+      },
+
+      "mission" : {
+         "encounter_name" : "escaping_harpies_1",
+
+         "role" : "raid_stockpiles",
+         "offset" : { "x" : 0, "y" : 0, "z" : 0 },
+
+         "sighted_bulletin" : {
+            "title" : "The harpy is now free!",
+            "message" : "The harpy's flying away with joy!"
+         },
+
+         "members" : {
+            "harpy_1" : {
+               "from_ctx" : "harpy_captives_camp.citizens.caged_harpy[1]",
+               "equipment" : {
+                  "abilities" : "stonehearth:abilities:wolf_rider_abilities"
+               },
+               "attributes" : {
+                  "raid_timeout_minutes" : 0,
+                  "raid_timeout_variance_minutes" : 0
+               }
+            }
+         }
+      }
+   }
+}

@@ -14,5 +14,41 @@
             "Description" : "Guards only; hands off!"
          }
       }
+   },
+   "citizens" : {
+      "cage_guards" : {
+         "from_population" : {
+            "location" : { "x": 0, "z": 5 },
+            "range"    : 2,
+            "min"      : 2,
+            "max"      : 2,
+            "job" : "stonehearth:jobs:footman"
+         },
+         "equipment" : {
+            "weapon" : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul", "stonehearth:weapons:iron_mace" ],
+            "outfit" : "stonehearth:monsters:goblins:outfits:maurauder"
+         },
+         "loot_drops" : {
+            "num_rolls" : {
+               "min" : 1,
+               "max" : 1
+            },
+            "items" : [
+               {"uri" : "stonehearth:resources:red_fox_pelt",        "weight" : 3 },
+               {"uri" : "stonehearth:resources:racoon_pelt",         "weight" : 3 },
+               {"uri" : "stonehearth:resources:squirrel_pelt",       "weight" : 3 },
+               {"uri" : "stonehearth:resources:rabbit_pelt",         "weight" : 3 },
+               {"uri" : "stonehearth:resources:coal:lump_of_coal",   "weight" : 2 },
+               {"uri" : "stonehearth:resources:iron:ore",            "weight" : 2 },
+               {"uri" : "stonehearth:resources:silver:ore",          "weight" : 2 },
+               {"uri" : "stonehearth:resources:gold:ore",            "weight" : 2 },
+               {"uri" : "stonehearth:resources:tin:ore",             "weight" : 2 },
+               {"uri" : "stonehearth:monsters:goblins:skull_trophy", "weight" : 1 }
+            ]
+         },
+         "unit_info" : {
+            "description" : "Keeping the harpies in place"
+         }
+      }
    }
 }

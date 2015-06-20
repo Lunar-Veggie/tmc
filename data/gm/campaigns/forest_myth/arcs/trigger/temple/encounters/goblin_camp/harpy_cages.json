@@ -1,0 +1,63 @@
+{
+   "type" : "camp_piece",
+
+   "script" : "file(generate_captives.lua)",
+   "script_info" : {
+      "type" : "caged_harpies",
+      "captives_player_id" : "air_myth",
+      "ctx_entity_registration_path" : "harpy_captives_camp",
+
+      "from_population" : {
+         "role" : "harpy",
+         "location" : { "x": 0, "y": 0, "z": 0 },
+         "range"    : 0,
+         "min"      : 1,
+         "max"      : 1
+      },
+      "unit_info" : {
+         "description" : "Wants to fly again..."
+      },
+      "attributes" : {
+         "menace" : 0
+      },
+      "equipment" : {
+         "abilities" : "stonehearth:monsters:goblins:wolf_sleep_collar"
+      }
+   },
+
+   "entities" : {
+      "harpy_cage_1" : {
+         "uri" : "tmc:objects:harpy_cage",
+         "unit_info" : {
+            "name" : "Harpy Cage"
+         },
+         "location" : {
+            "x" :  8,
+            "y" :  0,
+            "z" : -4
+         }
+      },
+      "harpy_cage_2" : {
+         "uri" : "tmc:objects:harpy_cage",
+         "unit_info" : {
+            "name" : "Harpy Cage"
+         },
+         "location" : {
+            "x" : 10,
+            "y" :  0,
+            "z" :  4
+         }
+      },
+      "harpy_cage_3" : {
+         "uri" : "tmc:objects:harpy_cage",
+         "unit_info" : {
+            "name" : "Harpy Cage"
+         },
+         "location" : {
+            "x" :  0,
+            "y" :  0,
+            "z" :  7
+         }
+      }
+   }
+}

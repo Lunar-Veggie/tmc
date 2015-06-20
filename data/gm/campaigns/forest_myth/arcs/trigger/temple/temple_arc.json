@@ -24,9 +24,18 @@
       "rescue harpies quest"                  : "file(encounters/quests/rescue_harpies/rescue_harpies_quest.json)",
       "rescue harpies dialog"                 : "file(encounters/quests/rescue_harpies/rescue_harpies_dialog.json)",
       "create harpy captives camp"            : "file(encounters/quests/rescue_harpies/create_harpy_captives_camp.json)",
-      "wait for harpy cage destruction"       : "file(encounters/quests/rescue_harpies/wait_for_harpy_cage_destruction.json)",
-      "escaping harpies"                      : "file(encounters/quests/rescue_harpies/escaping_harpies.json)",
-      "destroy goblin captivators stockpiles" : "file(encounters/quests/rescue_harpies/destroy_goblin_captivators_stockpiles.json)",
-      "rescue harpies success dialog"         : "file(encounters/quests/rescue_harpies/rescue_harpies_success_dialog.json)"
+      "wait for harpy cages destruction"      : "file(encounters/quests/rescue_harpies/wait_for_harpy_cages_destruction.json)",
+      "wait for cage 1 destruction"           : "file(encounters/quests/rescue_harpies/wait_for_cage_1_destruction.json)",
+      "wait for cage 2 destruction"           : "file(encounters/quests/rescue_harpies/wait_for_cage_2_destruction.json)",
+      "wait for cage 3 destruction"           : "file(encounters/quests/rescue_harpies/wait_for_cage_3_destruction.json)",
+      "escaping harpy 1"                      : "file(encounters/quests/rescue_harpies/escaping_harpy_1.json)",
+      "escaping harpy 2"                      : "file(encounters/quests/rescue_harpies/escaping_harpy_2.json)",
+      "escaping harpy 3"                      : "file(encounters/quests/rescue_harpies/escaping_harpy_3.json)",
+      "destroy goblin captivators stockpiles" : "file(encounters/quests/rescue_harpies/destroy_stockpiles.json)",
+      "rescue harpies success dialog"         : "file(encounters/quests/rescue_harpies/rescue_harpies_success_dialog.json)",
+      "wait until leaving"                    : "file(encounters/quests/rescue_harpies/wait_until_leaving.json)",
+      "leave with harpies"                    : "file(encounters/quests/rescue_harpies/leave_with_harpies.json)",
+      "destroy goblin captivators misc"       : "file(encounters/quests/rescue_harpies/destroy_misc.json)",
+      "rescue harpies fail dialog"            : "file(encounters/quests/rescue_harpies/rescue_harpies_fail_dialog.json)"
    }
 }

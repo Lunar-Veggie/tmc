@@ -1,0 +1,12 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "wait_for_event",
+
+   "in_edge"  : "wait_for_cage_2_destruction",
+   "out_edge" : "escaping_harpy_2",
+
+   "wait_for_event_info" : {
+      "source" : "harpy_captives_camp.entities.harpy_cage_2",
+      "event"  : "radiant:entity:pre_destroy"
+   }
+}

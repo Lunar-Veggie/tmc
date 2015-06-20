@@ -4,7 +4,7 @@
    "rarity" : "common",
 
    "in_edge"  : "create_harpy_captives_camp",
-   "out_edge" : "wait_for_harpy_cage_destruction",
+   "out_edge" : [ "wait_for_cage_1_destruction", "wait_for_cage_2_destruction", "wait_for_cage_3_destruction", "wait_for_harpy_cages_destruction", "wait_until_leaving" ],
 
    "create_camp_info" : {
       "npc_player_id" : "goblins",
@@ -28,9 +28,9 @@
             "info"     : "file(../../goblin_camp/goblin_tent.json)",
             "position" : { "x": -5, "y": -7 }
          },
-         "harpy_cage" : {
-            "info"     : "file(../../goblin_camp/harpy_cage.json)",
-            "position" : { "x":  8, "y": -4 }
+         "harpy_cages" : {
+            "info"     : "file(../../goblin_camp/harpy_cages.json)",
+            "position" : { "x":  0, "y":  0 }
          },
          "stockpile" : {
             "info"     : "file(../../goblin_camp/goblin_captivators_stockpile.json)",

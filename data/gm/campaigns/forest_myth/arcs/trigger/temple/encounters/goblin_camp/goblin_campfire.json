@@ -17,7 +17,7 @@
       }
    },
    "citizens" : {
-      "workers" : {
+      "worker" : {
          "from_population" : {
             "job" : "stonehearth:jobs:worker",
             "min" : 1,
