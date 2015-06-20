@@ -19,6 +19,14 @@
       "goblin raid"                       : "file(encounters/quests/fight_off_goblin_raiders/goblin_raid.json)",
       "wait for goblin boss death"        : "file(encounters/quests/fight_off_goblin_raiders/wait_for_goblin_boss_death.json)",
       "destroy goblin raiders stockpiles" : "file(encounters/quests/fight_off_goblin_raiders/destroy_goblin_raiders_stockpiles.json)",
-      "goblin raiders success dialog"     : "file(encounters/quests/fight_off_goblin_raiders/goblin_raiders_success_dialog.json)"
+      "goblin raiders success dialog"     : "file(encounters/quests/fight_off_goblin_raiders/goblin_raiders_success_dialog.json)",
+
+      "rescue harpies quest"                  : "file(encounters/quests/rescue_harpies/rescue_harpies_quest.json)",
+      "rescue harpies dialog"                 : "file(encounters/quests/rescue_harpies/rescue_harpies_dialog.json)",
+      "create harpy captives camp"            : "file(encounters/quests/rescue_harpies/create_harpy_captives_camp.json)",
+      "wait for harpy cage destruction"       : "file(encounters/quests/rescue_harpies/wait_for_harpy_cage_destruction.json)",
+      "escaping harpies"                      : "file(encounters/quests/rescue_harpies/escaping_harpies.json)",
+      "destroy goblin captivators stockpiles" : "file(encounters/quests/rescue_harpies/destroy_goblin_captivators_stockpiles.json)",
+      "rescue harpies success dialog"         : "file(encounters/quests/rescue_harpies/rescue_harpies_success_dialog.json)"
    }
 }

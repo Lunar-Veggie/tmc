@@ -1,0 +1,12 @@
+{
+   "type" : "camp_piece",
+
+   "script" : "file(stockpile.lua)",
+   "script_info" : {
+      "npc_player_id" : "goblins",
+      "ctx_entity_registration_path" : "harpy_captives_camp",
+      "stockpile_size" : { "w" : 3, "h" : 3 },
+      "stockpile_contents" : "stonehearth:resources:wood:oak_log",
+      "entity_name" : "general_stockpile"
+   }
+}

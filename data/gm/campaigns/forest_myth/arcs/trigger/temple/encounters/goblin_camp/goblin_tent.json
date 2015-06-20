@@ -1,0 +1,18 @@
+{
+   "type" : "camp_piece",
+
+   "entities" : {
+      "tent" : {
+         "uri" : "stonehearth:monsters:goblins:goblin_tent",
+         "location" : {
+            "x" : 0,
+            "y" : 0,
+            "z" : 0
+         },
+         "unit_info" : {
+            "name" : "Harpy Guards' Tent",
+            "Description" : "Guards only; hands off!"
+         }
+      }
+   }
+}
