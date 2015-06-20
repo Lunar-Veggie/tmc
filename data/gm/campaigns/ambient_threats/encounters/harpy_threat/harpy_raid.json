@@ -44,6 +44,15 @@
                "equipment" : {
                   "weapon"    : [ "tmc:air:harpy:talons" ],
                   "abilities" : "stonehearth:abilities:wolf_rider_abilities"
+               },
+               "loot_drops" : {
+                  "items" : [
+                     { "uri" : "",                           "weight" : 4 },
+                     { "uri" : "stonehearth:rabbit_jerky",   "weight" : 2 },
+                     { "uri" : "stonehearth:squirrel_jerky", "weight" : 2 },
+                     { "uri" : "stonehearth:racoon_jerky",   "weight" : 2 },
+                     { "uri" : "stonehearth:red_fox_jerky",  "weight" : 2 }
+                  ]
                }
             }
          }
