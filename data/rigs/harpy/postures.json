@@ -1,3 +1,7 @@
 {
-   
+   "stonehearth:sitting" : {
+      "idle_breathe"     : "sit_on_ground",
+      "idle_sway"        : "sit_on_ground",
+      "idle_look_around" : "sit_on_ground"
+   }
 }
