@@ -13,7 +13,7 @@
                "title" : "The Dryad needs your help!",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "The Harpy is in Dageger!",
+               "message" : "The Harpies is in Danger!",
                "choices" : {
                   "stonehearth:next" : {
                      "next_node" : "msg2"
@@ -26,7 +26,7 @@
                "title" : "The Dryad needs your help!",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "Goblins have captured her!",
+               "message" : "Goblins have captured them!",
                "choices" : {
                   "stonehearth:next" : {
                      "next_node" : "msg3"
@@ -39,7 +39,7 @@
                "title" : "The Dryad needs your help!",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "Could you pleas help them?",
+               "message" : "Could you please help them?",
                "choices" : {
                   "stonehearth:ok" : {
                   }

@@ -13,7 +13,7 @@
                "title" : "A relieved dryad approaches",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "The harpy is safe now, thatnks!",
+               "message" : "The harpies are safe now, thanks!",
                "choices" : {
                   "stonehearth:next" : {
                      "next_node" : "msg2"
@@ -26,7 +26,7 @@
                "title" : "A relieved dryad approaches",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "The Harpy wanted me to give you this",
+               "message" : "They wanted me to give you this.",
                "choices" : {
                   "stonehearth:next" : {
                      "next_node" : "msg3"
@@ -39,7 +39,7 @@
                "title" : "A relieved dryad approaches",
                "dialog_title" : "%name(forest_temple.boss)",
                "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "Harpies are kinda shy, i hope you understand.",
+               "message" : "Harpies are kind of shy, I hope you understand.",
                "choices" : {
                   "stonehearth:ok" : {
                      "out_edge" : "quest_successful"
