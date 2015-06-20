@@ -15,11 +15,10 @@
       },
       "unit_info" : {
          "name" : "Magical Harpy Feather",
-         "description" : "A feather granted from the harpy, you feel lighter just by holding it!.",
+         "description" : "You feel lighter just by holding it!",
          "icon" : "file(harpy_feather.png)"
-
       },
-    
+
       "stonehearth:material" : {
          "tags" : "tmc_feather air_resource refined animal_part"
       }
