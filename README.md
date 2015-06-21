@@ -11,7 +11,6 @@ TODO:
 
 Dryad quest ideas:
 
-- rescue harpy from goblins
 - request stone for golem
 
 
