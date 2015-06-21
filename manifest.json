@@ -62,7 +62,9 @@
 
    "controllers" : {
       "class:guardian" : "file(jobs/guardian/guardian.lua)",
-      "class:spirit"   : "file(jobs/spirit/spirit.lua)"
+      "class:spirit"   : "file(jobs/spirit/spirit.lua)",
+
+      "util:choose_location_outside_camp" : "file(util/choose_location_outside_camp.lua)"
    },
 
    "mixintos" : {
