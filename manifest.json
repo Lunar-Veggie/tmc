@@ -49,6 +49,9 @@
 
       "actions:sleep_on_ground_naturally" : "file(ai/actions/sleep_on_ground_naturally_action.lua)",
 
+      "buffs:guardian:def_1" : "file(jobs/guardian/guardian_buffs/defense_1_buff.json)",
+      "buffs:guardian:dmg_1" : "file(jobs/guardian/guardian_buffs/damage_1_buff.json)",
+
       "effects:forest_magic_glow" : "file(data/effects/forest_magic_glow)",
 
       "sounds:mandragora_scream" : "file(data/sounds/effects/mandragora_scream.wav)",

@@ -1,0 +1,8 @@
+{
+   "type" : "buff",
+   "name" : "Defense +20%",
+   "description" : "The guardian endures blows better",
+   "icon" : "file(defense_1_buff.png)",
+   "modifiers" : {
+   }
+}

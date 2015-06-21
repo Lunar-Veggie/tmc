@@ -3,7 +3,7 @@
    "job_id"         : "guardian",
    "alias"          : "tmc:jobs:guardian",
    "controller"     : "tmc:class:guardian",
-   "description"    : "Dedicating its life to protect something",
+   "description"    : "Dedicating its life in protecting something",
    "requirements"   : "It's not something you can become; you have to be chosen for it",
    "default_stance" : "aggressive",
 
@@ -12,5 +12,42 @@
    "equipment" : {
    },
 
-   "roles" : "guardian_job combat"
+   "roles" : "guardian_job combat",
+
+   "xp_rewards" : {
+      "base_exp_per_hit" : 10
+   },
+
+   "max_level" : 6,
+
+   "level_data" : {
+      "1" : {
+         "perks" : [
+            {
+               "type" : "apply_buff",
+               "name" : "Defense Up 20%",
+               "id" : "guardian_defense_up_1",
+               "icon" : "file(images/defense_up_1.png)",
+               "buff_name" : "tmc:buffs:guardian:def_1",
+               "description" : "During its time of receiving the wrong ends of the sword, the guardian has learned how to better defend against such things.",
+               "level" : 1,
+               "demote_fn" : "remove_buff"
+            }
+         ]
+      },
+      "3" : {
+         "perks" : [
+            {
+               "type" : "apply_buff",
+               "name" : "Damage Up 20%",
+               "id" : "guardian_damage_up_1",
+               "icon" : "file(images/damage_up_1.png)",
+               "buff_name" : "tmc:buffs:guardian:dmg_1",
+               "description" : "The guardian has been diligent with his combat exercises, and as such it has learned how to land blows with better results.",
+               "level" : 3,
+               "demote_fn" : "remove_buff"
+            }
+         ]
+      }
+   }
 }
