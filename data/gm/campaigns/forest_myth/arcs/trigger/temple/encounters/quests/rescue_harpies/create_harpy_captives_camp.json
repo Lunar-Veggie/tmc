@@ -1,40 +1,46 @@
 {
    "type" : "encounter",
-   "encounter_type" : "create_camp",
+   "encounter_type" : "script",
    "rarity" : "common",
 
-   "in_edge"  : "create_harpy_captives_camp",
-   "out_edge" : [ "wait_for_cage_1_destruction", "wait_for_cage_2_destruction", "wait_for_cage_3_destruction", "wait_for_harpy_cages_destruction", "wait_until_leaving" ],
+   "in_edge" : "create_harpy_captives_camp",
 
-   "create_camp_info" : {
-      "npc_player_id" : "goblins",
-      "amenity_with_player" : "hostile",
-      "ctx_entity_registration_path" : "harpy_captives_camp",
+   "script_info" : {
+      "script" : "file(../../scripts/create_camp_custom.lua)",
+      "data"   : {
+         "out_edge" : [ "wait_for_cage_1_destruction", "wait_for_cage_2_destruction", "wait_for_cage_3_destruction", "wait_for_harpy_cages_destruction", "wait_until_leaving" ],
 
-      "radius" : 12,
-      "keep_grass" : false,
+         "npc_player_id" : "goblins",
+         "amenity_with_player" : "hostile",
+         "ctx_entity_registration_path" : "harpy_captives_camp",
+         "camp_location_ctx_path" : "forest_location",
 
-      "spawn_range" : {
-         "min" : 150,
-         "max" : 200
-      },
+         "radius" : 12,
+         "keep_grass" : false,
 
-      "pieces" : {
-         "campfire" : {
-            "info"     : "file(../../goblin_camp/goblin_campfire.json)",
-            "position" : { "x":  1, "y":  2 }
+         "spawn_range" : {
+            "min" :  80,
+            "max" : 140
          },
-         "goblin_tent" : {
-            "info"     : "file(../../goblin_camp/goblin_tent.json)",
-            "position" : { "x": -5, "y": -7 }
-         },
-         "harpy_cages" : {
-            "info"     : "file(../../goblin_camp/harpy_cages.json)",
-            "position" : { "x":  0, "y":  0 }
-         },
-         "stockpile" : {
-            "info"     : "file(../../goblin_camp/goblin_captivators_stockpile.json)",
-            "position" : { "x":  5, "y":  6 }
+         "player_min_distance" : 200,
+
+         "pieces" : {
+            "campfire" : {
+               "info"     : "file(../../goblin_camp/goblin_campfire.json)",
+               "position" : { "x":  1, "y":  2 }
+            },
+            "goblin_tent" : {
+               "info"     : "file(../../goblin_camp/goblin_tent.json)",
+               "position" : { "x": -5, "y": -7 }
+            },
+            "harpy_cages" : {
+               "info"     : "file(../../goblin_camp/harpy_cages.json)",
+               "position" : { "x":  0, "y":  0 }
+            },
+            "stockpile" : {
+               "info"     : "file(../../goblin_camp/goblin_captivators_stockpile.json)",
+               "position" : { "x":  5, "y":  6 }
+            }
          }
       }
    }

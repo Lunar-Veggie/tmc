@@ -1,63 +1,69 @@
 {
    "type" : "encounter",
-   "encounter_type" : "create_camp",
+   "encounter_type" : "script",
    "rarity" : "common",
 
-   "in_edge"  : "create_goblin_raiding_camp",
-   "out_edge" : ["spawn_goblin_raiders", "wait_for_goblin_boss_death"],
+   "in_edge" : "create_goblin_raiding_camp",
 
-   "create_camp_info" : {
-      "npc_player_id" : "goblins",
-      "amenity_with_player" : "hostile",
-      "ctx_entity_registration_path" : "goblin_raiding_camp",
+   "script_info" : {
+      "script" : "file(../../scripts/create_camp_custom.lua)",
+      "data"   : {
+         "out_edge" : [ "spawn_goblin_raiders", "wait_for_goblin_boss_death" ],
 
-      "radius" : 6,
-      "keep_grass" : true,
+         "npc_player_id" : "goblins",
+         "amenity_with_player" : "hostile",
+         "ctx_entity_registration_path" : "goblin_raiding_camp",
+         "camp_location_ctx_path" : "forest_location",
 
-      "spawn_range" : {
-         "min" : 200,
-         "max" : 250
-      },
+         "radius" : 6,
+         "keep_grass" : true,
 
-      "boss" : {
-         "from_population" : {
-            "job" : "stonehearth:jobs:footman",
-            "min" : 1,
-            "max" : 1,
-            "location" : { "x": 0, "z": 0 },
-            "range" : 3
+         "spawn_range" : {
+            "min" :  70,
+            "max" : 100
          },
-         "unit_info" : {
-            "description" : "Leader of the mighty goblin squad"
-         },
-         "equipment" : {
-            "weapon" : ["stonehearth:weapons:stone_maul", "stonehearth:weapons:jagged_cleaver"],
-            "armor"  : ["stonehearth:monsters:goblins:outfits:footman"]
-         },
-         "attributes" : {
-            "max_health" : 60,
-            "health"     : 60
-         },
-         "combat_leash_range" : 30,
-         "loot_drops" : {
-            "items" : [
-               { "uri" : "stonehearth:refined:silver_ingot",    "weight" : 5 },
-               { "uri" : "stonehearth:refined:gold_ingot",      "weight" : 5 },
-               { "uri" : "stonehearth:toys:plushie_toy_rabbit", "weight" : 1 }
-            ]
-         }
-      },
+         "player_min_distance" : 170,
 
-      "script" : "file(../../goblin_camp/goblin_raiders.lua)",
-
-      "pieces" : {
-         "campfire" : {
-            "info" : "file(../../goblin_camp/goblin_campfire.json)",
-            "position" : { "x": 1, "y": 2 }
+         "boss" : {
+            "from_population" : {
+               "job" : "stonehearth:jobs:footman",
+               "min" : 1,
+               "max" : 1,
+               "location" : { "x": 0, "z": 0 },
+               "range" : 3
+            },
+            "unit_info" : {
+               "description" : "Leader of the mighty goblin squad"
+            },
+            "equipment" : {
+               "weapon" : [ "stonehearth:weapons:stone_maul", "stonehearth:weapons:jagged_cleaver" ],
+               "armor"  : [ "stonehearth:monsters:goblins:outfits:footman" ]
+            },
+            "attributes" : {
+               "max_health" : 60,
+               "health"     : 60
+            },
+            "combat_leash_range" : 30,
+            "loot_drops" : {
+               "items" : [
+                  { "uri" : "stonehearth:refined:silver_ingot",    "weight" : 5 },
+                  { "uri" : "stonehearth:refined:gold_ingot",      "weight" : 5 },
+                  { "uri" : "stonehearth:toys:plushie_toy_rabbit", "weight" : 1 }
+               ]
+            }
          },
-         "stockpile" : {
-            "info" : "file(../../goblin_camp/goblin_raiders_stockpile.json)",
-            "position" : { "x": -2, "y": -1 }
+
+         "script" : "file(../../goblin_camp/goblin_raiders.lua)",
+
+         "pieces" : {
+            "campfire" : {
+               "info" : "file(../../goblin_camp/goblin_campfire.json)",
+               "position" : { "x": 1, "y": 2 }
+            },
+            "stockpile" : {
+               "info" : "file(../../goblin_camp/goblin_raiders_stockpile.json)",
+               "position" : { "x": -2, "y": -1 }
+            }
          }
       }
    }
