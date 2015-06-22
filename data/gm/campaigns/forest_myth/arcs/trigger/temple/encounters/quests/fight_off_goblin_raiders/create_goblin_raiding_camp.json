@@ -36,14 +36,14 @@
                "description" : "Leader of the mighty goblin squad"
             },
             "equipment" : {
-               "weapon" : [ "stonehearth:weapons:stone_maul", "stonehearth:weapons:jagged_cleaver" ],
+               "weapon" : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul" ],
                "armor"  : [ "stonehearth:monsters:goblins:outfits:footman" ]
             },
             "attributes" : {
                "max_health" : 60,
                "health"     : 60
             },
-            "combat_leash_range" : 30,
+            "combat_leash_range" : 15,
             "loot_drops" : {
                "items" : [
                   { "uri" : "stonehearth:refined:silver_ingot",    "weight" : 5 },

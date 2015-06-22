@@ -15,19 +15,19 @@
       "footmen" : {
          "from_population" : {
             "job" : "stonehearth:jobs:footman",
-            "min" : 1,
+            "min" : 2,
             "max" : 2,
             "location" : { "x": 0, "z": 0 },
             "range" : 3
          },
          "equipment" : {
-            "weapon" : ["stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul"],
-            "armor"  : ["stonehearth:monsters:goblins:outfits:footman"]
+            "weapon" : [ "stonehearth:weapons:jagged_cleaver" ],
+            "armor"  : [ "stonehearth:monsters:goblins:outfits:footman" ]
          },
          "unit_info" : {
             "description" : "Defender of the hearth"
          },
-         "combat_leash_range" : 30,
+         "combat_leash_range" : 15,
          "loot_drops" : {
             "items" : [
                { "uri" : "",                                          "weight" : 5 },
