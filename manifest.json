@@ -8,19 +8,19 @@
    "server_init_script" : "file(tmc_server)",
 
    "aliases" : {
-      "kingdoms:forest_myth" : "file(data/populations/forest_myth_population.json)",
-      "kingdoms:air_myth"    : "file(data/populations/air_myth_population.json)",
+      "kingdoms:forest_myth"    : "file(data/populations/forest_myth_population.json)",
+      "kingdoms:air_myth"       : "file(data/populations/air_myth_population.json)",
       "kingdoms:wild_creatures" : "file(data/populations/tmc_wild_creatures.json)",
 
       "amenities" : "file(data/amenities.json)",
 
-      "forest:dryad" : "file(entities/forest_myth/dryad)",
-      "forest:golem" : "file(entities/forest_myth/golem)",
+      "forest:dryad"             : "file(entities/forest_myth/dryad)",
+      "forest:golem"             : "file(entities/forest_myth/golem)",
       "forest:golem:stone_hands" : "file(entities/forest_myth/golem/golem_stone_hands.json)",
-      "forest:mandragora" : "file(entities/forest_myth/mandragora)",
-      "forest:mandragora:voice" : "file(entities/forest_myth/mandragora/mandragora_voice.json)",
+      "forest:mandragora"        : "file(entities/forest_myth/mandragora)",
+      "forest:mandragora:voice"  : "file(entities/forest_myth/mandragora/mandragora_voice.json)",
 
-      "air:harpy" : "file(entities/air_myth/harpy)",
+      "air:harpy"        : "file(entities/air_myth/harpy)",
       "air:harpy:talons" : "file(entities/air_myth/harpy/harpy_talons.json)",
 
       "skeletons:golem"      : "file(data/rigs/golem)",
@@ -30,17 +30,17 @@
       "armor:forest_leather_vest" : "file(entities/armor/forest_leather_vest)",
 
       "resources:magical_forest_thread" : "file(entities/resources/magical_forest_thread)",
-      "resources:harpy_feather" : "file(entities/resources/harpy_feather)",
-      "resources:mandrake_root" : "file(entities/resources/mandrake_root)",
-      "resources:mandrake_leaves" : "file(entities/resources/mandrake_leaves)",
+      "resources:harpy_feather"         : "file(entities/resources/harpy_feather)",
+      "resources:mandrake_root"         : "file(entities/resources/mandrake_root)",
+      "resources:mandrake_leaves"       : "file(entities/resources/mandrake_leaves)",
 
       "decorations:garden_gnome" : "file(entities/decorations/garden_gnome)",
 
       "decorations:forest_myth:great_ancient_tree" : "file(entities/forest_myth/great_ancient_tree)",
-      "decorations:forest_myth:ancient_pillar_1" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_1)",
-      "decorations:forest_myth:ancient_pillar_2" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_2)",
-      "decorations:forest_myth:ancient_pillar_3" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_3)",
-      "decorations:forest_myth:ancient_pillar_4" : "file(entities/forest_myth/ancient_pillars/ancient_pillar_4)",
+      "decorations:forest_myth:ancient_pillar_1"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_1)",
+      "decorations:forest_myth:ancient_pillar_2"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_2)",
+      "decorations:forest_myth:ancient_pillar_3"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_3)",
+      "decorations:forest_myth:ancient_pillar_4"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_4)",
 
       "objects:harpy_cage" : "file(entities/objects/harpy_cage)",
 
@@ -55,12 +55,12 @@
       "effects:forest_magic_glow" : "file(data/effects/forest_magic_glow)",
 
       "sounds:mandragora_scream" : "file(data/sounds/effects/mandragora_scream.wav)",
-      "sounds:wing_flap" : "file(data/sounds/effects/wing_flap.wav)"
+      "sounds:wing_flap"         : "file(data/sounds/effects/wing_flap.wav)"
    },
 
    "components" : {
       "soul_keeper" : "file(components/soul_keeper/soul_keeper_component.lua)",
-      "animation" : "file(components/animation/animation_component.lua)"
+      "animation"   : "file(components/animation/animation_component.lua)"
    },
 
    "controllers" : {
