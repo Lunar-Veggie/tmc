@@ -17,7 +17,7 @@
 
    "entity_data" : {
       "stonehearth:combat:weapon_data" : {
-         "base_damage" : 14,
+         "base_damage" : 10,
          "reach"       : 1.0
       },
 
