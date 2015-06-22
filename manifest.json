@@ -84,5 +84,15 @@
       ],
 
       "/stonehearth/data/gm/campaigns/trader/arcs/caravan_shops_arc.json" : [ "file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)" ]
+   },
+
+   "overrides" : {
+      "/stonehearth/ui/shell/loading_screen/images/bg0.jpg" : "file(ui/shell/loading_screen/images/loading_forest.jpg)",
+      "/stonehearth/ui/shell/loading_screen/images/bg1.jpg" : "file(ui/shell/loading_screen/images/loading_forest.jpg)",
+      "/stonehearth/ui/shell/loading_screen/images/bg2.jpg" : "file(ui/shell/loading_screen/images/loading_forest.jpg)",
+      "/stonehearth/ui/shell/loading_screen/images/bg3.jpg" : "file(ui/shell/loading_screen/images/loading_forest.jpg)",
+      "/stonehearth/ui/shell/loading_screen/images/bg4.jpg" : "file(ui/shell/loading_screen/images/loading_arachne.jpg)",
+      "/stonehearth/ui/shell/loading_screen/images/bg5.jpg" : "file(ui/shell/loading_screen/images/loading_arachne.jpg)",
+      "/stonehearth/ui/shell/loading_screen/images/bg6.jpg" : "file(ui/shell/loading_screen/images/loading_arachne.jpg)"
    }
 }
