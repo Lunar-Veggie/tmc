@@ -11,7 +11,7 @@
          },
          "unit_info" : {
             "name" : "Harpy Guards' Tent",
-            "Description" : "Guards only; hands off!"
+            "Description" : "Guards only; go away!"
          }
       }
    },
@@ -19,15 +19,16 @@
       "cage_guards" : {
          "from_population" : {
             "location" : { "x": 0, "z": 5 },
-            "range"    : 2,
-            "min"      : 2,
-            "max"      : 2,
+            "range"    : 3,
+            "min"      : 3,
+            "max"      : 3,
             "job" : "stonehearth:jobs:footman"
          },
          "equipment" : {
-            "weapon" : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul", "stonehearth:weapons:iron_mace" ],
-            "outfit" : "stonehearth:monsters:goblins:outfits:maurauder"
+            "weapon" : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul" ],
+            "outfit" : "stonehearth:monsters:goblins:outfits:footman"
          },
+         "combat_leash_range" : 30,
          "loot_drops" : {
             "num_rolls" : {
                "min" : 1,
@@ -47,7 +48,7 @@
             ]
          },
          "unit_info" : {
-            "description" : "Keeping the harpies in place"
+            "description" : "Keeps the harpies in place"
          }
       }
    }
