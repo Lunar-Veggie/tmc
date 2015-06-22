@@ -5,7 +5,7 @@ function RescueHarpiesQuest:initialize()
 end
 
 function RescueHarpiesQuest:restore()
-   self._sv.quest_complete_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:quest:finished', self, self._quest_finished)
+   self._sv.quest_complete_listener = radiant.events.listen_once(self._sv.ctx.forest_temple.boss, 'tmc:quest:finished', self, self._quest_finished)
 end
 
 function RescueHarpiesQuest:start(ctx, data)
