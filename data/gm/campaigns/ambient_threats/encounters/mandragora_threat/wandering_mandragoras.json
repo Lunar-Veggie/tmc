@@ -17,7 +17,7 @@
 
          "spawn_range" : {
             "min" : 250,
-            "max" : 400
+            "max" : 350
          },
          "spawn_amount" : {
             "min" : 1,
