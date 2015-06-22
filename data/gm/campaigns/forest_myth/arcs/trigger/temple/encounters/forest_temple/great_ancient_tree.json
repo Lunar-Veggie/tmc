@@ -24,7 +24,7 @@
             "range"    : 10
          },
 
-         "combat_leash_range" : 64,
+         "combat_leash_range" : 40,
 
          "equipment" : {
             "weapon" : [ "tmc:forest:golem:stone_hands" ]
