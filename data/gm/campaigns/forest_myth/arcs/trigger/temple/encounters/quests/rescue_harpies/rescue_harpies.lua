@@ -12,7 +12,6 @@ function RescueHarpiesQuest:start(ctx, data)
    self._sv.ctx = ctx
    self._sv.quest_data = data
 
-   self._sv.prev_captive_and_captivator_amenity = self:_get_amenity('air_myth', 'goblins')
    self._sv.prev_captive_and_player_amenity = self:_get_amenity('air_myth', ctx.player_id)
 
    stonehearth.player:set_amenity('air_myth', 'goblins', 'neutral')
@@ -38,9 +37,11 @@ end
 function RescueHarpiesQuest:_quest_finished(args)
    if args.successful then
       self:_get_rewards(self._sv.quest_data.rewards)
+      stonehearth.player:set_amenity('air_myth', self._sv.ctx.player_id, 'neutral')
+   else
+      stonehearth.player:set_amenity('air_myth', self._sv.ctx.player_id, self._sv.prev_captive_and_player_amenity)
    end
-   stonehearth.player:set_amenity('air_myth', 'goblins', self._sv.prev_captive_and_captivator_amenity)
-   stonehearth.player:set_amenity('air_myth', self._sv.ctx.player_id, self._sv.prev_captive_and_player_amenity)
+   stonehearth.player:set_amenity('air_myth', 'goblins', 'hostile')
 end
 
 function RescueHarpiesQuest:_get_rewards(rewards)
