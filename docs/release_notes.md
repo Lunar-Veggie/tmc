@@ -1,4 +1,10 @@
-## Version 0.1 (initial release)
+## Alpha 1.02 (bug fixes)
+
+- **Bug fix** - Fixed save-load bug for quests.
+- **Bug fix** - The mythology campaign won't show up in peaceful mode now.
+
+
+## Alpha 1 (initial release)
 
 - **New population** - Forest myth. Which also includes new creatures: the Dryad and the Golem.
 - **New population** - Air myth. So far this includes the new creature: the Harpy.
