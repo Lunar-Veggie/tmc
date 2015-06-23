@@ -1,6 +1,21 @@
 tmc = {}
+local tmc_campaigns = {{type='mythologies', has_combat=true}}
 
-local function _set_amenities(data)
+local function start_campaign(campaign)
+   if campaign.has_combat then
+      -- We listen in on this only once, when we get this then we know that a new game has been started.
+      -- This is a pretty ugly way to disable the campaign, but until Stonehearth makes it easier this will have to do.
+      -- Could use Jelly to make this easier, but should Jelly be required just because of this...?
+      radiant.events.listen_once(stonehearth.personality, 'stonehearth:journal_event', function(args)
+         stonehearth.game_master:enable_campaign_type(campaign.type, not stonehearth.game_master._sv.disabled['combat'])
+         stonehearth.game_master:_start_campaign(campaign.type)
+      end)
+   else
+      stonehearth.game_master:_start_campaign(campaign.type)
+   end
+end
+
+local function set_amenities(data)
 
    for first_player_id, amenities in pairs(data) do
 
@@ -15,8 +30,10 @@ local function _set_amenities(data)
 end
 
 radiant.events.listen_once(tmc, 'radiant:init', function()
-   stonehearth.game_master:_start_campaign('mythologies')
-   _set_amenities(radiant.resources.load_json('tmc:amenities'))
+   for _,campaign in pairs(tmc_campaigns) do
+      start_campaign(campaign)
+   end
+   set_amenities(radiant.resources.load_json('tmc:amenities'))
 end)
 
 return tmc
