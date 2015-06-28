@@ -88,7 +88,7 @@
 
    "overrides" : {
       "/stonehearth/ui/shell/title/images/background.jpg"   : "file(ui/shell/splash/Splash.png)",
-      "/stonehearth/ui/shell/loading_screen/images/bg0.jpg" : "file(ui/shell/loading_screen/images/loading_forest.jpg)",
-      "/stonehearth/ui/shell/loading_screen/images/bg6.jpg" : "file(ui/shell/loading_screen/images/loading_arachne.jpg)"
+      "/stonehearth/ui/shell/loading_screen/images/bg1.jpg" : "file(ui/shell/loading_screen/images/loading_forest.jpg)",
+      "/stonehearth/ui/shell/loading_screen/images/bg4.jpg" : "file(ui/shell/loading_screen/images/loading_arachne.jpg)"
    }
 }
