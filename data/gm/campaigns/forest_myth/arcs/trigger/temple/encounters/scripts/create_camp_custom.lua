@@ -154,13 +154,12 @@ function CreateCampCustom:_create_camp(location, camp_region)
    end
 
    if info.boss then
-      local members                      = game_master_lib.create_citizens(self._population, info.boss, ctx.enemy_location, ctx)
-      local ctx_entity_registration_path = self._sv.info.ctx_entity_registration_path
+      local members = game_master_lib.create_citizens(self._population, info.boss, ctx.enemy_location, ctx)
 
-      if ctx_entity_registration_path then
+      if info.ctx_entity_registration_path then
          local boss_entity = members[1]
          if boss_entity then
-            game_master_lib.register_entities(ctx, ctx_entity_registration_path, {boss=boss_entity})
+            game_master_lib.register_entities(ctx, info.ctx_entity_registration_path, {boss=boss_entity})
          end
       end
    end
@@ -187,16 +186,22 @@ function CreateCampCustom:_create_camp(location, camp_region)
 
    -- Continue with the campaign
    local out_edge = self._sv.out_edge
-   if type(out_edge) == 'table' then
-      for _,edge in pairs(out_edge) do
-         ctx.arc:spawn_encounter(ctx, edge)
-      end
-   elseif type(out_edge) == 'string' then
-      ctx.arc:spawn_encounter(ctx, out_edge)
-   else
-      error('wrong format on out_edge (%s)', radiant.util.tostring(out_edge))
+
+   if out_edge == 'arc:finish' then
+      ctx.campaign:finish_arc(ctx)
+      return
    end
+   if type(out_edge) == 'string' then
+      out_edge = {out_edge}
+   end
+
+   for _,edge in pairs(out_edge) do
+      ctx.arc:spawn_encounter(ctx, edge)
+   end
+
    radiant.events.trigger_async(ctx.encounter_name, 'stonehearth:create_camp_complete', {})
+
+   radiant.events.trigger_async(ctx.forest_temple.boss, 'tmc:forest_gm:update_ctx', {quest_data = ctx[info.ctx_entity_registration_path]})
 end
 
 function CreateCampCustom:_add_piece(piece, visible_rgn)
