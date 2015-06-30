@@ -6,12 +6,15 @@
    "in_edge"  : "issue_quest",
    "out_edge" : [ "rescue_harpies_dialog", "create_harpy_captives_camp" ],
 
-   "script_info" : {
+   "script_info" :
+   {
       "script" : "file(rescue_harpies.lua)",
-      "data"   : {
-         "rewards" : {
-            "tmc:resources:harpy_feather" : 1
-         }
+      "data"   :
+      {
+         "npc_player_id"      : "goblins",
+         "captives_player_id" : "air_myth",
+
+         "rewards" : { "tmc:resources:harpy_feather" : 1 }
       }
    }
 }

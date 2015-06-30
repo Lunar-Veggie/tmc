@@ -5,19 +5,19 @@ function RescueHarpiesQuest:initialize()
 end
 
 function RescueHarpiesQuest:restore()
-   self._sv.quest_complete_listener = radiant.events.listen_once(self._sv.ctx.forest_temple.boss, 'tmc:quest:finished', self, self._quest_finished)
+   self._sv.quest_complete_listener = radiant.events.listen_once(self._sv.ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_finished)
 end
 
 function RescueHarpiesQuest:start(ctx, data)
    self._sv.ctx = ctx
    self._sv.quest_data = data
 
-   self._sv.prev_captive_and_player_amenity = self:_get_amenity('air_myth', ctx.player_id)
+   self._sv.prev_captive_and_player_amenity = self:_get_amenity(data.captives_player_id, ctx.player_id)
 
-   stonehearth.player:set_amenity('air_myth', 'goblins', 'neutral')
-   stonehearth.player:set_amenity('air_myth', ctx.player_id, 'neutral')
+   stonehearth.player:set_amenity(data.captives_player_id, data.npc_player_id, 'neutral')
+   stonehearth.player:set_amenity(data.captives_player_id, ctx.player_id,      'neutral')
 
-   self._sv.quest_complete_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:quest:finished', self, self._quest_finished)
+   self._sv.quest_complete_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_finished)
 
    self.__saved_variables:mark_changed()
 end
@@ -35,13 +35,16 @@ function RescueHarpiesQuest:_get_amenity(player_id_a, player_id_b)
 end
 
 function RescueHarpiesQuest:_quest_finished(args)
+   local ctx  = self._sv.ctx
+   local data = self._sv.quest_data
+
    if args.successful then
-      self:_get_rewards(self._sv.quest_data.rewards)
-      stonehearth.player:set_amenity('air_myth', self._sv.ctx.player_id, 'neutral')
+      self:_get_rewards(data.rewards)
+      stonehearth.player:set_amenity(data.captives_player_id, ctx.player_id, 'neutral')
    else
-      stonehearth.player:set_amenity('air_myth', self._sv.ctx.player_id, self._sv.prev_captive_and_player_amenity)
+      stonehearth.player:set_amenity(data.captives_player_id, ctx.player_id, self._sv.prev_captive_and_player_amenity)
    end
-   stonehearth.player:set_amenity('air_myth', 'goblins', 'hostile')
+   stonehearth.player:set_amenity(data.captives_player_id, data.npc_player_id, 'hostile')
 end
 
 function RescueHarpiesQuest:_get_rewards(rewards)
