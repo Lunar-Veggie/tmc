@@ -1,4 +1,15 @@
-## Alpha 1.02 (bug fixes)
+## Alpha 1.11
+
+- **Bug fix** - Fixed the issues related to the dryad's death.
+
+
+## Alpha 1.1
+
+- **UI** - Overrode the splash screen image with a new one.
+- **UI** - Overrode a couple of loading screen images with new ones.
+
+
+## Alpha 1.02
 
 - **Bug fix** - Fixed save-load bug for quests.
 - **Bug fix** - The mythology campaign won't show up in peaceful mode now.
