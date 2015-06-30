@@ -46,7 +46,7 @@ function DestroyEntityCustom:start(ctx, info)
 end
 
 function DestroyEntityCustom:_delete_everything(ctx, info)
-   radiant.events.trigger(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', {successful=false})
+   radiant.events.trigger(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', {dryad_death=false})
 
    for i,entity_name in ipairs(info.target_entities) do
       local delete_target = ctx:get(entity_name)

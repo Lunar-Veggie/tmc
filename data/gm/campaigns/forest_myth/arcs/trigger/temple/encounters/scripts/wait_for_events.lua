@@ -56,7 +56,7 @@ function WaitForEvents:_listen_for_events()
       table.insert(self._listeners, radiant.events.listen(source, event, self, self._event_sprung))
    end
 
-   self._quest_listener = radiant.events.listen_once(self._sv.ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self.stop)
+   self._quest_listener = radiant.events.listen(self._sv.ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_done)
 end
 
 function WaitForEvents:_event_sprung()
@@ -89,6 +89,16 @@ function WaitForEvents:stop()
          listener:destroy()
          self._listeners[id] = nil
       end
+   end
+   if self._quest_listener then
+      self._quest_listener:destroy()
+      self._quest_listener = nil
+   end
+end
+
+function WaitForEvents:_quest_done(args)
+   if args.dryad_death then
+      self:stop()
    end
 end
 
