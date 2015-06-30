@@ -1,12 +1,17 @@
 {
    "type"           : "encounter",
-   "encounter_type" : "wait",
+   "encounter_type" : "script",
    "rarity"         : "common",
 
    "in_edge"  : "wait_to_issue_quest",
-   "out_edge" : "issue_quest",
 
-   "wait_info" : {
-      "duration" : "2d"
+   "script_info" :
+   {
+      "script" : "file(scripts/wait_custom.lua)",
+      "data"   :
+      {
+         "duration" : "1h",
+         "out_edge" : "issue_quest"
+      }
    }
 }
