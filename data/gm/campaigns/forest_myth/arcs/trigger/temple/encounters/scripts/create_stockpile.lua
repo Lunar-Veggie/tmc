@@ -8,7 +8,7 @@ function Stockpile:initialize(piece)
 end
 
 function Stockpile:start(ctx, info)
-   self._ctx = ctx
+   self._ctx  = ctx
    self._info = info
 
    assert(ctx.npc_player_id)
