@@ -1,3 +1,8 @@
+--[[
+This code were taken from Team Radient from their file wait_for_event_encounter.lua,
+there are only a few changes made to reflect what was needed for this mod.
+--]]
+
 local WaitForEvents = class()
 
 function WaitForEvents:initialize()
@@ -50,23 +55,28 @@ function WaitForEvents:_listen_for_events()
    for _,source in pairs(sources) do
       table.insert(self._listeners, radiant.events.listen(source, event, self, self._event_sprung))
    end
+
+   self._quest_listener = radiant.events.listen_once(self._sv.ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self.stop)
 end
 
 function WaitForEvents:_event_sprung()
    self._sv.events_nr = self._sv.events_nr - 1
 
    if self._sv.events_nr == 0 then
+      -- Continue with the campaign
       local ctx = self._sv.ctx
       local out_edge = self._sv.out_edge
 
-      if type(out_edge) == 'table' then
-         for _,edge in pairs(out_edge) do
-            ctx.arc:spawn_encounter(ctx, edge)
-         end
-      elseif type(out_edge) == 'string' then
-         ctx.arc:spawn_encounter(ctx, out_edge)
-      else
-         error('wrong format on out_edge (%s)', radiant.util.tostring(out_edge))
+      if out_edge == 'arc:finish' then
+         ctx.campaign:finish_arc(ctx)
+         return
+      end
+      if type(out_edge) == 'string' then
+         out_edge = {out_edge}
+      end
+
+      for _,edge in pairs(out_edge) do
+         ctx.arc:spawn_encounter(ctx, edge)
       end
    end
 
