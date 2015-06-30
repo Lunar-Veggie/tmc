@@ -1,7 +1,7 @@
 {
    "type" : "camp_piece",
 
-   "script" : "file(stockpile.lua)",
+   "script" : "file(../scripts/create_stockpile.lua)",
    "script_info" : {
       "npc_player_id" : "goblins",
       "ctx_entity_registration_path" : "goblin_raiding_camp",
@@ -27,7 +27,7 @@
          "unit_info" : {
             "description" : "Defender of the hearth"
          },
-         "combat_leash_range" : 15,
+         "combat_leash_range" : 25,
          "loot_drops" : {
             "items" : [
                { "uri" : "",                                          "weight" : 5 },

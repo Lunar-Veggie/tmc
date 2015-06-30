@@ -1,7 +1,7 @@
 {
    "type" : "camp_piece",
 
-   "script" : "file(stockpile.lua)",
+   "script" : "file(../scripts/create_stockpile.lua)",
    "script_info" : {
       "npc_player_id" : "goblins",
       "ctx_entity_registration_path" : "harpy_captives_camp",

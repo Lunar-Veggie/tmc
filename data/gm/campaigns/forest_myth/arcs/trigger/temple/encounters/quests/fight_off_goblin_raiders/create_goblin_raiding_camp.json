@@ -43,7 +43,7 @@
                "max_health" : 60,
                "health"     : 60
             },
-            "combat_leash_range" : 15,
+            "combat_leash_range" : 25,
             "loot_drops" : {
                "items" : [
                   { "uri" : "stonehearth:refined:silver_ingot",    "weight" : 5 },
