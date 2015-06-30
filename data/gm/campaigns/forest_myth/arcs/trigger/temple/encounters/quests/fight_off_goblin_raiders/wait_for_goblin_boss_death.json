@@ -1,12 +1,16 @@
 {
    "type" : "encounter",
-   "encounter_type" : "wait_for_event",
+   "encounter_type" : "script",
 
-   "in_edge"  : "wait_for_goblin_boss_death",
-   "out_edge" : [ "goblin_raiders_success_dialog", "destroy_goblin_raiders_stockpiles" ],
+   "in_edge" : "wait_for_goblin_boss_death",
 
-   "wait_for_event_info" : {
-      "source" : "goblin_raiding_camp.boss",
-      "event"  : "radiant:entity:pre_destroy"
+   "script_info" : {
+      "script" : "file(../../scripts/wait_for_events.lua)",
+      "data"   : {
+         "sources" : [ "goblin_raiding_camp.boss" ],
+         "event" : "radiant:entity:pre_destroy",
+
+         "out_edge" : [ "goblin_raiders_success_dialog", "destroy_goblin_raiders_stockpiles" ]
+      }
    }
 }
