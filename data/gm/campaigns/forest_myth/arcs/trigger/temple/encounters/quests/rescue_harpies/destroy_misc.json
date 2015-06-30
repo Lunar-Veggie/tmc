@@ -10,7 +10,6 @@
          "harpy_captives_camp.entities.tent",
          "harpy_captives_camp.entities.general_stockpile"
       ],
-      "effect" : "/stonehearth/data/effects/fursplosion_effect/growing_wool_effect.json",
-      "continue_always" : true
+      "effect" : "/stonehearth/data/effects/fursplosion_effect/growing_wool_effect.json"
    }
 }

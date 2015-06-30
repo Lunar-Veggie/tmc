@@ -5,14 +5,14 @@ function GoblinRaidersQuest:initialize()
 end
 
 function GoblinRaidersQuest:restore()
-   self._sv.quest_complete_listener = radiant.events.listen_once(self._sv.ctx.forest_temple.boss, 'tmc:quest:finished', self, self._quest_finished)
+   self._quest_complete_listener = radiant.events.listen_once(self._sv.ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_finished)
 end
 
 function GoblinRaidersQuest:start(ctx, data)
    self._sv.ctx = ctx
    self._sv.quest_data = data
 
-   self._sv.quest_complete_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:quest:finished', self, self._quest_finished)
+   self._quest_complete_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_finished)
 end
 
 function GoblinRaidersQuest:_quest_finished(args)
@@ -30,6 +30,7 @@ function GoblinRaidersQuest:_get_rewards(rewards)
    if not drop_origin then
       return false
    end
+
    local items = radiant.entities.spawn_items(rewards, drop_origin, 1, 3, {owner=ctx.player_id})
 
    for _,item in pairs(items) do

@@ -6,12 +6,14 @@
    "in_edge"  : "issue_quest",
    "out_edge" : [ "fight_off_goblin_raiders_dialog", "create_goblin_raiding_camp" ],
 
-   "script_info" : {
+   "script_info" :
+   {
       "script" : "file(fight_off_goblin_raiders.lua)",
-      "data"   : {
-         "rewards" : {
-            "tmc:resources:magical_forest_thread" : 1
-         }
+      "data"   :
+      {
+         "npc_player_id" : "goblins",
+
+         "rewards" : { "tmc:resources:magical_forest_thread" : 1 }
       }
    }
 }

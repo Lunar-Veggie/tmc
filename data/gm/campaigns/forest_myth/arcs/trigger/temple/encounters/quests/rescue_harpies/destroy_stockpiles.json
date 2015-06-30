@@ -5,7 +5,6 @@
    "in_edge" : "destroy_goblin_captivators_stockpiles",
 
    "destroy_entity_info" : {
-      "target_entities" : ["harpy_captives_camp.entities.general_stockpile"],
-      "continue_always" : true
+      "target_entities" : ["harpy_captives_camp.entities.general_stockpile"]
    }
 }

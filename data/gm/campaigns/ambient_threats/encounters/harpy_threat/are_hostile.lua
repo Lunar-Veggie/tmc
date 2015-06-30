@@ -13,14 +13,16 @@ function IsHostile:start(ctx, data)
       -- Continue with the campaign
       local out_edge = data.out_edge
 
-      if type(out_edge) == 'table' then
-         for _,edge in pairs(out_edge) do
-            ctx.arc:spawn_encounter(ctx, edge)
-         end
-      elseif type(out_edge) == 'string' then
-         ctx.arc:spawn_encounter(ctx, out_edge)
-      else
-         error('wrong format on out_edge (%s)', radiant.util.tostring(out_edge))
+      if out_edge == 'arc:finish' then
+         ctx.campaign:finish_arc(ctx)
+         return
+      end
+      if type(out_edge) == 'string' then
+         out_edge = {out_edge}
+      end
+      
+      for _,edge in pairs(out_edge) do
+         ctx.arc:spawn_encounter(ctx, edge)
       end
    end
 end
