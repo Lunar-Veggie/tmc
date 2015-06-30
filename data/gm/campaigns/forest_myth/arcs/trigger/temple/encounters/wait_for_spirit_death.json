@@ -1,13 +1,18 @@
 {
    "type"           : "encounter",
-   "encounter_type" : "wait_for_event",
+   "encounter_type" : "script",
    "rarity"         : "common",
 
-   "in_edge"  : "wait_for_spirit_death",
-   "out_edge" : "finish_arc_on_spirit_death",
+   "in_edge" : "wait_for_spirit_death",
 
-   "wait_for_event_info" : {
-      "source" : "forest_temple.boss",
-      "event"  : "radiant:entity:pre_destroy"
+   "script_info" : {
+      "script" : "file(scripts/wait_for_event_updater.lua)",
+      "data"   :
+      {
+         "source" : "forest_temple.boss",
+         "event"  : "radiant:entity:pre_destroy",
+
+         "out_edge" : [ "spirit_death_dialog", "destroy_forest_stockpiles", "end_ongoing_quest" ]
+      }
    }
 }

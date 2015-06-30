@@ -3,10 +3,12 @@
    "rarity" : "common",
 
    "encounters" : {
-      "wait to start"              : "file(encounters/wait_to_start.json)",
-      "create forest temple 1"     : "file(encounters/create_forest_temple_1.json)",
-      "wait for spirit death"      : "file(encounters/wait_for_spirit_death.json)",
-      "finish arc on spirit death" : "file(encounters/finish_arc_on_spirit_death.json)",
+      "wait to start"            : "file(encounters/wait_to_start.json)",
+      "create forest temple 1"   : "file(encounters/create_forest_temple_1.json)",
+      "wait for spirit death"    : "file(encounters/wait_for_spirit_death.json)",
+      "spirit death dialog"      : "file(encounters/spirit_death_dialog.json)",
+      "destroy forest stockpile" : "file(encounters/destroy_stockpiles.json)",
+      "end any ongoing quest"    : "file(encounters/end_ongoing_quest.json)",
 
       "wait to issue quest" : "file(encounters/wait_to_issue_quest.json)",
       "quest successful"    : "file(encounters/quest_successful.json)",
@@ -18,7 +20,7 @@
       "spawn goblin raiders"              : "file(encounters/quests/fight_off_goblin_raiders/spawn_goblin_raiders.json)",
       "goblin raid"                       : "file(encounters/quests/fight_off_goblin_raiders/goblin_raid.json)",
       "wait for goblin boss death"        : "file(encounters/quests/fight_off_goblin_raiders/wait_for_goblin_boss_death.json)",
-      "destroy goblin raiders stockpiles" : "file(encounters/quests/fight_off_goblin_raiders/destroy_goblin_raiders_stockpiles.json)",
+      "destroy goblin raiders stockpiles" : "file(encounters/quests/fight_off_goblin_raiders/destroy_stockpiles.json)",
       "goblin raiders success dialog"     : "file(encounters/quests/fight_off_goblin_raiders/goblin_raiders_success_dialog.json)",
 
       "rescue harpies quest"                  : "file(encounters/quests/rescue_harpies/rescue_harpies_quest.json)",
