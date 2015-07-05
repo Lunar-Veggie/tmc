@@ -7,7 +7,7 @@
    "out_edge" : "create_forest_temple",
 
    "wait_for_net_worth_info" : {
-      "threshold" : 500,
+      "threshold" : 1000,
       "interval"  : "8h"
    }
 }
