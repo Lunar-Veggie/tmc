@@ -10,7 +10,7 @@
       "script" : "file(scripts/wait_custom.lua)",
       "data"   :
       {
-         "duration" : "1h",
+         "duration" : "2d",
          "out_edge" : "issue_quest"
       }
    }
