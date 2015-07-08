@@ -5,41 +5,52 @@
 
    "in_edge" : "goblin_raid",
 
-   "script_info" : {
+   "script_info":
+   {
       "script" : "file(pillage_target.lua)",
-      "data"   : {
+      "data":
+      {
          "offset" : { "x" : 0, "y" : 0, "z" : 0 },
 
-         "sighted_bulletin" : {
-            "title" : "A dangerous goblin!",
+         "sighted_bulletin":
+         {
+            "title"   : "A dangerous goblin!",
             "message" : "He's out to get you"
          },
 
-         "pillage_radius" :{
+         "pillage_radius":
+         {
             "min" : 8,
             "max" : 20
          },
 
-         "members" : {
-            "footmen" : {
-               "from_population" : {
-                  "job" : "stonehearth:jobs:footman",
-                  "min" : 2,
-                  "max" : 3,
+         "members":
+         {
+            "footmen":
+            {
+               "from_population":
+               {
+                  "job"      : "stonehearth:jobs:footman",
+                  "min"      : 2,
+                  "max"      : 3,
                   "location" : { "x": 3, "z": 3 },
-                  "range" : 8
+                  "range"    : 8
                },
-               "attributes" : {
+               "attributes":
+               {
                   "raid_timeout_minutes" : 300,
                   "raid_timeout_variance_minutes" : 60
                },
-               "equipment" : {
+               "equipment":
+               {
                   "weapon"    : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul" ],
                   "armor"     : [ "stonehearth:monsters:goblins:outfits:footman" ],
                   "abilities" : "stonehearth:abilities:wolf_rider_abilities"
                },
-               "loot_drops" : {
-                  "items" : [
+               "loot_drops":
+               {
+                  "items":
+                  [
                      {"uri" : "",                                          "weight" : 10 },
                      {"uri" : "stonehearth:rabbit_jerky",                  "weight" : 1 },
                      {"uri" : "stonehearth:squirrel_jerky",                "weight" : 1 },

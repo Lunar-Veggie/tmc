@@ -5,11 +5,13 @@
 
    "in_edge" : "mountain_harpies",
 
-   "script_info" : {
+   "script_info":
+   {
       "script" : "file(are_hostile.lua)",
-      "data"   : {
+      "data":
+      {
          "npc_player_id" : "air_myth",
-         "out_edge" : "wait_to_raid"
+         "out_edge"      : "wait_to_raid"
       }
    }
 }

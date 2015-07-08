@@ -2,13 +2,15 @@
    "type"   : "campaign",
    "rarity" : "common",
 
-   "arcs" : {
-      "trigger" : {
+   "arcs":
+   {
+      "trigger":
+      {
          "forest_temple" : "file(arcs/trigger/temple/temple_arc.json)"
       },
-      "challenge" : {
-      },
-      "climax" : {
-      }
+
+      "challenge" : {},
+
+      "climax" : {}
    }
 }

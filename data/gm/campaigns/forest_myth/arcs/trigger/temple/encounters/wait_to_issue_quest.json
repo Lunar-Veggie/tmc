@@ -5,10 +5,10 @@
 
    "in_edge"  : "wait_to_issue_quest",
 
-   "script_info" :
+   "script_info":
    {
       "script" : "file(scripts/wait_custom.lua)",
-      "data"   :
+      "data":
       {
          "duration" : "2d",
          "out_edge" : "issue_quest"

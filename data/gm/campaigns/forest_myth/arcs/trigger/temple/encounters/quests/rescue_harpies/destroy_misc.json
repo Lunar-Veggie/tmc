@@ -4,8 +4,10 @@
 
    "in_edge" : "destroy_goblin_captivators_misc",
 
-   "destroy_entity_info" : {
-      "target_entities" : [
+   "destroy_entity_info":
+   {
+      "target_entities":
+      [
          "harpy_captives_camp.citizens",
          "harpy_captives_camp.entities.tent",
          "harpy_captives_camp.entities.general_stockpile"

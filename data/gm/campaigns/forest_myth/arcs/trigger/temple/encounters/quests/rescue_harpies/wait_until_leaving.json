@@ -5,7 +5,8 @@
    "in_edge"  : "wait_until_leaving",
    "out_edge" : "leave_with_harpies",
 
-   "wait_info" :  {
+   "wait_info":
+   {
       "duration" : "24h"
    }
 }

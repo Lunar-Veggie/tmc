@@ -4,10 +4,13 @@
 
    "in_edge" : "wait_for_harpy_cages_destruction",
 
-   "script_info" : {
+   "script_info":
+   {
       "script" : "file(../../scripts/wait_for_events.lua)",
-      "data"   : {
-         "sources" : [
+      "data":
+      {
+         "sources":
+         [
             "harpy_captives_camp.entities.harpy_cage_1",
             "harpy_captives_camp.entities.harpy_cage_2",
             "harpy_captives_camp.entities.harpy_cage_3"

@@ -2,7 +2,8 @@
    "type" : "camp_piece",
 
    "script" : "file(../scripts/create_stockpile.lua)",
-   "script_info" : {
+   "script_info":
+   {
       "npc_player_id"                : "forest_myth",
       "ctx_entity_registration_path" : "forest_temple",
 

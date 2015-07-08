@@ -4,11 +4,13 @@
 
    "in_edge" : "wait_for_goblin_boss_death",
 
-   "script_info" : {
+   "script_info":
+   {
       "script" : "file(../../scripts/wait_for_events.lua)",
-      "data"   : {
+      "data":
+      {
          "sources" : [ "goblin_raiding_camp.boss" ],
-         "event" : "radiant:entity:pre_destroy",
+         "event"   : "radiant:entity:pre_destroy",
 
          "out_edge" : [ "goblin_raiders_success_dialog", "destroy_goblin_raiders_stockpiles" ]
       }

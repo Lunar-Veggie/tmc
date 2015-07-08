@@ -2,7 +2,8 @@
    "type"   : "arc",
    "rarity" : "common",
 
-   "encounters" : {
+   "encounters":
+   {
       "wait to start"            : "file(encounters/wait_to_start.json)",
       "create forest temple 1"   : "file(encounters/create_forest_temple_1.json)",
       "wait for spirit death"    : "file(encounters/wait_for_spirit_death.json)",

@@ -5,8 +5,9 @@
    "in_edge"  : "destroy_forest_stockpiles",
    "out_edge" : "arc:finish",
 
-   "destroy_entity_info" : {
-      "target_entities" : ["forest_temple.entities.general_stockpile"],
+   "destroy_entity_info":
+   {
+      "target_entities" : [ "forest_temple.entities.general_stockpile" ],
       "continue_always" : true
    }
 }

@@ -6,7 +6,8 @@
    "in_edge"  : "wild_mandragoras",
    "out_edge" : "wandering_mandragoras",
 
-   "wait_info" : {
+   "wait_info":
+   {
       "duration" : "1h+12h"
    }
 }

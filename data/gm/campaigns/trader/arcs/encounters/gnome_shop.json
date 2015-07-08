@@ -6,18 +6,20 @@
 
    "in_edge" : "spawn_shop",
 
-   "shop_info" : {
+   "shop_info":
+   {
       "title" : "A gnome comes by with his wares to trade",
       "name"  : "Gnome's Shop",
 
-      "inventory" : {
-         "items" : [
-            "tmc:decorations:garden_gnome"
-         ],
-         "items_matching" : {
-            "food" : {
-               "category" : ["food"],
-               "material" : ["vegetable"]
+      "inventory":
+      {
+         "items" : [ "tmc:decorations:garden_gnome" ],
+         "items_matching":
+         {
+            "food":
+            {
+               "category" : [ "food" ],
+               "material" : [ "vegetable" ]
             }
          }
       }

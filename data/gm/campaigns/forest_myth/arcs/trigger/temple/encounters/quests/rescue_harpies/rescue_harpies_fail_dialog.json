@@ -5,43 +5,57 @@
 
    "in_edge" : "rescue_harpies_fail_dialog",
 
-   "dialog_tree_info" : {
+   "dialog_tree_info":
+   {
       "start_node" : "msg1",
-      "nodes" : {
-         "msg1" : {
-            "bulletin" : {
-               "title" : "The dryad expresses her disappointment",
+      "nodes":
+      {
+         "msg1":
+         {
+            "bulletin":
+            {
+               "title"        : "The dryad expresses her disappointment",
                "dialog_title" : "%name(forest_temple.boss)",
-               "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "You didn't save them? Why didn't you save them?",
-               "choices" : {
-                  "stonehearth:next" : {
+               "portrait"     : "file(../../images/dryad_portrait.png)",
+               "message"      : "You didn't save them? Why didn't you save them?",
+               "choices":
+               {
+                  "stonehearth:next":
+                  {
                      "next_node" : "msg2"
                   }
                }
             }
          },
-         "msg2" : {
-            "bulletin" : {
-               "title" : "The dryad expresses her disappointment",
+         "msg2":
+         {
+            "bulletin":
+            {
+               "title"        : "The dryad expresses her disappointment",
                "dialog_title" : "%name(forest_temple.boss)",
-               "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "Now they're off with those evil goblins, doing who knows what!",
-               "choices" : {
-                  "stonehearth:next" : {
+               "portrait"     : "file(../../images/dryad_portrait.png)",
+               "message"      : "Now they're off with those evil goblins, doing who knows what!",
+               "choices":
+               {
+                  "stonehearth:next":
+                  {
                      "next_node" : "msg3"
                   }
                }
             }
          },
-         "msg3" : {
-            "bulletin" : {
-               "title" : "The dryad expresses her disappointment",
+         "msg3":
+         {
+            "bulletin":
+            {
+               "title"        : "The dryad expresses her disappointment",
                "dialog_title" : "%name(forest_temple.boss)",
-               "portrait" : "file(../../images/dryad_portrait.png)",
-               "message" : "I thought you could do better than that...",
-               "choices" : {
-                  "stonehearth:ok" : {
+               "portrait"     : "file(../../images/dryad_portrait.png)",
+               "message"      : "I thought you could do better than that...",
+               "choices":
+               {
+                  "stonehearth:ok":
+                  {
                      "out_edge" : "quest_failed"
                   }
                }

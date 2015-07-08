@@ -6,7 +6,8 @@
    "in_edge"  : "remove_harpies_at_night",
    "out_edge" : "destroy_harpies",
 
-   "wait_for_time_of_day_info" : {
+   "wait_for_time_of_day_info":
+   {
       "time" : "21:00"
    }
 }

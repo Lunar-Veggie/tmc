@@ -6,47 +6,51 @@
    "in_edge"  : "harpy_raid",
    "out_edge" : "remove_harpies_at_night",
 
-   "create_mission_info" : {
-      "spawn_range" : {
-         "min" :  80,
-         "max" : 160
-      },
+   "create_mission_info":
+   {
+      "spawn_range" : { "min" : 80, "max" : 160 },
 
-      "mission" : {
-         "npc_player_id" : "air_myth",
+      "mission":
+      {
+         "npc_player_id"                : "air_myth",
          "ctx_entity_registration_path" : "harpy_raid.raiders",
 
          "role"   : "pillage",
          "offset" : { "x" : 0, "y" : 0, "z" : 0 },
 
-         "pillage_radius" : {
-            "min" : 40,
-            "max" : 80
-         },
+         "pillage_radius" : { "min" : 40, "max" : 80 },
 
-         "sighted_bulletin" : {
+         "sighted_bulletin":
+         {
             "title" : "Invaders sighted!"
          },
 
-         "members" : {
-            "harpies" : {
-               "from_population" : {
-                  "role" : "harpy",
+         "members":
+         {
+            "harpies":
+            {
+               "from_population":
+               {
+                  "role"     : "harpy",
                   "location" : { "x": 3, "z": 3 },
-                  "min"   : 2,
-                  "max"   : 2,
-                  "range" : 20
+                  "min"      : 2,
+                  "max"      : 2,
+                  "range"    : 20
                },
-               "attributes" : {
-                  "raid_timeout_minutes" : 180,
+               "attributes":
+               {
+                  "raid_timeout_minutes"          : 180,
                   "raid_timeout_variance_minutes" : 120
                },
-               "equipment" : {
+               "equipment":
+               {
                   "weapon"    : [ "tmc:air:harpy:talons" ],
                   "abilities" : "stonehearth:abilities:wolf_rider_abilities"
                },
-               "loot_drops" : {
-                  "items" : [
+               "loot_drops":
+               {
+                  "items":
+                  [
                      { "uri" : "",                           "weight" : 4 },
                      { "uri" : "stonehearth:rabbit_jerky",   "weight" : 2 },
                      { "uri" : "stonehearth:squirrel_jerky", "weight" : 2 },

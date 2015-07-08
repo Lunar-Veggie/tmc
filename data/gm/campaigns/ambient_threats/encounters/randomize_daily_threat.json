@@ -1,12 +1,10 @@
 {
-   "random_out_edge_info" : {
-      "out_edges" : {
-         "mountain_harpies" : {
-            "weight" : 2
-         },
-         "wild_mandragoras" : {
-            "weight" : 1
-         }
+   "random_out_edge_info":
+   {
+      "out_edges":
+      {
+         "mountain_harpies" : { "weight" : 2 },
+         "wild_mandragoras" : { "weight" : 1 }
       }
    }
 }

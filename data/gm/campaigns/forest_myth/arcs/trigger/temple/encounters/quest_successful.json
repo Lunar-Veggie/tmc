@@ -5,7 +5,8 @@
    "in_edge"  : "quest_successful",
    "out_edge" : "wait_to_issue_quest",
 
-   "script_info" : {
+   "script_info":
+   {
       "script" : "file(quests/successful.lua)",
       "data"   : {}
    }

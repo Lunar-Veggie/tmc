@@ -5,7 +5,8 @@
    "in_edge"  : "wait_for_cage_1_destruction",
    "out_edge" : "escaping_harpy_1",
 
-   "wait_for_event_info" : {
+   "wait_for_event_info":
+   {
       "source" : "harpy_captives_camp.entities.harpy_cage_1",
       "event"  : "radiant:entity:pre_destroy"
    }

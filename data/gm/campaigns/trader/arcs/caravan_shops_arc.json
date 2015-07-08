@@ -1,5 +1,6 @@
 {
-   "encounters" : {
+   "encounters":
+   {
       "gnome shop" : "file(encounters/gnome_shop.json)"
    }
 }

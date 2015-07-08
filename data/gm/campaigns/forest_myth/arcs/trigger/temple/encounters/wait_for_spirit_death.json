@@ -5,7 +5,8 @@
 
    "in_edge" : "wait_for_spirit_death",
 
-   "script_info" : {
+   "script_info":
+   {
       "script" : "file(scripts/wait_for_event_updater.lua)",
       "data"   :
       {

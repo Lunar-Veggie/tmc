@@ -1,5 +1,6 @@
 {
-   "info" : {
+   "info":
+   {
       "name"        : "The Mythical Creatures",
       "description" : "Adds creatures from various mythologies",
       "version"     : 1
@@ -7,7 +8,8 @@
 
    "server_init_script" : "file(tmc_server)",
 
-   "aliases" : {
+   "aliases":
+   {
       "kingdoms:forest_myth"    : "file(data/populations/forest_myth_population.json)",
       "kingdoms:air_myth"       : "file(data/populations/air_myth_population.json)",
       "kingdoms:wild_creatures" : "file(data/populations/tmc_wild_creatures.json)",
@@ -58,37 +60,37 @@
       "sounds:wing_flap"         : "file(data/sounds/effects/wing_flap.wav)"
    },
 
-   "components" : {
+   "components":
+   {
       "soul_keeper" : "file(components/soul_keeper/soul_keeper_component.lua)",
       "animation"   : "file(components/animation/animation_component.lua)"
    },
 
-   "controllers" : {
+   "controllers":
+   {
       "class:guardian" : "file(jobs/guardian/guardian.lua)",
       "class:spirit"   : "file(jobs/spirit/spirit.lua)",
 
       "util:choose_location_outside_camp" : "file(util/choose_location_outside_camp.lua)"
    },
 
-   "mixintos" : {
-      "/stonehearth/jobs/weaver/recipes/recipes.json" : [ "file(jobs/weaver/recipes/recipes.json)" ],
+   "mixintos":
+   {
+      "stonehearth/jobs/weaver/recipes/recipes.json" : "file(jobs/weaver/recipes/recipes.json)",
 
-      "/stonehearth/data/npc_index.json"   : [ "file(data/npc_index.json)" ],
-      "/stonehearth/data/gm/gm_index.json" : [ "file(data/gm/gm_index.json)" ],
+      "stonehearth/data/npc_index.json"   : "file(data/npc_index.json)",
+      "stonehearth/data/gm/gm_index.json" : "file(data/gm/gm_index.json)",
 
-      "/stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json" : [
-         "file(data/gm/campaigns/ambient_threats/ambient_threats_arc.json)"
-      ],
-      "/stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_daily_threat.json" : [
-         "file(data/gm/campaigns/ambient_threats/encounters/randomize_daily_threat.json)"
-      ],
+      "stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json"               : "file(data/gm/campaigns/ambient_threats/ambient_threats_arc.json)",
+      "stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_daily_threat.json" : "file(data/gm/campaigns/ambient_threats/encounters/randomize_daily_threat.json)",
 
-      "/stonehearth/data/gm/campaigns/trader/arcs/caravan_shops_arc.json" : [ "file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)" ]
+      "stonehearth/data/gm/campaigns/trader/arcs/caravan_shops_arc.json" : "file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)"
    },
 
-   "overrides" : {
-      "/stonehearth/ui/shell/title/images/background.jpg"   : "file(ui/shell/splash/Splash.png)",
-      "/stonehearth/ui/shell/loading_screen/images/bg1.jpg" : "file(ui/shell/loading_screen/images/loading_forest.jpg)",
-      "/stonehearth/ui/shell/loading_screen/images/bg4.jpg" : "file(ui/shell/loading_screen/images/loading_arachne.jpg)"
+   "overrides":
+   {
+      "stonehearth/ui/shell/title/images/background.jpg"   : "file(ui/shell/splash/Splash.png)",
+      "stonehearth/ui/shell/loading_screen/images/bg1.jpg" : "file(ui/shell/loading_screen/images/loading_forest.jpg)",
+      "stonehearth/ui/shell/loading_screen/images/bg4.jpg" : "file(ui/shell/loading_screen/images/loading_arachne.jpg)"
    }
 }

@@ -1,15 +1,15 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "script",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge"  : "issue_quest",
    "out_edge" : [ "fight_off_goblin_raiders_dialog", "create_goblin_raiding_camp" ],
 
-   "script_info" :
+   "script_info":
    {
       "script" : "file(fight_off_goblin_raiders.lua)",
-      "data"   :
+      "data":
       {
          "npc_player_id" : "goblins",
 

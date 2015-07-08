@@ -5,8 +5,10 @@
    "in_edge"  : "leave_with_harpies",
    "out_edge" : [ "rescue_harpies_fail_dialog", "destroy_goblin_captivators_misc" ],
 
-   "destroy_entity_info" : {
-      "target_entities" : [
+   "destroy_entity_info":
+   {
+      "target_entities":
+      [
          "harpy_captives_camp.entities.harpy_cage_1",
          "harpy_captives_camp.entities.harpy_cage_2",
          "harpy_captives_camp.entities.harpy_cage_3"

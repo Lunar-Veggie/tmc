@@ -6,7 +6,8 @@
    "in_edge"  : "wait_to_raid",
    "out_edge" : "harpy_raid",
 
-   "wait_info" : {
+   "wait_info":
+   {
       "duration" : "2h+4h"
    }
 }

@@ -4,10 +4,12 @@
 
    "in_edge" : "end_ongoing_quest",
 
-   "script_info" : {
+   "script_info":
+   {
       "script" : "file(scripts/destroy_entity_custom.lua)",
-      "data"   : {
-         "target_entities" : ["quest_data"],
+      "data":
+      {
+         "target_entities" : [ "quest_data" ],
          "effect" : "/stonehearth/data/effects/fursplosion_effect/growing_wool_effect.json",
          "continue_always" : true
       }

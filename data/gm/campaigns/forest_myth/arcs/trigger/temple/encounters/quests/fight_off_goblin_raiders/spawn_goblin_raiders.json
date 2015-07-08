@@ -4,9 +4,10 @@
 
    "in_edge" : "spawn_goblin_raiders",
 
-   "generator_info" : {
-      "delay" : "19h+4h",
+   "generator_info":
+   {
+      "delay"         : "19h+4h",
       "source_entity" : "goblin_raiding_camp.entities.campfire",
-      "spawn_edge" : "goblin_raid"
+      "spawn_edge"    : "goblin_raid"
    }
 }
