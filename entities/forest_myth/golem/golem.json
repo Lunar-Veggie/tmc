@@ -20,17 +20,6 @@
          }
       },
 
-      "sensor_list":
-      {
-         "sensors":
-         {
-            "sight":
-            {
-               "radius" : 64
-            }
-         }
-      },
-
       "unit_info":
       {
          "name"        : "A Golem",
