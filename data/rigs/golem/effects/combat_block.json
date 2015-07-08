@@ -1,40 +1,48 @@
 {
    "type" : "effect",
-   "tracks" : {
-      "animation" : {
+
+   "tracks":
+   {
+      "animation":
+      {
          "type"       : "animation_effect",
          "start_time" : 0,
          "animation"  : "combat_block.json",
          "loop"       : false
       },
-      "sound": {
-         "type" : "sound_effect",
+      "sound":
+      {
+         "type"         : "sound_effect",
          "duration"     : 1000,
          "start_time"   : 200,
          "min_distance" : 30,
          "falloff"      : 3.6,
          "volume"       : 30,
-         "track" : {
+         "track":
+         {
             "type" : "one_of",
-            "items" : [
+            "items":
+            [
                "stonehearth:sounds:woodsword_block_01",
                "stonehearth:sounds:woodsword_block_02",
                "stonehearth:sounds:woodsword_block_03"
             ]
          }
       },
-      "hit_spark": {
-         "type" : "cubemitter",
+      "hit_spark":
+      {
+         "type"       : "cubemitter",
          "start_time" : 200,
          "end_time"   : 240,
          "cubemitter" : "particles/combat/parry.cubemitter.json",
-         "transforms" : {
-            "x"  : 0,
-            "y"  : 2,
+         "transforms":
+         {
+            "x"  :  0,
+            "y"  :  2,
             "z"  : -1.5,
-            "rx" : 0,
-            "ry" : 0,
-            "rz" : 0
+            "rx" :  0,
+            "ry" :  0,
+            "rz" :  0
          }
       }
    }

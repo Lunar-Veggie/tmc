@@ -1,7 +1,10 @@
 {
    "type" : "effect",
-   "tracks" : {
-      "animation" : {
+
+   "tracks":
+   {
+      "animation":
+      {
          "type"       : "animation_effect",
          "start_time" : 0,
          "animation"  : "combat_clap_attack.json",

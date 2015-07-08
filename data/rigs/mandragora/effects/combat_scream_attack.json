@@ -1,22 +1,28 @@
 {
    "type" : "effect",
-   "tracks" : {
-      "animation" : {
+
+   "tracks":
+   {
+      "animation":
+      {
          "type"       : "animation_effect",
          "start_time" : 0,
          "animation"  : "scream_attack.json",
          "loop"       : false
       },
-      "sound" : {
-         "type" : "sound_effect",
+      "sound":
+      {
+         "type"         : "sound_effect",
          "duration"     : 1000,
          "start_time"   : 200,
          "min_distance" : 30,
          "falloff"      : 3.6,
          "volume"       : 30,
-         "track" : {
+         "track":
+         {
             "type" : "one_of",
-            "items" : [
+            "items":
+            [
                "tmc:sounds:mandragora_scream"
             ]
          }
