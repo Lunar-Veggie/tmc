@@ -1,8 +1,12 @@
 { 
-   "craftable_recipes" : {
-      "clothing_armor" : {
-         "recipes" : {
-            "forest_leather_vest" : {
+   "craftable_recipes":
+   {
+      "clothing_armor":
+      {
+         "recipes":
+         {
+            "forest_leather_vest":
+            {
                "recipe" : "file(forest_leather_vest_recipe.json)"
             }            
          }

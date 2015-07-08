@@ -1,10 +1,13 @@
 {
-   "type" : "buff",
-   "name" : "Damage +20%",
+   "type"        : "buff",
+   "name"        : "Damage +20%",
    "description" : "The guardian attacks with increased ferocity",
-   "icon" : "file(damage_1_buff.png)",
-   "modifiers" : {
-      "multiplicative_dmg_modifier" : {
+   "icon"        : "file(damage_1_buff.png)",
+
+   "modifiers":
+   {
+      "multiplicative_dmg_modifier":
+      {
          "add" : 0.20
       }
    }

@@ -2,16 +2,19 @@
    "type"   : "entity",
    "mixins" : "file(../ancient_pillar.json)",
 
-   "components" : {
-      "model_variants" : {
-         "default" : {
-            "models" : [
-               "file(ancient_pillar_1.qb)"
-            ]
+   "components":
+   {
+      "model_variants":
+      {
+         "default":
+         {
+            "models" : [ "file(ancient_pillar_1.qb)" ]
          }
       },
-      "region_collision_shape" : {
-         "region_from_model" : {
+      "region_collision_shape":
+      {
+         "region_from_model":
+         {
             "model" : "file(ancient_pillar_1.qb)"
          }
       }

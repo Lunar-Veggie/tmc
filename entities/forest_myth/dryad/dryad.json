@@ -2,35 +2,58 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:mob",
 
-   "components" : {
-      "render_info" : {
+   "components":
+   {
+      "render_info":
+      {
          "animation_table" : "stonehearth:skeletons:humanoid:female",
          "scale"           : 0.075
       },
-      "model_variants" : {
-         "default" : {
-            "models" : [
-               "/stonehearth/entities/humans/female_1/body.qb",
+      "model_variants":
+      {
+         "default":
+         {
+            "models":
+            [
+               "stonehearth/entities/humans/female_1/body.qb",
                "file(outfit.qb)",
                "file(head.qb)"
             ]
          }
       },
-      "stonehearth:equipment_piece" : {
-         "render_type" : "merge_with_model"
+      "sensor_list":
+      {
+         "sensors":
+         {
+            "sight":
+            {
+               "radius" : 64
+            }
+         }
       },
 
-      "unit_info" : {
+      "unit_info":
+      {
          "name"        : "A Dryad",
          "description" : "A spirit of the forest"
       },
 
-      "stonehearth:material" : {
+      "stonehearth:equipment" : {},
+
+      "stonehearth:equipment_piece":
+      {
+         "render_type" : "merge_with_model"
+      },
+
+      "stonehearth:material":
+      {
          "tags" : "meat"
       },
 
-      "stonehearth:ai" : {
-         "actions" : [
+      "stonehearth:ai":
+      {
+         "actions":
+         [
             "stonehearth:actions:idle:sway",
             "stonehearth:actions:idle:look_around",
             "tmc:actions:sleep_on_ground_naturally",
@@ -67,64 +90,68 @@
          ]
       },
 
-      "stonehearth:observers" : {
-         "observers" : [
+      "stonehearth:observers":
+      {
+         "observers":
+         [
             "stonehearth:observers:free_time",
             "stonehearth:observers:find_target",
             "stonehearth:observers:sleepiness"
          ]
       },
 
-      "stonehearth:attributes" : {
-         "max_health" : {
+      "stonehearth:attributes":
+      {
+         "max_health":
+         {
             "type"  : "basic",
             "value" : 50
          },
-         "health" : {
+         "health":
+         {
             "type"     : "variable",
             "equation" : "max_health"
          },
-         "speed" : {
+         "speed":
+         {
             "type"  : "basic",
             "value" : 90
          },
-         "courage" : {
+         "courage":
+         {
             "type"  : "basic",
             "value" : 10
          },
-         "sleepiness" : {
+         "sleepiness":
+         {
             "type" : "random_range", 
             "base" : 4,
             "max"  : 8
          }
       },
 
-      "stonehearth:job" : {
-         "starting_level_title"       : "Apprentice __job_name__",
-         "default_level_title"        : "Level __level_number__ __job_name__",
-         "default_level_announcement" : "__name__ has achieved __job_name__ Level __level_number__!",
-         "xp_equation_for_next_level" : "next_level ^ 2 * 100",
+      "stonehearth:job":
+      {
+         "starting_level_title"              : "Apprentice __job_name__",
+         "default_level_title"               : "Level __level_number__ __job_name__",
+         "default_level_announcement"        : "__name__ has achieved __job_name__ Level __level_number__!",
+         "xp_equation_for_next_level"        : "next_level ^ 2 * 100",
          "levels_between_attribute_increase" : 10,
-         "level_data" : {
+         "level_data":
+         {
             "general_description_desc" : "Max HP increased!",
             "attribute_up_desc"        : "All attributes increased!"
-         }
-      },
-
-      "sensor_list" : {
-         "sensors" : {
-            "sight" : {
-               "radius" : 64
-            }
          }
       }
    },
 
-   "entity_data" : {
+   "entity_data":
+   {
       "stonehearth:entity_radius" : 0.75,
       "stonehearth:entity_reach"  : 1.0,
 
-      "stonehearth:observers:avoid_threatening_entities" : {
+      "stonehearth:observers:avoid_threatening_entities":
+      {
          "min_avoidance_distance" : 16,
          "max_avoidance_distance" : 16
       }

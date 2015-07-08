@@ -2,27 +2,33 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:tree",
 
-   "components" : {
-      "unit_info" : {
+   "components":
+   {
+      "unit_info":
+      {
          "name"        : "Great Ancient Tree",
          "description" : "Could be as old as time itself"
       },
-      "render_info" : {
+      "render_info":
+      {
          "scale" : 1
       },
-      "model_variants" : {
-         "default" : {
-            "models" : [
-               "file(great_ancient_tree.qb)"
-            ]
+      "model_variants":
+      {
+         "default":
+         {
+            "models" : [ "file(great_ancient_tree.qb)" ]
          }
       },
-      "stonehearth:resource_node" : {
+      "stonehearth:resource_node":
+      {
          "resource"   : "stonehearth:resources:wood:oak_log",
          "durability" : 100
       },
-      "region_collision_shape" : {
-         "region_from_model" : {
+      "region_collision_shape":
+      {
+         "region_from_model":
+         {
             "model" : "file(great_ancient_tree.qb)"
          }
       }

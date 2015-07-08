@@ -1,14 +1,19 @@
 {
    "type" : "entity",
 
-   "components" : {
-      "stonehearth:equipment_piece" : {
-         "injected_ai" : {
-            "actions" : [
+   "components":
+   {
+      "stonehearth:equipment_piece":
+      {
+         "injected_ai":
+         {
+            "actions":
+            [
                "stonehearth:actions:combat:flee",
                "stonehearth:actions:combat:cower",
             ],
-            "observers" : [
+            "observers":
+            [
                "stonehearth:observers:combat_panic",
                "stonehearth:observers:avoid_threatening_entities"
             ]

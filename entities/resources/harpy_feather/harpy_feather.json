@@ -2,35 +2,42 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:item_properties",
 
-   "components" : {
-      "item" : {
+   "components":
+   {
+      "item":
+      {
          "category" : "refined"
       },
-      "model_variants" : {
-         "default" : {
-            "models" : [
-               "file(harpy_feather.qb)"
-            ]
+      "model_variants":
+      {
+         "default":
+         {
+            "models" : [ "file(harpy_feather.qb)" ]
          }
       },
-      "unit_info" : {
-         "name" : "Magical Harpy Feather",
+      "unit_info":
+      {
+         "name"        : "Magical Harpy Feather",
          "description" : "You feel lighter just by holding it!",
-         "icon" : "file(harpy_feather.png)"
+         "icon"        : "file(harpy_feather.png)"
       },
 
-      "stonehearth:material" : {
+      "stonehearth:material":
+      {
          "tags" : "tmc_feather air_resource refined animal_part"
       }
    },
 
-   "entity_data" : {
-      "stonehearth:net_worth" : {
+   "entity_data":
+   {
+      "stonehearth:net_worth":
+      {
          "value_in_gold" : 35,
-         "rarity" : "common",
-         "shop_info" : {
-            "buyable"  : false,
-            "sellable" : true,
+         "rarity"        : "common",
+         "shop_info":
+         {
+            "buyable"          : false,
+            "sellable"         : true,
             "shopkeeper_level" : 1,
             "shopkeeper_type"  : "caravan"
          }

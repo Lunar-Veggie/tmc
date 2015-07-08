@@ -3,11 +3,15 @@
    "kingdom_id"   : "air_myth",
    "amenity_to_strangers" : "hostile",
 
-   "roles" : {
-      "harpy" : {
-         "male" : {
-            "uri" : ["tmc:air:harpy"],
-            "given_names" : [
+   "roles":
+   {
+      "harpy":
+      {
+         "male":
+         {
+            "uri" : [ "tmc:air:harpy" ],
+            "given_names":
+            [
                "Visschich",
                "Ezerex",
                "Reeph",
@@ -18,7 +22,8 @@
                "Divshiph"
             ]
          },
-         "surnames" : [
+         "surnames":
+         [
             "Whuohll",
             "Evhuinn",
             "Lirrow",
@@ -32,14 +37,18 @@
       }
    },
 
-   "town_pieces" : {
-      "optional_prefix" : [
+   "town_pieces":
+   {
+      "optional_prefix":
+      [
          "Nope, "
       ],
-      "town_name" : [
+      "town_name":
+      [
          "Nah"
       ],
-      "suffix" : [
+      "suffix":
+      [
          ", Don't think so"
       ]
    },

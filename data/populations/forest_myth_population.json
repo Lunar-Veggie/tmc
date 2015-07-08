@@ -3,11 +3,15 @@
    "kingdom_id"   : "forest_myth",
    "amenity_to_strangers" : "neutral",
 
-   "roles" : {
-      "dryad" : {
-         "male" : {
-            "uri" : ["tmc:forest:dryad"],
-            "given_names" : [
+   "roles":
+   {
+      "dryad":
+      {
+         "male":
+         {
+            "uri" : [ "tmc:forest:dryad" ],
+            "given_names":
+            [
                "Myra",
                "Yulima",
                "Drimda",
@@ -16,7 +20,8 @@
                "Lily"
             ]
          },
-         "surnames" : [
+         "surnames":
+         [
             "Green",
             "Sprout",
             "Stumpling",
@@ -26,10 +31,13 @@
             "Leafey"
          ]
       },
-      "golem" : {
-         "male" : {
-            "uri" : ["tmc:forest:golem"],
-            "given_names" : [
+      "golem":
+      {
+         "male":
+         {
+            "uri" : [ "tmc:forest:golem" ],
+            "given_names":
+            [
                "Gorem",
                "Stompy",
                "Gromp",
@@ -40,14 +48,18 @@
       }
    },
 
-   "town_pieces" : {
-      "optional_prefix" : [
+   "town_pieces":
+   {
+      "optional_prefix":
+      [
          "Nope, "
       ],
-      "town_name" : [
+      "town_name":
+      [
          "Nah"
       ],
-      "suffix" : [
+      "suffix":
+      [
          ", Don't think so"
       ]
    },

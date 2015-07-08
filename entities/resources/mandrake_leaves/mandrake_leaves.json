@@ -2,42 +2,51 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:item_properties",
 
-   "components" : {
-      "model_variants" : {
-         "default" : {
-            "models" : [
-               "file(mandrake_leaves.qb)"
-            ]
+   "components":
+   {
+      "model_variants":
+      {
+         "default":
+         {
+            "models" : [ "file(mandrake_leaves.qb)" ]
          }
       },
-      "render_info" : {
+      "render_info":
+      {
          "scale" : 0.1
       },
-      "mob" : {
+      "mob":
+      {
          "model_origin" : { "x": -0.05, "y": 0, "z": 0.05 }
       },
-      "unit_info" : {
-         "name" : "Mandrake Leaves",
+      "unit_info":
+      {
+         "name"        : "Mandrake Leaves",
          "description" : "Ingredient used in healing medicine or herbal tea",
-         "icon" : "file(mandrake_leaves.png)"
+         "icon"        : "file(mandrake_leaves.png)"
       },
-      "item" : {
+      "item":
+      {
          "category" : "resources"
       },
-      "stonehearth:material" : {
+      "stonehearth:material":
+      {
          "tags" : "mandrake leaves plant resource"
       }
    },
 
-   "entity_data" : {
-      "stonehearth:net_worth" : {
+   "entity_data":
+   {
+      "stonehearth:net_worth":
+      {
          "value_in_gold" : 35,
-         "rarity" : "common",
-         "shop_info" : {
-            "buyable" : false,
-            "sellable" : true,
+         "rarity"        : "common",
+         "shop_info":
+         {
+            "buyable"          : false,
+            "sellable"         : true,
             "shopkeeper_level" : 1,
-            "shopkeeper_type" : "caravan"
+            "shopkeeper_type"  : "caravan"
          }
       }
    }

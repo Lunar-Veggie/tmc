@@ -1,23 +1,27 @@
 {
    "type" : "entity",
 
-   "components" : {
-      "model_variants" : {
-         "default" : {
-            "models" : [
-               "file(garden_gnome.qb)"
-            ]
+   "components":
+   {
+      "model_variants":
+      {
+         "default":
+         {
+            "models" : [ "file(garden_gnome.qb)" ]
          }
       },
-      "mob" : {
+      "mob":
+      {
          "region_origin" : { "x" : 0.5, "y" : 0, "z" : 0.5 }
       },
-      "unit_info" : {
+      "unit_info":
+      {
          "name"        : "Garden Gnome",
          "description" : "Smaller than an actual gnome, if you can believe it",
          "icon"        : "file(garden_gnome.png)"
       },
-      "stonehearth:material" : {
+      "stonehearth:material":
+      {
          "tags" : "decoration"
       }
    }

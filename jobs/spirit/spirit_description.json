@@ -10,12 +10,15 @@
    "abilities" : "file(spirit_abilities)",
 
    "roles" : "spirit_job",
-   "task_groups" : [
+   "task_groups":
+   [
       "stonehearth:task_group:harvest"
    ],
 
-   "level_data" : {
-      "0" : {
+   "level_data":
+   {
+      "0":
+      {
          "title" : "Spirit"
       }
    }
