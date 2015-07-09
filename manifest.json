@@ -25,9 +25,12 @@
       "air:harpy"        : "file(entities/air_myth/harpy)",
       "air:harpy:talons" : "file(entities/air_myth/harpy/harpy_talons.json)",
 
+      "spider:arachne" : "file(entities/spider/arachne)",
+
       "skeletons:golem"      : "file(data/rigs/golem)",
       "skeletons:mandragora" : "file(data/rigs/mandragora)",
       "skeletons:harpy"      : "file(data/rigs/harpy)",
+      "skeletons:arachne"    : "file(data/rigs/arachne)",
 
       "armor:forest_leather_vest" : "file(entities/armor/forest_leather_vest)",
 
