@@ -4,17 +4,18 @@
 
    "components":
    {
-      "unit_info":
-      {
-         "name"        : "Scythe",
-         "description" : "2spooky4me"
-      },
       "model_variants":
       {
          "default":
          {
             "models": [ "file(scythe.qb)" ]
          }
+      },
+
+      "unit_info":
+      {
+         "name"        : "Scythe",
+         "description" : "2spooky4me"
       },
 
       "stonehearth:material":
