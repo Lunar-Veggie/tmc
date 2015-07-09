@@ -7,9 +7,7 @@
       "render_info":
       {
          "animation_table" : "tmc:skeletons:arachne",
-         "color_map"       : "file(materials/golem_color_map.json)",
-         "material_maps"   : [ "file(materials/golem_material_map.json)" ],
-         "scale"           : 0.12
+         "scale"           : 0.1
       },
 
       "model_variants":
@@ -22,13 +20,13 @@
 
       "unit_info":
       {
-         "name"        : "A arachne",
-         "description" : "An ancient guardian of the Dryads"
+         "name"        : "Arachne",
+         "description" : "The mother of spiders"
       },
 
       "stonehearth:material":
       {
-         "tags" : "stone"
+         "tags" : "meat"
       },
 
       "stonehearth:attributes":
@@ -36,7 +34,7 @@
          "max_health":
          {
             "type"  : "basic",
-            "value" : 200
+            "value" : 350
          },
          "health":
          {
@@ -46,20 +44,20 @@
          "speed":
          {
             "type"  : "basic",
-            "value" : 20
+            "value" : 50
          },
          "menace":
          {
             "type"  : "basic",
-            "value" : 70
+            "value" : 100
          }
       }
    },
 
    "entity_data":
    {
-      "stonehearth:entity_radius" : 1.8,
-      "stonehearth:entity_reach"  : 2.2,
+      "stonehearth:entity_radius" : 2.0,
+      "stonehearth:entity_reach"  : 2.5,
 
       "stonehearth:observers:avoid_threatening_entities":
       {
