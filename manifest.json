@@ -55,6 +55,8 @@
 
       "actions:sleep_on_ground_naturally" : "file(ai/actions/sleep_on_ground_naturally_action.lua)",
 
+      "ai_pack:sleeping" : "file(ai/packs/sleeping_ai_pack.json)",
+
       "buffs:guardian:def_1" : "file(jobs/guardian/guardian_buffs/defense_1_buff.json)",
       "buffs:guardian:dmg_1" : "file(jobs/guardian/guardian_buffs/damage_1_buff.json)",
 

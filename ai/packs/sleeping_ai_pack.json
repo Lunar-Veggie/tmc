@@ -1,0 +1,21 @@
+{
+   "actions":
+   [
+      "stonehearth:actions:run_sleep_effect",
+      "stonehearth:actions:sleep_trivial",
+      "stonehearth:actions:sleep_when_exhausted",
+
+      "tmc:actions:sleep_on_ground_naturally"
+   ],
+
+   "observers":
+   [
+      "stonehearth:observers:sleepiness"
+   ],
+
+   "ai_packs":
+   [
+      "stonehearth:ai_pack:core",
+      "stonehearth:ai_pack:movement"
+   ]
+}
