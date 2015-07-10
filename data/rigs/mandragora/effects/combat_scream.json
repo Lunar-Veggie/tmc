@@ -7,7 +7,7 @@
       {
          "type"       : "animation_effect",
          "start_time" : 0,
-         "animation"  : "scream_attack.json",
+         "animation"  : "combat_scream.json",
          "loop"       : false
       },
       "sound":

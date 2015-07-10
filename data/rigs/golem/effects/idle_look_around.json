@@ -7,7 +7,7 @@
       {
          "type"       : "animation_effect",
          "start_time" : 0,
-         "animation"  : "idle_motion_1.json",
+         "animation"  : "idle_look_around.json",
          "loop"       : false
       }
    }

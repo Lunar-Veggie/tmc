@@ -7,7 +7,7 @@
       {
          "type"       : "animation_effect",
          "start_time" : 0,
-         "animation"  : "combat_smash_attack.json",
+         "animation"  : "combat_smash.json",
          "loop"       : false
       }
    }

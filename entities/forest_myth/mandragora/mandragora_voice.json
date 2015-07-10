@@ -29,7 +29,7 @@
       "stonehearth:combat:melee_attacks":
       [
          {
-            "name"         : "combat_scream_attack",
+            "name"         : "combat_scream",
             "active_frame" : 17,
             "cooldown"     : 2000,
             "priority"     : 1

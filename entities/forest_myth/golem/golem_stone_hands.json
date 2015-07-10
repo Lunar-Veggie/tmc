@@ -41,14 +41,14 @@
             "priority"     : 1
          },
          {
-            "name"         : "combat_smash_attack",
+            "name"         : "combat_smash",
             "active_frame" : 61,
             "cooldown"     : 24000,
             "priority"     : 3,
             "bonus_dmg_multiplier" : 0.6
          },
          {
-            "name"         : "combat_clap_attack",
+            "name"         : "combat_clap",
             "active_frame" : 71,
             "cooldown"     : 22000,
             "priority"     : 2,
