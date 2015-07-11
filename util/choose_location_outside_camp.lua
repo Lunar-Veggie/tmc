@@ -173,7 +173,7 @@ function ChooseLocationOutsideCamp:_try_later()
    self._sv.slop_space = self._sv.slop_space + 1
    self:_destroy_find_location_timer()
 
-   self._find_location_timer = radiant.set_realtime_timer(5000, function() self:_try_finding_location() end)
+   self._find_location_timer = radiant.set_realtime_timer("ChooseLocationOutsideCamp try_later", 5000, function() self:_try_finding_location() end)
 end
 
 return ChooseLocationOutsideCamp

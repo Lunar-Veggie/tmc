@@ -31,14 +31,11 @@ function WaitCustom:start(ctx, info)
 
    self._sv.ctx   = ctx
    self._sv.info  = info
-   self._sv.timer = stonehearth.calendar:set_timer(timeout,
-      function()
-         self:_timer_callback()
-      end)
+   self._sv.timer = stonehearth.calendar:set_timer("WaitEncounterCustom wait timer", timeout, radiant.bind(self, '_timer_callback'))
 
    self._quest_listener = radiant.events.listen(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_done)
 
-   self._log:spam('Wait Encounter: %s will expire at %s which is in %s', ctx.encounter_name, self._sv.timer:get_expire_time(), stonehearth.calendar:format_remaining_time(self._sv.timer))
+   self._log:spam('Wait Encounter Custom: %s will expire at %s which is in %s', ctx.encounter_name, self._sv.timer:get_expire_time(), stonehearth.calendar:format_remaining_time(self._sv.timer))
    self._log:spam('It is currently %s', stonehearth.calendar:format_time())
 end
 
@@ -50,7 +47,7 @@ function WaitCustom:_timer_callback()
       self._sv.timer = nil
    end
 
-   self._log:spam('Wait Encounter: %s is now firing at %s', ctx.encounter_name, stonehearth.calendar:format_time())
+   self._log:spam('Wait Encounter Custom: %s is now firing at %s', ctx.encounter_name, stonehearth.calendar:format_time())
    self.__saved_variables:mark_changed()
 
    -- Continue with the campaign
