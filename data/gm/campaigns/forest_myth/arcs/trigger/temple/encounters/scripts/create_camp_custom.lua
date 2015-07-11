@@ -136,7 +136,7 @@ function CreateCampCustom:_create_camp(location, camp_region)
    self._population   = stonehearth.population:get_population(info.npc_player_id)
 
    if info.amenity_with_player then
-      stonehearth.player:set_amenity(info.npc_player_id,ctx.player_id,info.amenity_with_player)
+      stonehearth.player:set_amenity(info.npc_player_id, ctx.player_id, info.amenity_with_player)
    end
 
    local entities = radiant.terrain.get_entities_in_region(camp_region)
@@ -174,12 +174,10 @@ function CreateCampCustom:_create_camp(location, camp_region)
    end
 
    stonehearth.terrain:get_explored_region(ctx.player_id)
-                        :modify(function(cursor)
-      cursor:add_region(visible_rgn)
-   end)
+                        :modify(function(cursor) cursor:add_region(visible_rgn) end)
 
    if info.script then
-      local script    = radiant.create_controller(info.script,ctx)
+      local script    = radiant.create_controller(info.script, ctx)
       self._sv.script = script
       script:start(ctx, info)
    end
@@ -221,9 +219,9 @@ function CreateCampCustom:_add_piece(piece, visible_rgn)
          local offset = Point3(info.location.x, info.location.y, info.location.z)
          radiant.terrain.place_entity(entity, origin+offset, {force_iconic=info.force_iconic})
          if rot then
-            radiant.entities.turn_to(entity,rot)
+            radiant.entities.turn_to(entity, rot)
          end
-         self:_add_entity_to_visible_rgn(entity,visible_rgn)
+         self:_add_entity_to_visible_rgn(entity, visible_rgn)
          entities[name] = entity
       end
    end
@@ -235,10 +233,10 @@ function CreateCampCustom:_add_piece(piece, visible_rgn)
    local citizens_by_type = {}
 
    if piece.info.citizens then
-      for type,info in pairs(piece.info.citizens) do
-         local citizens = game_master_lib.create_citizens(self._population,info,origin,ctx)
+      for type, info in pairs(piece.info.citizens) do
+         local citizens = game_master_lib.create_citizens(self._population, info, origin, ctx)
          citizens_by_type[type] = citizens
-         for i,citizen in ipairs(citizens) do
+         for i, citizen in ipairs(citizens) do
             self:_add_entity_to_visible_rgn(citizen,visible_rgn)
          end
       end
@@ -276,7 +274,7 @@ function CreateCampCustom:_add_entity_to_visible_rgn(entity, visble_rgn)
    end
 end
 
-function CreateCampCustom:_add_region_to_visble_rgn(entity,rgn,visble_rgn)
+function CreateCampCustom:_add_region_to_visble_rgn(entity, rgn, visble_rgn)
    if not rgn then
       return
    end
