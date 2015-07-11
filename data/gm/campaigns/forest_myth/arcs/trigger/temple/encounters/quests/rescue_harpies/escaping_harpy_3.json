@@ -1,7 +1,7 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "create_mission",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge" : "escaping_harpy_3",
 
@@ -33,7 +33,7 @@
                },
                "attributes":
                {
-                  "raid_timeout_minutes" : 0,
+                  "raid_timeout_minutes"          : 1,
                   "raid_timeout_variance_minutes" : 0
                }
             }
