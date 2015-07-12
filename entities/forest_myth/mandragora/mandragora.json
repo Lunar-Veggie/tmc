@@ -2,7 +2,7 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:monster",
 
-   "init_script" : "file(mandragora_init.lua)",
+   "init_script" : "file(mandragora_init_script.lua)",
 
    "components":
    {
