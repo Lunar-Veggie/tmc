@@ -2,6 +2,8 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:monster",
 
+   "init_script" : "file(mandragora_init.lua)",
+
    "components":
    {
       "render_info":
@@ -74,6 +76,15 @@
       {
          "min_avoidance_distance" : 16,
          "max_avoidance_distance" : 16
+      },
+
+      "stonehearth:destroyed_loot_table":
+      {
+         "items":
+         [
+            { "uri" : "tmc:resources:mandrake_leaves", "weight" : 4 },
+            { "uri" : "tmc:resources:mandrake_root",   "weight" : 2 }
+         ]
       }
    }
 }

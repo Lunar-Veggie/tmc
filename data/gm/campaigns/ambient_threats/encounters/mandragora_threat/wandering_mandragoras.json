@@ -1,7 +1,7 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "script",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge" : "wandering_mandragoras",
 
@@ -22,19 +22,6 @@
          {
             "min" : 1,
             "max" : 2
-         },
-
-         "equipment":
-         {
-            "weapon" : [ "tmc:forest:mandragora:voice" ]
-         },
-         "loot_drops":
-         {
-            "items":
-            [
-               { "uri" : "tmc:resources:mandrake_leaves", "weight" : 3 },
-               { "uri" : "tmc:resources:mandrake_root",   "weight" : 1 }
-            ]
          }
       }
    }
