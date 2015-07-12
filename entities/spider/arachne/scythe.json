@@ -1,6 +1,5 @@
 {
-   "type"   : "entity",
-   "mixins" : "stonehearth:mixins:item_properties",
+   "type" : "entity",
 
    "components":
    {
@@ -10,17 +9,6 @@
          {
             "models": [ "file(scythe.qb)" ]
          }
-      },
-
-      "unit_info":
-      {
-         "name"        : "Huge Scythe",
-         "description" : "Arachne's choice of weapon"
-      },
-
-      "stonehearth:material":
-      {
-         "tags" : "melee_weapon"
       },
 
       "stonehearth:equipment_piece":

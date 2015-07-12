@@ -1,15 +1,8 @@
 {
-   "type"   : "entity",
-   "mixins" : "stonehearth:mixins:item_properties",
+   "type" : "entity",
 
    "components":
    {
-      "unit_info":
-      {
-         "name"        : "The voice of the Mandragora",
-         "description" : ""
-      },
-
       "stonehearth:equipment_piece":
       {
          "slot"   : "mainhand",
@@ -25,7 +18,6 @@
          "base_damage" : 13,
          "reach"       : 1.0
       },
-
       "stonehearth:combat:melee_attacks":
       [
          {
@@ -35,6 +27,7 @@
             "priority"     : 1
          }
       ],
+
       "stonehearth:combat:melee_defenses":
       [
          {

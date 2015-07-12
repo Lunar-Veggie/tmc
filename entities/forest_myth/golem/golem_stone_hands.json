@@ -1,16 +1,8 @@
 {
-   "type"   : "entity",
-   "mixins" : "stonehearth:mixins:item_properties",
+   "type" : "entity",
 
    "components":
    {
-      "unit_info":
-      {
-         "name"        : "Golem's Stone Hands",
-         "description" : "Use to bring some hard fisticuffing",
-         "icon"        : "file(hand.png)"
-      },
-
       "stonehearth:equipment_piece":
       {
          "slot"   : "mainhand",
