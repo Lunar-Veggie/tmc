@@ -25,31 +25,7 @@
             "range"    : 10
          },
 
-         "combat_leash_range" : 40,
-
-         "equipment":
-         {
-            "weapon" : [ "tmc:forest:golem:stone_hands" ]
-         },
-
-         "loot_drops":
-         {
-            "num_rolls":
-            {
-               "min" : 2,
-               "max" : 3
-            },
-            "items":
-            [
-               { "uri" : "stonehearth:resources:stone:hunk_of_stone", "weight" : 10 },
-               { "uri" : "stonehearth:resources:coal:lump_of_coal",   "weight" : 1 },
-               { "uri" : "stonehearth:resources:copper:ore",          "weight" : 1 },
-               { "uri" : "stonehearth:resources:tin:ore",             "weight" : 1 },
-               { "uri" : "stonehearth:resources:iron:ore",            "weight" : 1 },
-               { "uri" : "stonehearth:resources:silver:ore",          "weight" : 1 },
-               { "uri" : "stonehearth:resources:gold:ore",            "weight" : 1 }
-            ]
-         }
+         "combat_leash_range" : 40
       }
    }
 }

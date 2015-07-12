@@ -2,6 +2,8 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:monster",
 
+   "init_script" : "file(golem_init_script.lua)",
+
    "components":
    {
       "render_info":
@@ -65,6 +67,25 @@
       {
          "min_avoidance_distance" : 16,
          "max_avoidance_distance" : 16
+      },
+
+      "stonehearth:destroyed_loot_table":
+      {
+         "num_rolls":
+         {
+            "min" : 2,
+            "max" : 3
+         },
+         "items":
+         [
+            { "uri" : "stonehearth:resources:stone:hunk_of_stone", "weight" : 10 },
+            { "uri" : "stonehearth:resources:coal:lump_of_coal",   "weight" : 1 },
+            { "uri" : "stonehearth:resources:copper:ore",          "weight" : 1 },
+            { "uri" : "stonehearth:resources:tin:ore",             "weight" : 1 },
+            { "uri" : "stonehearth:resources:iron:ore",            "weight" : 1 },
+            { "uri" : "stonehearth:resources:silver:ore",          "weight" : 1 },
+            { "uri" : "stonehearth:resources:gold:ore",            "weight" : 1 }
+         ]
       }
    }
 }
