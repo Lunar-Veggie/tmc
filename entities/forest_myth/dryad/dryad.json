@@ -40,11 +40,6 @@
 
       "stonehearth:equipment" : {},
 
-      "stonehearth:equipment_piece":
-      {
-         "render_type" : "merge_with_model"
-      },
-
       "stonehearth:material":
       {
          "tags" : "meat"
