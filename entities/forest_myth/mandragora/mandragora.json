@@ -18,10 +18,6 @@
             "models" : [ "file(mandragora.qb)" ]
          }
       },
-      "stonehearth:equipment_piece":
-      {
-         "render_type" : "merge_with_model"
-      },
 
       "unit_info":
       {
