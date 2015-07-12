@@ -2,6 +2,8 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:monster",
 
+   "init_script" : "file(harpy_init_script.lua)",
+
    "components":
    {
       "unit_info":
@@ -73,6 +75,22 @@
       {
          "min_avoidance_distance" : 16,
          "max_avoidance_distance" : 16
+      },
+
+      "stonehearth:destroyed_loot_table":
+      {
+         "num_rolls":
+         {
+            "min" : 0,
+            "max" : 1
+         },
+         "items":
+         [
+            { "uri" : "stonehearth:rabbit_jerky",   "weight" : 3 },
+            { "uri" : "stonehearth:squirrel_jerky", "weight" : 3 },
+            { "uri" : "stonehearth:racoon_jerky",   "weight" : 3 },
+            { "uri" : "stonehearth:red_fox_jerky",  "weight" : 3 }
+         ]
       }
    }
 }
