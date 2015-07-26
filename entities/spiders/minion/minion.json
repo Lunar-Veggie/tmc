@@ -1,0 +1,68 @@
+{
+   "type"   : "entity",
+   "mixins" : "stonehearth:mixins:monster",
+
+   "components":
+   {
+      "render_info":
+      {
+         "animation_table" : "tmc:skeletons:spiders:minion",
+         "scale"           : 0.095
+      },
+
+      "model_variants":
+      {
+         "default":
+         {
+            "models" : [ "file(minion.qb)" ]
+         }
+      },
+
+      "unit_info":
+      {
+         "name"        : "Spider Minion",
+         "description" : "Children of the queen spider"
+      },
+
+      "stonehearth:material":
+      {
+         "tags" : "meat"
+      },
+
+      "stonehearth:attributes":
+      {
+         "max_health":
+         {
+            "type"  : "basic",
+            "value" : 60
+         },
+         "health":
+         {
+            "type"     : "variable",
+            "equation" : "max_health"
+         },
+         "speed":
+         {
+            "type"  : "basic",
+            "value" : 50
+         },
+         "menace":
+         {
+            "type"  : "basic",
+            "value" : 100
+         }
+      }
+   },
+
+   "entity_data":
+   {
+      "stonehearth:entity_radius" : 0.75,
+      "stonehearth:entity_reach"  : 1.0,
+
+      "stonehearth:observers:avoid_threatening_entities":
+      {
+         "min_avoidance_distance" : 16,
+         "max_avoidance_distance" : 16
+      }
+   }
+}
