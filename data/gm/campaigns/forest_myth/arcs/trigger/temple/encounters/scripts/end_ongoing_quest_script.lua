@@ -1,6 +1,8 @@
 --[[
-This code were taken from Team Radient from their file destroy_entity_encounter.lua,
+This code were taken from Team Radient from their file "destroy_entity_encounter.lua",
 there are only a few changes made to reflect what was needed for this mod.
+
+The difference here is that we're also triggering the event which ends any ongoing quest.
 --]]
 
 local Entity = _radiant.om.Entity
@@ -46,7 +48,7 @@ function DestroyEntityCustom:start(ctx, info)
 end
 
 function DestroyEntityCustom:_delete_everything(ctx, info)
-   radiant.events.trigger(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', {dryad_death=false})
+   radiant.events.trigger(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', {successful = false})
 
    for i,entity_name in ipairs(info.target_entities) do
       local delete_target = ctx:get(entity_name)

@@ -6,7 +6,7 @@
 
    "script_info":
    {
-      "script" : "file(scripts/destroy_entity_custom.lua)",
+      "script" : "file(scripts/end_ongoing_quest_script.lua)",
       "data":
       {
          "target_entities" : [ "quest_data" ],
