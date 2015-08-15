@@ -7,7 +7,7 @@
 
    "script_info":
    {
-      "script" : "file(scripts/wait_custom.lua)",
+      "script" : "file(scripts/wait_to_issue_quest_script.lua)",
       "data":
       {
          "duration" : "2d",

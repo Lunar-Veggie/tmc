@@ -1,12 +1,15 @@
 --[[
 This code were taken from Team Radient from their file "wait_encounter.lua",
 there are only a few changes made to reflect what was needed for this mod.
+
+The difference here is that we're listening in on the dryad;
+if she dies then this stops prematurely.
 --]]
 
-local WaitCustom = class()
+local WaitToIssueQuest = class()
 
-function WaitCustom:activate()
-   self._log = radiant.log.create_logger('game_master_encounter')
+function WaitToIssueQuest:activate()
+   self._log = radiant.log.create_logger('game_master.encounter.wait_to_issue_quest')
 
    if self._sv.timer then
       self._sv.timer:bind(
@@ -14,12 +17,13 @@ function WaitCustom:activate()
             self:_timer_callback()
          end)
 
-      self._quest_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self.stop)
+      self._kill_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self.stop)
    end
 end
 
-function WaitCustom:start(ctx, info)
+function WaitToIssueQuest:start(ctx, info)
    assert(info.duration)
+
    local timeout  = info.duration
    local override = radiant.util.get_config('game_master.encounters.wait.duration')
 
@@ -33,13 +37,13 @@ function WaitCustom:start(ctx, info)
    self._sv.info  = info
    self._sv.timer = stonehearth.calendar:set_timer("WaitEncounterCustom wait timer", timeout, radiant.bind(self, '_timer_callback'))
 
-   self._quest_listener = radiant.events.listen(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_done)
+   self._kill_listener = radiant.events.listen(ctx.forest_temple.boss, 'stonehearth:kill_event', self, self.stop)
 
    self._log:spam('Wait Encounter Custom: %s will expire at %s which is in %s', ctx.encounter_name, self._sv.timer:get_expire_time(), stonehearth.calendar:format_remaining_time(self._sv.timer))
    self._log:spam('It is currently %s', stonehearth.calendar:format_time())
 end
 
-function WaitCustom:_timer_callback()
+function WaitToIssueQuest:_timer_callback()
    local ctx  = self._sv.ctx
 
    if self._sv.timer then
@@ -66,10 +70,10 @@ function WaitCustom:_timer_callback()
    end
 end
 
-function WaitCustom:stop()
-   if self._quest_listener then
-      self._quest_listener:destroy()
-      self._quest_listener = nil
+function WaitToIssueQuest:stop()
+   if self._kill_listener then
+      self._kill_listener:destroy()
+      self._kill_listener = nil
    end
    if self._sv.timer then
       self._sv.timer:destroy()
@@ -78,33 +82,4 @@ function WaitCustom:stop()
    end
 end
 
-function WaitCustom:_quest_done(args)
-   if args.dryad_death then
-      self:stop()
-   end
-end
-
-function WaitCustom:get_progress_cmd(session, response)
-   local progress = {}
-   if self._sv.timer then
-      progress.time_left = stonehearth.calendar:format_remaining_time(self._sv.timer)
-   end
-   return progress;
-end
-
-function WaitCustom:trigger_now_cmd(session, response)
-   local ctx = self._sv.ctx
-   self._log:info('triggering now as requested by ui')
-
-   if self._sv.timer then
-      self._sv.timer:destroy()
-      self._sv.timer = nil
-      self.__saved_variables:mark_changed()
-   end
-
-   ctx.arc:trigger_next_encounter(ctx)
-
-   return true
-end
-
-return WaitCustom
+return WaitToIssueQuest
