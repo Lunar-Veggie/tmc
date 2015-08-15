@@ -100,13 +100,11 @@
          "packs":
          [
             "stonehearth:ai_pack:combat",
-            "stonehearth:ai_pack:upgrade_equipment",
             "stonehearth:ai_pack:health",
             "stonehearth:ai_pack:death",
             "stonehearth:ai_pack:idle",
-            "stonehearth:ai_pack:idle:bored:look_around",
+            "stonehearth:ai_pack:idle:bored:idle_effects",
             "stonehearth:ai_pack:idle:bored:wander",
-            "stonehearth:ai_pack:idle:bored:sway",
 
             "tmc:ai_pack:sleeping"
          ]
@@ -116,6 +114,23 @@
       {
          "min_avoidance_distance" : 16,
          "max_avoidance_distance" : 16
+      },
+
+      "stonehearth:idle_effects" : {
+         "effects" : [
+            {
+               "name" : "idle_breathe",
+               "weight" : 5
+            },
+            {
+               "name" : "idle_look_around",
+               "weight" : 2
+            },
+            {
+               "name" : "idle_sway",
+               "weight" : 2
+            }
+         ]
       }
    }
 }
