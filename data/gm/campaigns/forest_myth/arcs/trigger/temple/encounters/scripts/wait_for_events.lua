@@ -1,6 +1,8 @@
 --[[
-This code were taken from Team Radient from their file wait_for_event_encounter.lua,
+This code were taken from Team Radient from their file "wait_for_event_encounter.lua",
 there are only a few changes made to reflect what was needed for this mod.
+
+The difference here is that we're waiting for multiple events to trigger rather then just one.
 --]]
 
 local WaitForEvents = class()
@@ -56,7 +58,7 @@ function WaitForEvents:_listen_for_events()
       table.insert(self._listeners, radiant.events.listen(source, event, self, self._event_sprung))
    end
 
-   self._quest_listener = radiant.events.listen(self._sv.ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_done)
+   self._kill_listener = radiant.events.listen(self._sv.ctx.forest_temple.boss, 'stonehearth:kill_event', self, self.stop)
 end
 
 function WaitForEvents:_event_sprung()
@@ -90,15 +92,9 @@ function WaitForEvents:stop()
          self._listeners[id] = nil
       end
    end
-   if self._quest_listener then
-      self._quest_listener:destroy()
-      self._quest_listener = nil
-   end
-end
-
-function WaitForEvents:_quest_done(args)
-   if args.dryad_death then
-      self:stop()
+   if self._kill_listener then
+      self._kill_listener:destroy()
+      self._kill_listener = nil
    end
 end
 
