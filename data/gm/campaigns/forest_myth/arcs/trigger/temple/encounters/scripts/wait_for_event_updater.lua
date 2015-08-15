@@ -1,6 +1,9 @@
 --[[
-This code were taken from Team Radient from their file wait_for_event_encounter.lua,
+This code were taken from Team Radient from their file "wait_for_event_encounter.lua",
 there are only a few changes made to reflect what was needed for this mod.
+
+The difference here is that the ctx is updated to contain the camps created
+for future quests.
 --]]
 
 local WaitForEventUpdater = class()

@@ -1,6 +1,9 @@
 --[[
-This code were taken from Team Radient from their file create_camp_encounter.lua,
+This code were taken from Team Radient from their file "create_camp_encounter.lua",
 there are only a few changes made to reflect what was needed for this mod.
+
+The difference here is that we now create a camp relative to another camp
+instead of relative to the player's location.
 --]]
 
 local build_util       = radiant.mods.require('stonehearth.lib.build_util')
