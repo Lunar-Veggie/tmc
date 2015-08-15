@@ -12,7 +12,7 @@
          "sources" : [ "goblin_raiding_camp.boss" ],
          "event"   : "radiant:entity:pre_destroy",
 
-         "out_edge" : [ "goblin_raiders_success_dialog", "destroy_goblin_raiders_stockpiles" ]
+         "out_edge" : [ "goblin_raiders_success_dialog", "destroy_goblin_raiders_stockpiles", "destroy_goblin_raiders_misc" ]
       }
    }
 }

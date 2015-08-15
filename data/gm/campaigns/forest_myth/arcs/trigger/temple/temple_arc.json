@@ -22,6 +22,7 @@
       "goblin raid"                       : "file(encounters/quests/fight_off_goblin_raiders/goblin_raid.json)",
       "wait for goblin boss death"        : "file(encounters/quests/fight_off_goblin_raiders/wait_for_goblin_boss_death.json)",
       "destroy goblin raiders stockpiles" : "file(encounters/quests/fight_off_goblin_raiders/destroy_stockpiles.json)",
+      "destroy goblin raiders misc"       : "file(encounters/quests/fight_off_goblin_raiders/destroy_misc.json)",
       "goblin raiders success dialog"     : "file(encounters/quests/fight_off_goblin_raiders/goblin_raiders_success_dialog.json)",
 
       "rescue harpies quest"                  : "file(encounters/quests/rescue_harpies/rescue_harpies_quest.json)",
