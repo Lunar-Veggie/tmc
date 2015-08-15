@@ -5,7 +5,7 @@ function RescueHarpiesQuest:initialize()
 end
 
 function RescueHarpiesQuest:restore()
-   self._sv.quest_complete_listener = radiant.events.listen_once(self._sv.ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_finished)
+   self._quest_complete_listener = radiant.events.listen_once(self._sv.ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_finished)
 end
 
 function RescueHarpiesQuest:start(ctx, data)
@@ -17,9 +17,16 @@ function RescueHarpiesQuest:start(ctx, data)
    stonehearth.player:set_amenity(data.captives_player_id, data.npc_player_id, 'neutral')
    stonehearth.player:set_amenity(data.captives_player_id, ctx.player_id,      'neutral')
 
-   self._sv.quest_complete_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_finished)
+   self._quest_complete_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_finished)
 
    self.__saved_variables:mark_changed()
+end
+
+function RescueHarpiesQuest:stop()
+   if self._quest_complete_listener then
+      self._quest_complete_listener:destroy()
+      self._quest_complete_listener = nil
+   end
 end
 
 function RescueHarpiesQuest:_get_amenity(player_id_a, player_id_b)

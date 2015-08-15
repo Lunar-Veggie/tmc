@@ -15,6 +15,13 @@ function GoblinRaidersQuest:start(ctx, data)
    self._quest_complete_listener = radiant.events.listen_once(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', self, self._quest_finished)
 end
 
+function GoblinRaidersQuest:stop()
+   if self._quest_complete_listener then
+      self._quest_complete_listener:destroy()
+      self._quest_complete_listener = nil
+   end
+end
+
 function GoblinRaidersQuest:_quest_finished(args)
    if args.successful then
       self:_get_rewards(self._sv.quest_data.rewards)
