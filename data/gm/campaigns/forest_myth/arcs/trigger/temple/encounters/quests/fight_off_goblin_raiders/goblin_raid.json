@@ -43,7 +43,7 @@
                },
                "equipment":
                {
-                  "weapon"    : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul" ],
+                  "weapon"    : [ "stonehearth:weapons:jagged_cleaver" ],
                   "armor"     : [ "stonehearth:monsters:goblins:outfits:footman" ],
                   "abilities" : "stonehearth:abilities:wolf_rider_abilities"
                },
