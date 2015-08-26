@@ -18,6 +18,7 @@
       "fight off goblin raiders quest"    : "file(encounters/quests/fight_off_goblin_raiders/fight_off_goblin_raiders_quest.json)",
       "fight off goblin raiders dialog"   : "file(encounters/quests/fight_off_goblin_raiders/fight_off_goblin_raiders_dialog.json)",
       "create goblin raiding camp"        : "file(encounters/quests/fight_off_goblin_raiders/create_goblin_raiding_camp.json)",
+      "wait to spawn goblins"             : "file(encounters/quests/fight_off_goblin_raiders/wait_to_spawn_goblins.json)",
       "spawn goblin raiders"              : "file(encounters/quests/fight_off_goblin_raiders/spawn_goblin_raiders.json)",
       "goblin raid"                       : "file(encounters/quests/fight_off_goblin_raiders/goblin_raid.json)",
       "wait for goblin boss death"        : "file(encounters/quests/fight_off_goblin_raiders/wait_for_goblin_boss_death.json)",

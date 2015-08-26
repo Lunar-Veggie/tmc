@@ -1,0 +1,12 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "wait",
+
+   "in_edge"  : "wait_to_spawn_goblins",
+   "out_edge" : "spawn_goblin_raiders",
+
+   "wait_info":
+   {
+      "duration" : "9h+5h"
+   }
+}

@@ -10,7 +10,7 @@
       "script" : "file(../../scripts/create_camp_custom.lua)",
       "data":
       {
-         "out_edge" : [ "spawn_goblin_raiders", "wait_for_goblin_boss_death" ],
+         "out_edge" : [ "wait_to_spawn_goblins", "wait_for_goblin_boss_death" ],
 
          "npc_player_id"                : "goblins",
          "amenity_with_player"          : "hostile",
@@ -20,7 +20,7 @@
          "radius"     : 6,
          "keep_grass" : true,
 
-         "spawn_range"         : { "min" : 70, "max" : 100 },
+         "spawn_range"         : { "min" : 100, "max" : 150 },
          "player_min_distance" : 170,
 
          "boss":
