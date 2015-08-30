@@ -63,6 +63,14 @@
       "stonehearth:entity_radius" : 1.8,
       "stonehearth:entity_reach"  : 2.2,
 
+      "stonehearth:ai_packs":
+      {
+         "packs":
+         [
+            "tmc:ai_pack:regen"
+         ]
+      },
+
       "stonehearth:observers:avoid_threatening_entities":
       {
          "min_avoidance_distance" : 16,
