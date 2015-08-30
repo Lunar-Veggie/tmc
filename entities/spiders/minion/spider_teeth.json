@@ -1,0 +1,31 @@
+{
+   "type" : "entity",
+
+   "components":
+   {
+      "stonehearth:equipment_piece":
+      {
+         "slot"   : "mainhand",
+         "ilevel" : 0,
+         "roles"  : "combat"
+      }
+   },
+
+   "entity_data":
+   {
+      "stonehearth:combat:weapon_data":
+      {
+         "base_damage" : 7,
+         "reach"       : 1.5
+      },
+      "stonehearth:combat:melee_attacks":
+      [
+         {
+            "name"         : "attack_pounce",
+            "active_frame" : 18,
+            "cooldown"     : 2300,
+            "priority"     : 1
+         }
+      ],
+   }
+}

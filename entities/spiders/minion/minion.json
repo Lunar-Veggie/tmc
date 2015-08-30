@@ -2,6 +2,8 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:monster",
 
+   "init_script" : "file(minion_init_script.lua)",
+
    "components":
    {
       "render_info":
