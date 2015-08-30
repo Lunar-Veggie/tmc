@@ -3,7 +3,5 @@
    "kingdom_id"   : "tmc_wild_creatures",
    "amenity_to_strangers" : "hostile",
 
-   "roles" : {},
-
-   "task_groups" : {}
+   "roles" : {}
 }

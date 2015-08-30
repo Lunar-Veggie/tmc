@@ -46,23 +46,5 @@
             ]
          }
       }
-   },
-
-   "town_pieces":
-   {
-      "optional_prefix":
-      [
-         "Nope, "
-      ],
-      "town_name":
-      [
-         "Nah"
-      ],
-      "suffix":
-      [
-         ", Don't think so"
-      ]
-   },
-
-   "task_groups" : {}
+   }
 }
