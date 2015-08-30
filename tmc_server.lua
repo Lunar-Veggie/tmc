@@ -1,4 +1,4 @@
-tmc = {}
+tmc = {constants = require('constants')}
 local tmc_campaigns = {{type='mythologies', has_combat=true}}
 
 local function start_campaign(campaign)
