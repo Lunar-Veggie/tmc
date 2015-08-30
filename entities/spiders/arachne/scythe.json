@@ -26,6 +26,15 @@
       {
          "base_damage" : 20,
          "reach"       : 2.0
-      }
+      },
+      "stonehearth:combat:melee_attacks":
+      [
+         {
+            "name"         : "attack_swing",
+            "active_frame" : 25,
+            "cooldown"     : 2700,
+            "priority"     : 1
+         }
+      ]
    }
 }
