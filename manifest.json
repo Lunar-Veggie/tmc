@@ -60,6 +60,7 @@
       "actions:sleep_on_ground_naturally" : "file(ai/actions/sleep_on_ground_naturally_action.lua)",
 
       "ai_pack:sleeping" : "file(ai/packs/sleeping_ai_pack.json)",
+      "ai_pack:regen"    : "file(ai/packs/regen_ai_pack.json)",
 
       "buffs:guardian:def_1" : "file(jobs/guardian/guardian_buffs/defense_1_buff.json)",
       "buffs:guardian:dmg_1" : "file(jobs/guardian/guardian_buffs/damage_1_buff.json)",
@@ -80,6 +81,8 @@
    {
       "class:guardian" : "file(jobs/guardian/guardian.lua)",
       "class:spirit"   : "file(jobs/spirit/spirit.lua)",
+
+      "observers:regen" : "file(ai/observers/regen_observer.lua)",
 
       "util:choose_location_outside_camp" : "file(util/choose_location_outside_camp.lua)"
    },
