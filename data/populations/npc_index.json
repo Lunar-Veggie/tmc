@@ -7,6 +7,10 @@
    {
       "kingdom" : "tmc:kingdoms:air_myth"
    },
+   "spider_myth":
+   {
+      "kingdom" : "tmc:kingdoms:spider_myth"
+   },
    "tmc_wild_creatures":
    {
       "kingdom" : "tmc:kingdoms:wild_creatures"

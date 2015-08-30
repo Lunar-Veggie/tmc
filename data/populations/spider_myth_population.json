@@ -1,0 +1,23 @@
+{
+   "kingdom_name" : "Spider myth",
+   "kingdom_id"   : "spider_myth",
+   "amenity_to_strangers" : "hostile",
+
+   "roles":
+   {
+      "arachne":
+      {
+         "male":
+         {
+            "uri" : [ "ambient_gm_mod:spiders:arachne" ]
+         }
+      },
+      "minion":
+      {
+         "male":
+         {
+            "uri" : [ "ambient_gm_mod:spiders:minion" ]
+         }
+      }
+   }
+}

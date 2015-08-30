@@ -12,6 +12,7 @@
    {
       "kingdoms:forest_myth"    : "file(data/populations/forest_myth_population.json)",
       "kingdoms:air_myth"       : "file(data/populations/air_myth_population.json)",
+      "kingdoms:spider_myth"    : "file(data/populations/spider_myth_population.json)",
       "kingdoms:wild_creatures" : "file(data/populations/tmc_wild_creatures.json)",
 
       "amenities" : "file(data/amenities.json)",
@@ -87,7 +88,7 @@
    {
       "stonehearth/jobs/weaver/recipes/recipes.json" : "file(jobs/weaver/recipes/recipes.json)",
 
-      "stonehearth/data/npc_index.json"   : "file(data/npc_index.json)",
+      "stonehearth/data/npc_index.json"   : "file(data/populations/npc_index.json)",
       "stonehearth/data/gm/gm_index.json" : "file(data/gm/gm_index.json)",
 
       "stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json"               : "file(data/gm/campaigns/ambient_threats/ambient_threats_arc.json)",
