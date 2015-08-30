@@ -26,7 +26,7 @@
       "air:harpy:talons" : "file(entities/air_myth/harpy/harpy_talons.json)",
 
       "spiders:minion"         : "file(entities/spiders/minion)",
-      "spiders:minion:teeth"   : "file(entities/spiders/minion)",
+      "spiders:minion:teeth"   : "file(entities/spiders/minion/spider_teeth.json)",
       "spiders:arachne"        : "file(entities/spiders/arachne)",
       "spiders:arachne:scythe" : "file(entities/spiders/arachne/scythe.json)",
 
