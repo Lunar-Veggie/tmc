@@ -15,7 +15,6 @@
       {
          "slot"        : "mainhand",
          "render_type" : "attach_to_bone",
-         "ilevel"      : 0,
          "roles"       : "combat"
       }
    },

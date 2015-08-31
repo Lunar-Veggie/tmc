@@ -5,9 +5,8 @@
    {
       "stonehearth:equipment_piece":
       {
-         "slot"   : "mainhand",
-         "ilevel" : 0,
-         "roles"  : "combat"
+         "slot"  : "mainhand",
+         "roles" : "combat"
       }
    },
 
