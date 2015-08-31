@@ -5,9 +5,8 @@
    {
       "stonehearth:equipment_piece":
       {
-         "slot"   : "mainhand",
-         "ilevel" : 0,
-         "roles"  : "combat"
+         "slot"  : "mainhand",
+         "roles" : "combat"
       }
    },
 
@@ -50,14 +49,14 @@
 
       "stonehearth:combat:armor_data":
       {
-         "base_damage_reduction" : 7
+         "base_damage_reduction" : 12
       },
       "stonehearth:combat:melee_defenses":
       [
          {
             "name"         : "combat_block",
             "active_frame" : 18,
-            "cooldown"     : 1000,
+            "cooldown"     : 8000,
             "priority"     : 0
          }
       ]
