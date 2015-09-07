@@ -50,6 +50,11 @@
             "type"  : "basic",
             "value" : 20
          },
+         "courage":
+         {
+            "type"  : "basic",
+            "value" : 99999
+         },
          "menace":
          {
             "type"  : "basic",
