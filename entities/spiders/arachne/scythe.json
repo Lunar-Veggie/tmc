@@ -34,6 +34,16 @@
             "cooldown"     : 2700,
             "priority"     : 1
          }
+      ],
+
+      "stonehearth:combat:melee_defenses":
+      [
+         {
+            "name"         : "combat_dodge",
+            "active_frame" : 8,
+            "cooldown"     : 7000,
+            "priority"     : 1
+         }
       ]
    }
 }

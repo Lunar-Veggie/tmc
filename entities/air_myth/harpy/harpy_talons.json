@@ -35,7 +35,7 @@
       [
          {
             "name"         : "combat_dodge",
-            "active_frame" : 17,
+            "active_frame" : 8,
             "cooldown"     : 7000,
             "priority"     : 1
          }
