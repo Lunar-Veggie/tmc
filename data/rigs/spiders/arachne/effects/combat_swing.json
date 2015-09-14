@@ -7,7 +7,7 @@
       {
          "type"       : "animation_effect",
          "start_time" : 0,
-         "animation"  : "attack_swing.json",
+         "animation"  : "combat_swing.json",
          "loop"       : false
       }
    }
