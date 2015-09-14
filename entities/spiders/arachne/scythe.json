@@ -29,7 +29,7 @@
       "stonehearth:combat:melee_attacks":
       [
          {
-            "name"         : "attack_swing",
+            "name"         : "combat_swing",
             "active_frame" : 25,
             "cooldown"     : 2700,
             "priority"     : 1
