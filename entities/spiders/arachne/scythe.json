@@ -39,7 +39,7 @@
       "stonehearth:combat:melee_defenses":
       [
          {
-            "name"         : "combat_dodge",
+            "name"         : "combat_block",
             "active_frame" : 8,
             "cooldown"     : 7000,
             "priority"     : 1
