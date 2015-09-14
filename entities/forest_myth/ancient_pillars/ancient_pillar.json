@@ -17,6 +17,7 @@
       {
          "model_origin" : { "x" : -0.5, "y" : 0, "z" : 0.5 }
       },
+
       "region_collision_shape":
       {
          "region":
@@ -26,6 +27,20 @@
                "max" : { "x" :  3, "y" : 10, "z" :  4 }
             }
          ]
+      },
+
+      "stonehearth:attributes":
+      {
+         "max_health":
+         {
+            "type"  : "basic",
+            "value" : 250
+         },
+         "health":
+         {
+            "type"     : "variable",
+            "equation" : "max_health"
+         }
       },
 
       "tmc:soul_keeper" : {}
