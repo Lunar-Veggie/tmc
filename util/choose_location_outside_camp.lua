@@ -3,7 +3,7 @@ This code were taken from Team Radient from their file choose_location_outside_t
 there are only a few changes made to reflect what was needed for this mod.
 --]]
 
-local rng                       = _radiant.csg.get_default_rng()
+local rng                       = _radiant.math.get_default_rng()
 local Point3                    = _radiant.csg.Point3
 local Cube3                     = _radiant.csg.Cube3
 local Region2                   = _radiant.csg.Region2

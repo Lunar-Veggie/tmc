@@ -1,4 +1,4 @@
-local rng = _radiant.csg.get_default_rng()
+local rng = _radiant.math.get_default_rng()
 local Point3 = _radiant.csg.Point3
 local SpawnMandragoras = class()
 

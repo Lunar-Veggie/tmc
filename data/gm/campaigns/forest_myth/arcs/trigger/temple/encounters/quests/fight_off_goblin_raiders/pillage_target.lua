@@ -1,5 +1,5 @@
 local Point3 = _radiant.csg.Point3
-local rng = _radiant.csg.get_default_rng()
+local rng = _radiant.math.get_default_rng()
 local Mission = radiant.mods.require('stonehearth.services.server.game_master.controllers.missions.mission')
 local PillageTarget = class()
 radiant.mixin(PillageTarget, Mission)

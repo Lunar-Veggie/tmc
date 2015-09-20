@@ -6,7 +6,7 @@ The difference here is that we're also triggering the event which ends any ongoi
 --]]
 
 local Entity = _radiant.om.Entity
-local rng    = _radiant.csg.get_default_rng()
+local rng    = _radiant.math.get_default_rng()
 local DestroyEntityCustom = class()
 
 function DestroyEntityCustom:restore()
