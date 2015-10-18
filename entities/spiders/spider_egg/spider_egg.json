@@ -1,18 +1,17 @@
 {
    "type"   : "entity",
-   "mixins" : "stonehearth:mixins:destructable_object",
+   "mixins" : "stonehearth:mixins:monster",
+
+   "init_script" : "file(minion_init_script.lua)",
 
    "components":
    {
-      "unit_info":
-      {
-         "name"        : "Giant Spider Eggs",
-         "description" : "Eeewww; it Wiggles!"
-      },
       "render_info":
       {
-         "scale" : 0.1
+         "animation_table" : "tmc:skeletons:spiders:spider_egg",
+         "scale"           : 0.1
       },
+
       "model_variants":
       {
          "default":
@@ -20,27 +19,52 @@
             "models" : [ "file(spider_egg.qb)" ]
          }
       },
-      "region_collision_shape":
+
+      "unit_info":
       {
-         "region":
-         [
-            {
-               "min" : { "x" : -1, "y" : 0, "z" : -1 },
-               "max" : { "x" :  0, "y" : 3, "z" :  1 }
-            },
-            {
-               "min" : { "x" :  0, "y" : 0, "z" : -1 },
-               "max" : { "x" :  2, "y" : 3, "z" :  0 }
-            },
-            {
-               "min" : { "x" :  1, "y" : 0, "z" :  0 },
-               "max" : { "x" :  2, "y" : 3, "z" :  2 }
-            },
-            {
-               "min" : { "x" : -1, "y" : 0, "z" :  1 },
-               "max" : { "x" :  1, "y" : 3, "z" :  2 }
-            }
-         ]
+         "name"        : "Spider Egg",
+         "description" : "A Giant Spider Egg"
+      },
+
+      "stonehearth:material":
+      {
+         "tags" : "meat"
+      },
+
+      "stonehearth:attributes":
+      {
+         "max_health":
+         {
+            "type"  : "basic",
+            "value" : 60
+         },
+         "health":
+         {
+            "type"     : "variable",
+            "equation" : "max_health"
+         },
+         "speed":
+         {
+            "type"  : "basic",
+            "value" : 0
+         },
+         "menace":
+         {
+            "type"  : "basic",
+            "value" : 100
+         }
+      }
+   },
+
+   "entity_data":
+   {
+      "stonehearth:entity_radius" : 0.75,
+      "stonehearth:entity_reach"  : 1.0,
+
+      "stonehearth:observers:avoid_threatening_entities":
+      {
+         "min_avoidance_distance" : 16,
+         "max_avoidance_distance" : 16
       }
    }
 }
