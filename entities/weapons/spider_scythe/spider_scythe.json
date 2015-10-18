@@ -1,0 +1,59 @@
+{
+   "mixins": "stonehearth:mixins:item_properties",
+   "type": "entity",
+   "components": {
+      "unit_info": {
+         "name": "Two Handed Sword",
+         "description": "The Giant Scythe, Weilded by Arachne herself!",
+         "icon" : "file(spider_scythe.png)"
+      },
+      "item" : {
+         "category" : "weapons"
+      },    
+      "stonehearth:material" : {
+         "tags" : "tmc special_weapon spider_weapon"
+      },
+      "model_variants": {
+         "default" : {
+            "models": [
+               "file(spider_scythe_equipped.qb)"
+            ]
+         }
+      },
+      "stonehearth:entity_forms" : {
+         "iconic_form" : "file(spider_scythe_iconic.json)"
+      },
+      "stonehearth:equipment_piece" : {
+         "slot" : "mainhand",
+         "render_type" : "attach_to_bone",
+         "postures" : [ "stonehearth:combat", "stonehearth:patrol" ],
+         "ilevel" : 15,
+         "roles" : "combat",
+         "equip_effect" : "/stonehearth/data/effects/weapon_level_up"
+      }
+   },
+   "entity_data" : {
+      "stonehearth:combat:weapon_data" : {
+         "base_damage" : 30,
+         "reach" : 2.8
+      },
+      "stonehearth:combat:melee_attacks" : [
+      {
+         "name" : "combat_2h_attack",
+         "active_frame" : 21,
+         "cooldown" : 0,
+         "priority" : 2
+      }      
+      ],
+      "stonehearth:net_worth" : {
+         "value_in_gold" : 250,
+         "rarity" : "common",
+         "shop_info" : {
+            "buyable" : false,   
+            "sellable" : true,
+            "shopkeeper_level" : 1,
+            "shopkeeper_type" : "caravan"
+         }
+      }
+   }
+}

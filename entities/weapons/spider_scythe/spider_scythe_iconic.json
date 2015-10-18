@@ -1,0 +1,24 @@
+{
+   "mixins": "stonehearth:mixins:item_properties",
+   "type": "entity",
+   "components": {
+      "unit_info": {
+         "name": "Two Handed Sword",
+         "description": "The Gicant Scythe, Weilded by Arachne herself!",
+         "icon" : "file(spider_scythe.png)"
+      },
+      "item" : {
+         "category" : "weapons"
+      },    
+      "stonehearth:material" : {
+         "tags" : "tmc special_weapon spider_weapon"
+      },
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(spider_scythe_iconic.qb)"
+            ]
+         }
+      }
+   }
+}

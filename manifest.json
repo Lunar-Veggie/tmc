@@ -30,6 +30,7 @@
       "spiders:minion:teeth"   : "file(entities/spiders/minion/spider_teeth.json)",
       "spiders:arachne"        : "file(entities/spiders/arachne)",
       "spiders:arachne:scythe" : "file(entities/spiders/arachne/scythe.json)",
+      "spiders:spider_egg"    : "file(entities/spiders/spider_egg/spider_egg.json)",
 
       "skeletons:golem"           : "file(data/rigs/golem)",
       "skeletons:mandragora"      : "file(data/rigs/mandragora)",
@@ -38,6 +39,8 @@
       "skeletons:spiders:minion"  : "file(data/rigs/spiders/minion)",
 
       "armor:forest_leather_vest" : "file(entities/armor/forest_leather_vest)",
+
+      "weapons:spider_scythe" : "file(entities/weapons/spider_scythe)",
 
       "resources:magical_forest_thread" : "file(entities/resources/magical_forest_thread)",
       "resources:harpy_feather"         : "file(entities/resources/harpy_feather)",
