@@ -37,6 +37,7 @@
       "skeletons:harpy"           : "file(data/rigs/harpy)",
       "skeletons:spiders:arachne" : "file(data/rigs/spiders/arachne)",
       "skeletons:spiders:minion"  : "file(data/rigs/spiders/minion)",
+      "skeletons:spiders:spider_egg"  : "file(data/rigs/spiders/spider_egg)",
 
       "armor:forest_leather_vest" : "file(entities/armor/forest_leather_vest)",
 
