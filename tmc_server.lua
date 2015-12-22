@@ -31,7 +31,10 @@ function tmc:_on_init()
    for _,campaign in pairs(tmc_campaigns) do
       start_campaign(campaign)
    end
+
    set_amenities(radiant.resources.load_json('tmc:kingdoms:amenities'))
+
+   radiant.log.write('tmc', 0, 'The Mythical Creatures mod successfully initiated')
 end
 
 radiant.events.listen_once(tmc, 'radiant:init', tmc, tmc._on_init)
