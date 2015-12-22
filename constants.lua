@@ -4,8 +4,8 @@ local constants =
    {
       work =
       {
-         SPIRITING = 1,
-         GUARDING  = 4,
+         SPIRIT_DUTIES = 1,
+         GUARDING      = 4
       }
    },
    regen =
