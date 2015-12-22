@@ -40,7 +40,7 @@ function WaitToIssueQuest:start(ctx, info)
    self._kill_listener = radiant.events.listen(ctx.forest_temple.boss, 'stonehearth:kill_event', self, self.stop)
 
    self._log:spam('Wait Encounter Custom: %s will expire at %s which is in %s', ctx.encounter_name, self._sv.timer:get_expire_time(), stonehearth.calendar:format_remaining_time(self._sv.timer))
-   self._log:spam('It is currently %s', stonehearth.calendar:format_time())
+   self._log:spam('It is currently %s', stonehearth.calendar:_debug_format_time())
 end
 
 function WaitToIssueQuest:_timer_callback()
@@ -51,7 +51,7 @@ function WaitToIssueQuest:_timer_callback()
       self._sv.timer = nil
    end
 
-   self._log:spam('Wait Encounter Custom: %s is now firing at %s', ctx.encounter_name, stonehearth.calendar:format_time())
+   self._log:spam('Wait Encounter Custom: %s is now firing at %s', ctx.encounter_name, stonehearth.calendar:_debug_format_time())
    self.__saved_variables:mark_changed()
 
    -- Continue with the campaign
