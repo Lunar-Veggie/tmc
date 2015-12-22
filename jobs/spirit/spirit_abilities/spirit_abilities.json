@@ -7,17 +7,19 @@
       {
          "injected_ai":
          {
-            "actions":
+            "ai_packs":
             [
-               "stonehearth:actions:combat:flee",
-               "stonehearth:actions:combat:cower",
-            ],
-            "observers":
-            [
-               "stonehearth:observers:combat_panic",
-               "stonehearth:observers:avoid_threatening_entities"
+               "stonehearth:ai_pack:wimpy",
+               "stonehearth:ai_pack:panic",
+               "stonehearth:ai_pack:panic:flee",
+               "stonehearth:ai_pack:panic:cower"
             ]
          }
       }
+   },
+
+   "entity_data":
+   {
+      "stonehearth:panic_threshold" : 0.75
    }
 }
