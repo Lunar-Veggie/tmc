@@ -28,7 +28,7 @@ Their scream attack stuns the target
 Gnome trader:
 
 [X] Garden Gnome (must happen!)
-[ ] Firtilizer (?)
+[ ] Fertilizer (?)
 [X] Grown food
 [ ] Different kinds of beer/alcohol/drink
 [ ] Alchemy stuff (like potions)
