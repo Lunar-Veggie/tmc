@@ -8,21 +8,20 @@
 
    "create_camp_info":
    {
-      "npc_player_id" : "forest_myth",
-      "amenity_with_player" : "neutral",
+      "npc_player_id"                : "forest_myth",
+      "amenity_with_player"          : "neutral",
       "ctx_entity_registration_path" : "forest_temple",
+      "script"                       : "file(forest_temple/forest_temple.lua)",
 
-      "radius"     : 20,
-      "keep_grass" : true,
-
+      "radius"      : 20,
+      "keep_grass"  : true,
       "spawn_range" : { "min" : 180, "max" : 220 },
 
       "boss":
       {
          "from_population":
          {
-            "role" : "dryad",
-            "job"  : "tmc:jobs:spirit",
+            "job"  : "tmc:jobs:npc:spirit",
             "location" : { "x" : 5, "z" : -8 }
          },
 
@@ -34,8 +33,6 @@
             "health"     : 70
          }
       },
-
-      "script" : "file(forest_temple/forest_temple.lua)",
 
       "pieces":
       {

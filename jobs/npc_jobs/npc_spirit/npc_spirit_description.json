@@ -1,0 +1,21 @@
+{
+   "type"           : "job",
+   "alias"          : "tmc:jobs:npc:spirit",
+   "controller"     : "tmc:class:npc:spirit",
+   "default_stance" : "defensive",
+   "roles"          : "spirit_job",
+   "abilities"      : "file(npc_spirit_abilities)",
+
+   "display_name"   : "Spirit",
+   "description"    : "Creature of the forest",
+   "requirements"   : "It's something you're born for",
+
+   "max_level" : 6,
+   "level_data":
+   {
+      "0":
+      {
+         "title" : "Spirit"
+      }
+   }
+}

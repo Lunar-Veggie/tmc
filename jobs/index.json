@@ -1,0 +1,13 @@
+{
+   "jobs":
+   {
+      "tmc:jobs:npc:spirit":
+      {
+         "description" : "tmc:jobs:npc:spirit"
+      },
+      "tmc:jobs:npc:guardian":
+      {
+         "description" : "tmc:jobs:npc:guardian"
+      }
+   }
+}

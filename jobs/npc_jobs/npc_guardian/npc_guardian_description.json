@@ -1,25 +1,20 @@
 {
-   "name"           : "Guardian",
-   "job_id"         : "guardian",
-   "alias"          : "tmc:jobs:guardian",
-   "controller"     : "tmc:class:guardian",
-   "description"    : "Dedicating its life in protecting something",
-   "requirements"   : "It's not something you can become; you have to be chosen for it",
+   "type"           : "job",
+   "alias"          : "tmc:jobs:npc:guardian",
+   "controller"     : "tmc:class:npc:guardian",
    "default_stance" : "aggressive",
+   "roles"          : "guardian_job combat",
+   "abilities"      : "file(npc_guardian_abilities)",
 
-   "abilities" : "file(guardian_abilities)",
+   "display_name"   : "Guardian",
+   "description"    : "Dedicating its life in protecting something",
+   "requirements"   : "A strong mind and something worth protecting",
 
-   "equipment" : {},
-
-   "roles" : "guardian_job combat",
-
+   "max_level" : 6,
    "xp_rewards":
    {
       "base_exp_per_hit" : 10
    },
-
-   "max_level" : 6,
-
    "level_data":
    {
       "1":

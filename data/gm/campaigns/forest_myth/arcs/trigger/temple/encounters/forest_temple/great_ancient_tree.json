@@ -18,7 +18,7 @@
          "from_population":
          {
             "role"     : "golem",
-            "job"      : "tmc:jobs:guardian",
+            "job"      : "tmc:jobs:npc:guardian",
             "min"      : 2,
             "max"      : 2,
             "location" : { "x" : 9, "z" : -5 },
