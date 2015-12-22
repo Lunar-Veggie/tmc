@@ -34,8 +34,8 @@
 
       "unit_info":
       {
-         "name"        : "A Dryad",
-         "description" : "A spirit of the forest"
+         "display_name" : "i18n(tmc:entities.forest_myth.mobs.dryad.display_name)",
+         "description"  : "i18n(tmc:entities.forest_myth.mobs.dryad.description)"
       },
 
       "stonehearth:equipment" : {},
@@ -77,15 +77,15 @@
 
       "stonehearth:job":
       {
-         "starting_level_title"              : "Apprentice __job_name__",
-         "default_level_title"               : "Level __level_number__ __job_name__",
-         "default_level_announcement"        : "__name__ has achieved __job_name__ Level __level_number__!",
+         "starting_level_title"              : "i18n(tmc:entities.forest_myth.mobs.dryad.job.starting_level_title)",
+         "default_level_title"               : "i18n(tmc:entities.forest_myth.mobs.dryad.job.default_level_title)",
+         "default_level_announcement"        : "i18n(tmc:entities.forest_myth.mobs.dryad.job.default_level_announcement)",
          "xp_equation_for_next_level"        : "next_level ^ 2 * 100",
          "levels_between_attribute_increase" : 10,
          "level_data":
          {
-            "general_description_desc" : "Max HP increased!",
-            "attribute_up_desc"        : "All attributes increased!"
+            "general_description_desc" : "i18n(tmc:entities.forest_myth.mobs.dryad.job.general_description_desc)",
+            "attribute_up_desc"        : "i18n(tmc:entities.forest_myth.mobs.dryad.job.attribute_up_desc)"
          }
       }
    },

@@ -6,8 +6,8 @@
    {
       "unit_info":
       {
-         "name"        : "Great Ancient Tree",
-         "description" : "I doubt anyone would be able to say how old this is."
+         "display_name" : "i18n(tmc:entities.forest_myth.decorations.great_ancient_tree.display_name)",
+         "description"  : "i18n(tmc:entities.forest_myth.decorations.great_ancient_tree.description)"
       },
       "render_info":
       {

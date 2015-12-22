@@ -4,16 +4,16 @@
 
    "components":
    {
-      "item":
-      {
-         "category" : "decoration"
-      },
       "model_variants":
       {
          "default":
          {
             "models" : [ "file(garden_gnome.qb)" ]
          }
+      },
+      "item":
+      {
+         "category" : "decoration"
       }
    }
 }

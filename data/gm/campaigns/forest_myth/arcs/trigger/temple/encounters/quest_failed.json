@@ -1,5 +1,5 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "script",
 
    "in_edge"  : "quest_failed",

@@ -1,7 +1,7 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "script",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge" : "create_harpy_captives_camp",
 
@@ -17,11 +17,10 @@
          "ctx_entity_registration_path" : "harpy_captives_camp",
          "camp_location_ctx_path"       : "forest_location",
 
-         "radius"     : 12,
-         "keep_grass" : false,
-
+         "radius"              : 12,
          "spawn_range"         : { "min" : 80, "max" : 140 },
          "player_min_distance" : 200,
+         "keep_grass"          : false,
 
          "pieces":
          {

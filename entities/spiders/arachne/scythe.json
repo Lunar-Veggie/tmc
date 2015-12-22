@@ -7,7 +7,7 @@
       {
          "default":
          {
-            "models": [ "file(scythe.qb)" ]
+            "models" : [ "file(scythe.qb)" ]
          }
       },
 

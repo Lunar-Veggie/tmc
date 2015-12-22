@@ -1,5 +1,5 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "generator",
 
    "in_edge" : "spawn_goblin_raiders",

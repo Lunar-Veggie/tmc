@@ -6,9 +6,9 @@
    {
       "unit_info":
       {
-         "name"        : "The Giant Scythe",
-         "description" : "Wielded by Arachne herself!",
-         "icon"        : "file(spider_scythe.png)"
+         "display_name" : "i18n(tmc:entities.weapons.spider_scythe.display_name)",
+         "description"  : "i18n(tmc:entities.weapons.spider_scythe.description)",
+         "icon"         : "file(spider_scythe.png)"
       },
       "item":
       {

@@ -1,7 +1,7 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "wait",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge"  : "wait_to_raid",
    "out_edge" : "harpy_raid",

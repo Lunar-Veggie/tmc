@@ -1,7 +1,7 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "script",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge" : "goblin_raid",
 
@@ -14,8 +14,8 @@
 
          "sighted_bulletin":
          {
-            "title"   : "A dangerous goblin!",
-            "message" : "He's out to get you"
+            "title"   : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.quests.goblin_raiders.goblin_raid.bulletin.title)",
+            "message" : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.quests.goblin_raiders.goblin_raid.bulletin.message)"
          },
 
          "pillage_radius":

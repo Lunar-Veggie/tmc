@@ -1,7 +1,7 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "script",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge" : "create_goblin_raiding_camp",
 
@@ -16,12 +16,12 @@
          "amenity_with_player"          : "hostile",
          "ctx_entity_registration_path" : "goblin_raiding_camp",
          "camp_location_ctx_path"       : "forest_location",
+         "script"                       : "file(../../goblin_camp/goblin_raiders.lua)",
 
-         "radius"     : 6,
-         "keep_grass" : true,
-
+         "radius"              : 6,
          "spawn_range"         : { "min" : 100, "max" : 150 },
          "player_min_distance" : 170,
+         "keep_grass"          : true,
 
          "boss":
          {
@@ -35,17 +35,17 @@
             },
             "unit_info":
             {
-               "description" : "Leader of the mighty goblin squad"
-            },
-            "equipment":
-            {
-               "weapon" : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul" ],
-               "armor"  : [ "stonehearth:monsters:goblins:outfits:footman" ]
+               "description" : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.quests.goblin_raiders.goblin_raiding_camp.boss.description)"
             },
             "attributes":
             {
                "max_health" : 60,
                "health"     : 60
+            },
+            "equipment":
+            {
+               "weapon" : [ "stonehearth:weapons:jagged_cleaver", "stonehearth:weapons:stone_maul" ],
+               "armor"  : [ "stonehearth:monsters:goblins:outfits:footman" ]
             },
             "combat_leash_range" : 25,
             "loot_drops":
@@ -58,8 +58,6 @@
                ]
             }
          },
-
-         "script" : "file(../../goblin_camp/goblin_raiders.lua)",
 
          "pieces":
          {

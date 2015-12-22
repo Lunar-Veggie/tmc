@@ -6,6 +6,7 @@
       "version"     : 1
    },
 
+   "default_locale"     : "en",
    "server_init_script" : "file(tmc_server)",
 
    "aliases":
@@ -23,13 +24,13 @@
       "buffs:guardian:def_1" : "file(jobs/guardian/guardian_buffs/defense_1_buff.json)",
       "buffs:guardian:dmg_1" : "file(jobs/guardian/guardian_buffs/damage_1_buff.json)",
 
-      "decorations:garden_gnome" : "file(entities/decorations/garden_gnome)",
-
       "decorations:forest_myth:ancient_pillar_1"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_1)",
       "decorations:forest_myth:ancient_pillar_2"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_2)",
       "decorations:forest_myth:ancient_pillar_3"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_3)",
       "decorations:forest_myth:ancient_pillar_4"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_4)",
       "decorations:forest_myth:great_ancient_tree" : "file(entities/forest_myth/great_ancient_tree)",
+      "decorations:garden_gnome"                   : "file(entities/decorations/garden_gnome)",
+      "decorations:harpy_cage"                     : "file(entities/decorations/harpy_cage)",
 
       "effects:forest_magic_glow" : "file(data/effects/forest_magic_glow)",
 
@@ -47,8 +48,6 @@
       "kingdoms:forest_myth"    : "file(data/populations/forest_myth_population.json)",
       "kingdoms:spider_myth"    : "file(data/populations/spider_myth_population.json)",
       "kingdoms:wild_creatures" : "file(data/populations/tmc_wild_creatures.json)",
-
-      "objects:harpy_cage" : "file(entities/objects/harpy_cage)",
 
       "resources:harpy_feather"         : "file(entities/resources/harpy_feather)",
       "resources:magical_forest_thread" : "file(entities/resources/magical_forest_thread)",

@@ -21,8 +21,8 @@
 
       "unit_info":
       {
-         "name"        : "A Mandragora",
-         "description" : "A rare, dangerous, and mind-numbingly loud plant",
+         "name"        : "i18n(tmc:entities.forest_myth.mobs.mandragora.display_name)",
+         "description" : "i18n(tmc:entities.forest_myth.mobs.mandragora.description)",
          "player_id"   : "tmc_wild_creatures"
       },
 

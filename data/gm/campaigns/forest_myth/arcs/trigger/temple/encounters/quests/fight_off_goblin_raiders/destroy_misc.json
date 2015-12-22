@@ -1,11 +1,11 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "destroy_entity",
 
    "in_edge" : "destroy_goblin_raiders_misc",
 
    "destroy_entity_info":
    {
-      "target_entities" : ["goblin_raiding_camp.entities.campfire"]
+      "target_entities" : [ "goblin_raiding_camp.entities.campfire" ]
    }
 }

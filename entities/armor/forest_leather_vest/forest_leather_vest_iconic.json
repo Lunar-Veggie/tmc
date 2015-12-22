@@ -4,12 +4,6 @@
 
    "components":
    {
-      "unit_info":
-      {
-         "name"        : "Forest Leather Vest",
-         "description" : "Hardened leather with the magic of the Forest imbedded in it.",
-         "icon"        : "file(forest_leather_vest.png)"
-      },
       "model_variants":
       {
          "default":
@@ -21,6 +15,13 @@
       {
          "model_origin" : { "x": -0.05, "y": 0, "z": 0.05 }
       },
+      "unit_info":
+      {
+         "display_name" : "i18n(tmc:entities.armor.forest_leather_vest.display_name)",
+         "description"  : "i18n(tmc:entities.armor.forest_leather_vest.description)",
+         "icon"         : "file(forest_leather_vest.png)"
+      },
+
       "stonehearth:material":
       {
          "tags" : "armor light_armor"

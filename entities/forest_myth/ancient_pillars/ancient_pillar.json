@@ -6,8 +6,8 @@
    {
       "unit_info":
       {
-         "name"        : "Ancient Pillar",
-         "description" : "A mysterious pillar, its function and origin is unknown"
+         "display_name" : "i18n(tmc:entities.forest_myth.decorations.ancient_pillar.display_name)",
+         "description"  : "i18n(tmc:entities.forest_myth.decorations.ancient_pillar.description)"
       },
       "render_info":
       {

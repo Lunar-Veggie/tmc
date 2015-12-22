@@ -1,5 +1,5 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "wait_for_event",
 
    "in_edge"  : "wait_for_cage_2_destruction",

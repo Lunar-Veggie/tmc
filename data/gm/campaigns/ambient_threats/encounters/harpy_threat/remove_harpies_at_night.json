@@ -1,7 +1,7 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "wait_for_time_of_day",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge"  : "remove_harpies_at_night",
    "out_edge" : "destroy_harpies",

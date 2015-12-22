@@ -6,16 +6,16 @@
    "roles"          : "spirit_job",
    "abilities"      : "file(npc_spirit_abilities)",
 
-   "display_name"   : "Spirit",
-   "description"    : "Creature of the forest",
-   "requirements"   : "It's something you're born for",
+   "display_name" : "i18n(tmc:jobs.spirit.spirit_description.display_name)",
+   "description"  : "i18n(tmc:jobs.spirit.spirit_description.description)",
+   "requirements" : "i18n(tmc:jobs.spirit.spirit_description.requirements)",
 
    "max_level" : 6,
    "level_data":
    {
       "0":
       {
-         "title" : "Spirit"
+         "title" : "i18n(tmc:jobs.spirit.spirit_description.display_name)"
       }
    }
 }

@@ -9,11 +9,12 @@
          "location" : { "x" : 0, "y" : 0, "z" : 0 },
          "unit_info":
          {
-            "name"        : "Harpy Guards' Tent",
-            "Description" : "Guards only; go away!"
+            "display_name" : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.goblin_camp.goblin_tent.tent.display_name)",
+            "description"  : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.goblin_camp.goblin_tent.tent.description)"
          }
       }
    },
+
    "citizens":
    {
       "cage_guards":
@@ -25,6 +26,10 @@
             "min"      : 3,
             "max"      : 3,
             "job"      : "stonehearth:jobs:footman"
+         },
+         "unit_info":
+         {
+            "description" : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.goblin_camp.goblin_tent.cage_guards.description)"
          },
          "equipment":
          {
@@ -52,10 +57,6 @@
                {"uri" : "stonehearth:resources:tin:ore",             "weight" : 2 },
                {"uri" : "stonehearth:monsters:goblins:skull_trophy", "weight" : 1 }
             ]
-         },
-         "unit_info":
-         {
-            "description" : "Keeps the harpies in place"
          }
       }
    }

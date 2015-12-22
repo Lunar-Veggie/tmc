@@ -1,11 +1,11 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "destroy_entity",
 
    "in_edge" : "destroy_goblin_raiders_stockpiles",
 
    "destroy_entity_info":
    {
-      "target_entities" : ["goblin_raiding_camp.entities.general_stockpile"]
+      "target_entities" : [ "goblin_raiding_camp.entities.general_stockpile" ]
    }
 }

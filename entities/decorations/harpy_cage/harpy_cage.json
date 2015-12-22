@@ -4,21 +4,16 @@
 
    "components":
    {
-      "unit_info":
-      {
-         "name"        : "A harpy cage",
-         "description" : "It stops you from flying away; how inconvenient"
-      },
-      "render_info":
-      {
-         "scale" : 0.1
-      },
       "model_variants":
       {
          "default":
          {
             "models" : [ "file(harpy_cage.qb)" ]
          }
+      },
+      "render_info":
+      {
+         "scale" : 0.1
       },
       "region_collision_shape":
       {
@@ -41,6 +36,11 @@
                "max" : { "x" :  1, "y" : 3, "z" :  2 }
             }
          ]
+      },
+      "unit_info":
+      {
+         "display_name" : "i18n(tmc:entities.decorations.harpy_cage.display_name)",
+         "description"  : "i18n(tmc:entities.decorations.harpy_cage.description)"
       }
    }
 }

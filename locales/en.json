@@ -1,0 +1,431 @@
+{
+   "data":
+   {
+      "gm":
+      {
+         "campaigns":
+         {
+            "ambient_threats":
+            {
+               "harpy_threat":
+               {
+                  "harpy_raid":
+                  {
+                     "title" : "Invaders sighted!"
+                  }
+               }
+            },
+            "forest_myth":
+            {
+               "forest_temple":
+               {
+                  "dryad_death_dialog":
+                  {
+                     "dialog_nodes":
+                     {
+                        "msg1":
+                        {
+                           "bulletin_title"   : "[name(i18n_data.boss)] is Defeated!",
+                           "dialog_title"     : "[name(i18n_data.boss)]",
+                           "bulletin_message" : { "000" : "Can't let... Nature... lose..." }
+                        }
+                     }
+                  },
+
+                  "goblin_camp":
+                  {
+                     "goblin_campfire":
+                     {
+                        "campfire":
+                        {
+                           "display_name" : "Hypnotic Campfire",
+                           "description"  : "But... what makes it green?"
+                        },
+                        "worker":
+                        {
+                           "description" : "All-important hearth maintainer"
+                        }
+                     },
+                     "goblin_tent":
+                     {
+                        "tent":
+                        {
+                           "display_name" : "Guards' Tent",
+                           "description"  : "Guards only; no peeky!"
+                        },
+                        "cage_guards":
+                        {
+                           "description" : "Keeping the prisoners in check"
+                        }
+                     },
+                     "harpy_cages":
+                     {
+                        "harpy":
+                        {
+                           "description" : "Wants to fly again..."
+                        }
+                     }
+                  },
+
+                  "quests":
+                  {
+                     "goblin_raiders":
+                     {
+                        "goblin_raid":
+                        {
+                           "bulletin":
+                           {
+                              "title"   : "Dangerous goblins!",
+                              "message" : "They're out to get you"
+                           }
+                        },
+                        "goblin_raiding_camp":
+                        {
+                           "boss":
+                           {
+                              "description" : "Leader of the mighty goblin squad"
+                           }
+                        },
+                        "intro_dialog":
+                        {
+                           "dialog_tree_info":
+                           {
+                              "dialog_nodes":
+                              {
+                                 "msg1":
+                                 {
+                                    "bulletin_title"   : "A panicked dryad seeks assistance",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "Help! Goblins have come to destroy our home!" }
+                                 },
+                                 "msg2":
+                                 {
+                                    "bulletin_title"   : "A panicked dryad seeks assistance",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "We need help as we can't do anything that leaves our home unprotected." }
+                                 },
+                                 "msg3":
+                                 {
+                                    "bulletin_title"   : "A panicked dryad seeks assistance",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "Please help..." }
+                                 }
+                              }
+                           }
+                        },
+                        "success_dialog":
+                        {
+                           "dialog_tree_info":
+                           {
+                              "dialog_nodes":
+                              {
+                                 "msg1":
+                                 {
+                                    "bulletin_title"   : "A relieved dryad approaches",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "Thank you so much! Now we don't have to worry about those pesky goblins." }
+                                 },
+                                 "msg2":
+                                 {
+                                    "bulletin_title"   : "A relieved dryad approaches",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "Please, take this; you deserve it!" }
+                                 }
+                              }
+                           }
+                        }
+                     },
+                     "harpy_captives":
+                     {
+                        "escaping_harpy":
+                        {
+                           "bulletin":
+                           {
+                              "title"   : "A harpy has been freed!",
+                              "message" : "The harpy's flying away with joy!"
+                           }
+                        },
+                        "fail_dialog":
+                        {
+                           "dialog_tree_info":
+                           {
+                              "dialog_nodes":
+                              {
+                                 "msg1":
+                                 {
+                                    "bulletin_title"   : "The dryad expresses her disappointment",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "You didn't save them? Why didn't you save them?" }
+                                 },
+                                 "msg2":
+                                 {
+                                    "bulletin_title"   : "The dryad expresses her disappointment",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "Now they're off with those evil goblins, doing who knows what!" }
+                                 },
+                                 "msg3":
+                                 {
+                                    "bulletin_title"   : "The dryad expresses her disappointment",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "I thought you could do better than that..." }
+                                 }
+                              }
+                           }
+                        },
+                        "intro_dialog":
+                        {
+                           "dialog_tree_info":
+                           {
+                              "dialog_nodes":
+                              {
+                                 "msg1":
+                                 {
+                                    "bulletin_title"   : "The dryad needs your help!",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "The harpies are in Danger!" }
+                                 },
+                                 "msg2":
+                                 {
+                                    "bulletin_title"   : "The dryad needs your help!",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "Goblins have captured them!" }
+                                 },
+                                 "msg3":
+                                 {
+                                    "bulletin_title"   : "The dryad needs your help!",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "Could you please help them?" }
+                                 }
+                              }
+                           }
+                        },
+                        "success_dialog":
+                        {
+                           "dialog_tree_info":
+                           {
+                              "dialog_nodes":
+                              {
+                                 "msg1":
+                                 {
+                                    "bulletin_title"   : "A relieved dryad approaches",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "The harpies are safe now, thanks!" }
+                                 },
+                                 "msg2":
+                                 {
+                                    "bulletin_title"   : "A relieved dryad approaches",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "They wanted me to give you this." }
+                                 },
+                                 "msg3":
+                                 {
+                                    "bulletin_title"   : "A relieved dryad approaches",
+                                    "dialog_title"     : "[name(i18n_data.boss)]",
+                                    "bulletin_message" : { "000" : "Harpies are kind of shy, I hope you understand." }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            },
+            "trader":
+            {
+               "gnome_shop":
+               {
+                  "title" : "A gnome comes by with wares to trade",
+                  "name"  : "Gnome's Shop"
+               }
+            }
+         }
+      }
+   },
+
+   "entities":
+   {
+      "air_myth":
+      {
+         "mobs":
+         {
+            "harpy":
+            {
+               "display_name" : "Harpy",
+               "description"  : "A dangerous and beautiful being of the wind"
+            }
+         }
+      },
+      "armor":
+      {
+         "forest_leather_vest":
+         {
+            "display_name" : "Forest Leather Vest",
+            "description"  : "Hardened leather with the magic of the forest imbedded into it"
+         }
+      },
+      "decorations":
+      {
+         "garden_gnome":
+         {
+            "display_name" : "Garden Gnome",
+            "description"  : "Smaller than an actual gnome, if you can believe it"
+         },
+         "harpy_cage":
+         {
+            "display_name" : "Harpy Cage",
+            "description"  : "It stops its inhabitants from flying away; very inconvenient!"
+         }
+      },
+      "forest_myth":
+      {
+         "mobs":
+         {
+            "dryad":
+            {
+               "display_name" : "[str(self.unit_info.custom_name)]",
+               "description"  : "A spirit of the forest",
+               "job":
+               {
+                  "starting_level_title"       : "Apprentice [str(self.stonehearth:job.curr_job_name)]",
+                  "default_level_title"        : "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
+                  "default_level_announcement" : "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
+                  "general_description_desc"   : "Max Health increased!",
+                  "attribute_up_desc"          : "All attributes increased!"
+               }
+            },
+            "golem":
+            {
+               "display_name" : "[str(self.unit_info.custom_name)]",
+               "description"  : "The ancient guardians of the dryads"
+            },
+            "mandragora":
+            {
+               "display_name" : "Mandragora",
+               "description"  : "A rare, dangerous, and mind-numbingly loud plant"
+            }
+         },
+         "decorations":
+         {
+            "ancient_pillar":
+            {
+               "display_name" : "Ancient Pillar",
+               "description"  : "A mysterious pillar, its function and origin are unknown"
+            },
+            "great_ancient_tree":
+            {
+               "display_name" : "Great Ancient Tree",
+               "description"  : "I doubt anyone would be able to say how old this is"
+            }
+         }
+      },
+      "resources":
+      {
+         "harpy_feather":
+         {
+            "display_name" : "Magical Harpy Feather",
+            "description"  : "You feel lighter just by holding it!"
+         },
+         "magical_forest_thread":
+         {
+            "display_name" : "Magical Forest Thread",
+            "description"  : "A magical thread containing the power of the forest"
+         },
+         "mandrake_leaves":
+         {
+            "display_name" : "Mandrake Leaves",
+            "description"  : "Ingredient used in healing medicine or herbal tea"
+         },
+         "mandrake_root":
+         {
+            "display_name" : "Mandrake Root",
+            "description"  : "Potent ingredient for healing medicine"
+         }
+      },
+      "spiders":
+      {
+         "mobs":
+         {
+            "arachne":
+            {
+               "display_name" : "Arachne",
+               "description"  : "The mother of spiders"
+            },
+            "minion":
+            {
+               "display_name" : "Spider Minion",
+               "description"  : "A child of the queen spider"
+            },
+            "spider_egg":
+            {
+               "display_name" : "Spider Egg",
+               "description"  : "A giant spider egg"
+            }
+         }
+      },
+      "weapons":
+      {
+         "spider_scythe":
+         {
+            "display_name" : "The Giant Scythe",
+            "description"  : "Wielded by Arachne herself!"
+         }
+      }
+   },
+
+   "jobs":
+   {
+      "guardian":
+      {
+         "guardian_description":
+         {
+            "display_name" : "Guardian",
+            "description"  : "Dedicating its life in protecting something",
+            "requirements" : "A strong mind and something worth protecting",
+            "level_1_data":
+            {
+               "perk_000_name"        : "Defense Up 20%",
+               "perk_000_description" : "During its time of receiving the end of a weapon, the guardian has learned how to better defend against such things."
+            },
+            "level_3_data":
+            {
+               "perk_000_name"        : "Damage Up 20%",
+               "perk_000_description" : "The guardian has been diligent with his combat exercises, and as such it has learned how to land blows with better results."
+            }
+         },
+         "guardian_buffs":
+         {
+            "damage_1_buff":
+            {
+               "name"        : "Damage +20%",
+               "description" : "The guardian attacks with increased ferocity"
+            },
+            "defense_1_buff":
+            {
+               "name"        : "Defense +20%",
+               "description" : "The guardian endures blows better"
+            }
+         }
+      },
+      "spirit":
+      {
+         "spirit_description":
+         {
+            "display_name" : "Spirit",
+            "description"  : "An elemental creature",
+            "requirements" : "It's something one is born for"
+         }
+      },
+      "weaver":
+      {
+         "recipes":
+         {
+            "forest_leather_vest_recipe":
+            {
+               "recipe_name" : "Forest Leather Vest",
+               "description" : "Hardened leather with the magic of the Forest imbedded into it.",
+               "flavor"      : "It even smells like grass!"
+            }
+         }
+      }
+   }
+}

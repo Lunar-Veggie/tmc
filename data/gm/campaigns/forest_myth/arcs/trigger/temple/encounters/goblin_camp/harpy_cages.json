@@ -18,7 +18,7 @@
       },
       "unit_info":
       {
-         "description" : "Wants to fly again..."
+         "description" : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.goblin_camp.harpy_cages.harpy.description)"
       },
       "attributes":
       {
@@ -34,29 +34,17 @@
    {
       "harpy_cage_1":
       {
-         "uri" : "tmc:objects:harpy_cage",
-         "unit_info":
-         {
-            "name" : "Harpy Cage"
-         },
+         "uri"      : "tmc:decorations:harpy_cage",
          "location" : { "x" :  8, "y" :  0, "z" : -4 }
       },
       "harpy_cage_2":
       {
-         "uri" : "tmc:objects:harpy_cage",
-         "unit_info":
-         {
-            "name" : "Harpy Cage"
-         },
+         "uri"      : "tmc:decorations:harpy_cage",
          "location" : { "x" : 10, "y" :  0, "z" :  4 }
       },
       "harpy_cage_3":
       {
-         "uri" : "tmc:objects:harpy_cage",
-         "unit_info":
-         {
-            "name" : "Harpy Cage"
-         },
+         "uri"      : "tmc:decorations:harpy_cage",
          "location" : { "x" :  0, "y" :  0, "z" :  7 }
       }
    }

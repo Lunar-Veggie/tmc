@@ -18,8 +18,8 @@
 
          "sighted_bulletin":
          {
-            "title"   : "The harpy is now free!",
-            "message" : "The harpy's flying away with joy!"
+            "title"   : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.quests.harpy_captives.escaping_harpy.bulletin.title)",
+            "message" : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.quests.harpy_captives.escaping_harpy.bulletin.message)"
          },
 
          "members":

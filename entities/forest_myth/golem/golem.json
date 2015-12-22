@@ -24,8 +24,8 @@
 
       "unit_info":
       {
-         "name"        : "A Golem",
-         "description" : "An ancient guardian of the Dryads"
+         "display_name" : "i18n(tmc:entities.forest_myth.mobs.golem.display_name)",
+         "description"  : "i18n(tmc:entities.forest_myth.mobs.golem.description)"
       },
 
       "stonehearth:material":

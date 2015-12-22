@@ -22,8 +22,8 @@
 
       "unit_info":
       {
-         "name"        : "Arachne",
-         "description" : "The mother of spiders"
+         "display_name" : "i18n(tmc:entities.spiders.mobs.arachne.display_name)",
+         "description"  : "i18n(tmc:entities.spiders.mobs.arachne.description)"
       },
 
       "stonehearth:material":

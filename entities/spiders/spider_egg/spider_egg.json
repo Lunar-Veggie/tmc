@@ -22,8 +22,8 @@
 
       "unit_info":
       {
-         "name"        : "Spider Egg",
-         "description" : "A Giant Spider Egg"
+         "display_name" : "i18n(tmc:entities.spiders.mobs.spider_egg.display_name)",
+         "description"  : "i18n(tmc:entities.spiders.mobs.spider_egg.description)"
       },
 
       "stonehearth:material":

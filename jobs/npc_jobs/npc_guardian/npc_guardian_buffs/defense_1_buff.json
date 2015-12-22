@@ -1,7 +1,7 @@
 {
    "type"        : "buff",
-   "name"        : "Defense +20%",
-   "description" : "The guardian endures blows better",
+   "name"        : "i18n(tmc:jobs.guardian.guardian_buffs.defense_1_buff.name)",
+   "description" : "i18n(tmc:jobs.guardian.guardian_buffs.defense_1_buff.description)",
    "icon"        : "file(defense_1_buff.png)",
 
    "modifiers":

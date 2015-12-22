@@ -14,14 +14,14 @@
       "script"                       : "file(forest_temple/forest_temple.lua)",
 
       "radius"      : 20,
-      "keep_grass"  : true,
       "spawn_range" : { "min" : 180, "max" : 220 },
+      "keep_grass"  : true,
 
       "boss":
       {
          "from_population":
          {
-            "job"  : "tmc:jobs:npc:spirit",
+            "job"      : "tmc:jobs:npc:spirit",
             "location" : { "x" : 5, "z" : -8 }
          },
 

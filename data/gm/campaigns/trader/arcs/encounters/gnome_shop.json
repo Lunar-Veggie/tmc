@@ -8,8 +8,8 @@
 
    "shop_info":
    {
-      "title" : "A gnome comes by with his wares to trade",
-      "name"  : "Gnome's Shop",
+      "title" : "i18n(tmc:data.gm.campaigns.trader.gnome_shop.title)",
+      "name"  : "i18n(tmc:data.gm.campaigns.trader.gnome_shop.name)",
 
       "inventory":
       {

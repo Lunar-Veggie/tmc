@@ -16,10 +16,11 @@
       },
       "unit_info":
       {
-         "name"        : "Garden Gnome",
-         "description" : "Smaller than an actual gnome, if you can believe it",
-         "icon"        : "file(garden_gnome.png)"
+         "display_name" : "i18n(tmc:entities.decorations.garden_gnome.display_name)",
+         "description"  : "i18n(tmc:entities.decorations.garden_gnome.description)",
+         "icon"         : "file(garden_gnome.png)"
       },
+
       "stonehearth:material":
       {
          "tags" : "decoration"

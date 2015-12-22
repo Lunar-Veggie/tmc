@@ -17,14 +17,15 @@
       },
       "unit_info":
       {
-         "name"        : "Mandrake Root",
-         "description" : "Potent ingredient for healing medicine",
-         "icon"        : "file(mandrake_root.png)"
+         "display_name" : "i18n(tmc:entities.resources.mandrake_root.display_name)",
+         "description"  : "i18n(tmc:entities.resources.mandrake_root.description)",
+         "icon"         : "file(mandrake_root.png)"
       },
       "item":
       {
          "category" : "resources"
       },
+
       "stonehearth:material":
       {
          "tags" : "mandrake root plant resource"

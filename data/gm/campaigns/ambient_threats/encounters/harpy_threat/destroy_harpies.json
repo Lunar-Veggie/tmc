@@ -1,7 +1,7 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "destroy_entity",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge" : "destroy_harpies",
 

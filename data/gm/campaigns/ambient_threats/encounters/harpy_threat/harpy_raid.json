@@ -22,7 +22,7 @@
 
          "sighted_bulletin":
          {
-            "title" : "Invaders sighted!"
+            "title" : "i18n(tmc:data.gm.campaigns.ambient_threats.harpy_threat.harpy_raid.title)"
          },
 
          "members":

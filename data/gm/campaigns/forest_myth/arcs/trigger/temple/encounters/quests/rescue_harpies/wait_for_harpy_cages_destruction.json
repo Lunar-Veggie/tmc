@@ -1,5 +1,5 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "script",
 
    "in_edge" : "wait_for_harpy_cages_destruction",
@@ -9,13 +9,13 @@
       "script" : "file(../../scripts/wait_for_events.lua)",
       "data":
       {
+         "event" : "radiant:entity:pre_destroy",
          "sources":
          [
             "harpy_captives_camp.entities.harpy_cage_1",
             "harpy_captives_camp.entities.harpy_cage_2",
             "harpy_captives_camp.entities.harpy_cage_3"
          ],
-         "event" : "radiant:entity:pre_destroy",
          "out_edge" : [ "rescue_harpies_success_dialog", "destroy_goblin_captivators_stockpiles" ]
       }
    }

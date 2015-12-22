@@ -4,10 +4,6 @@
 
    "components":
    {
-      "item":
-      {
-         "category" : "refined"
-      },
       "model_variants":
       {
          "default":
@@ -15,11 +11,19 @@
             "models" : [ "file(harpy_feather.qb)" ]
          }
       },
+      "render_info":
+      {
+         "scale" : 0.1
+      },
       "unit_info":
       {
-         "name"        : "Magical Harpy Feather",
-         "description" : "You feel lighter just by holding it!",
-         "icon"        : "file(harpy_feather.png)"
+         "display_name" : "i18n(tmc:entities.resources.harpy_feather.display_name)",
+         "description"  : "i18n(tmc:entities.resources.harpy_feather.description)",
+         "icon"         : "file(harpy_feather.png)"
+      },
+      "item":
+      {
+         "category" : "refined"
       },
 
       "stonehearth:material":

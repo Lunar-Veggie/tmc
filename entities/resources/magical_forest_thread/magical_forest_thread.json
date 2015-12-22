@@ -4,10 +4,6 @@
 
    "components":
    {
-      "item":
-      {
-         "category" : "refined"
-      },
       "model_variants":
       {
          "default":
@@ -15,15 +11,23 @@
             "models" : [ "file(magical_forest_thread.qb)" ]
          }
       },
+      "render_info":
+      {
+         "scale" : 0.1
+      },
       "effect_list":
       {
          "effects" : [ "tmc:effects:forest_magic_glow" ]
       },
       "unit_info":
       {
-         "name"        : "Magical Forest Thread",
-         "description" : "A magical thread that has the power or the forest.",
-         "icon"        : "file(magical_forest_thread.png)"
+         "display_name" : "i18n(tmc:entities.resources.magical_forest_thread.display_name)",
+         "description"  : "i18n(tmc:entities.resources.magical_forest_thread.description)",
+         "icon"         : "file(magical_forest_thread.png)"
+      },
+      "item":
+      {
+         "category" : "refined"
       },
 
       "stonehearth:material":

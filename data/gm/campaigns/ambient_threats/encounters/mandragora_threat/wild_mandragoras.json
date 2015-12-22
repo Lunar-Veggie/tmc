@@ -1,7 +1,7 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "wait",
-   "rarity" : "common",
+   "rarity"         : "common",
 
    "in_edge"  : "wild_mandragoras",
    "out_edge" : "wandering_mandragoras",

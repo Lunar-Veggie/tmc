@@ -14,13 +14,13 @@
          {
             "bulletin":
             {
-               "title"        : "%name(forest_temple.boss) is Defeated!",
-               "dialog_title" : "%name(forest_temple.boss)",
+               "title"        : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.dryad_death_dialog.dialog_nodes.msg1.bulletin_title)",
+               "dialog_title" : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.dryad_death_dialog.dialog_nodes.msg1.dialog_title)",
+               "message"      : "i18n(tmc:data.gm.campaigns.forest_myth.forest_temple.dryad_death_dialog.dialog_nodes.msg1.bulletin_message.000)",
                "portrait"     : "file(images/dryad_portrait.png)",
-               "message"      : "Can't... let Nature... lose...",
                "choices":
                {
-                  "stonehearth:ok" : {}
+                  "stonehearth:ui.game.common.ok" : {}
                }
             }
          }

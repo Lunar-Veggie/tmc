@@ -1,5 +1,5 @@
 {
-   "type" : "encounter",
+   "type"           : "encounter",
    "encounter_type" : "wait",
 
    "in_edge"  : "wait_until_leaving",

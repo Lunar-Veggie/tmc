@@ -22,8 +22,8 @@
 
       "unit_info":
       {
-         "name"        : "Spider Minion",
-         "description" : "A child of the queen spider"
+         "display_name" : "i18n(tmc:entities.spiders.mobs.minion.display_name)",
+         "description"  : "i18n(tmc:entities.spiders.mobs.minion.description)"
       },
 
       "stonehearth:material":

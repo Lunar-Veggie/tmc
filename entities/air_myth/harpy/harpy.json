@@ -6,22 +6,22 @@
 
    "components":
    {
-      "unit_info":
-      {
-         "name"        : "A harpy",
-         "description" : "A dangerous and beautiful being of the wind"
-      },
-      "render_info":
-      {
-         "animation_table" : "tmc:skeletons:harpy",
-         "scale"           : 0.1
-      },
       "model_variants":
       {
          "default":
          {
             "models" : [ "file(harpy.qb)" ]
          }
+      },
+      "render_info":
+      {
+         "animation_table" : "tmc:skeletons:harpy",
+         "scale"           : 0.1
+      },
+      "unit_info":
+      {
+         "display_name" : "i18n(tmc:entities.air_myth.mobs.harpy.display_name)",
+         "description"  : "i18n(tmc:entities.air_myth.mobs.harpy.description)"
       },
 
       "stonehearth:material":
@@ -61,9 +61,7 @@
       "stonehearth:combat_state":
       {
          "stance" : "aggressive"
-      },
-
-      "stonehearth:equipment" : {}
+      }
    },
 
    "entity_data":
