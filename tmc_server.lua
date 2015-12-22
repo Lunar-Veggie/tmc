@@ -33,7 +33,7 @@ radiant.events.listen_once(tmc, 'radiant:init', function()
    for _,campaign in pairs(tmc_campaigns) do
       start_campaign(campaign)
    end
-   set_amenities(radiant.resources.load_json('tmc:amenities'))
+   set_amenities(radiant.resources.load_json('tmc:kingdoms:amenities'))
 end)
 
 return tmc

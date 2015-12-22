@@ -10,12 +10,28 @@
 
    "aliases":
    {
-      "kingdoms:forest_myth"    : "file(data/populations/forest_myth_population.json)",
-      "kingdoms:air_myth"       : "file(data/populations/air_myth_population.json)",
-      "kingdoms:spider_myth"    : "file(data/populations/spider_myth_population.json)",
-      "kingdoms:wild_creatures" : "file(data/populations/tmc_wild_creatures.json)",
+      "actions:sleep_on_ground_naturally" : "file(ai/actions/sleep_on_ground_naturally_action.lua)",
 
-      "amenities" : "file(data/amenities.json)",
+      "ai_pack:regen"    : "file(ai/packs/regen_ai_pack.json)",
+      "ai_pack:sleeping" : "file(ai/packs/sleeping_ai_pack.json)",
+
+      "air:harpy"        : "file(entities/air_myth/harpy)",
+      "air:harpy:talons" : "file(entities/air_myth/harpy/harpy_talons.json)",
+
+      "armor:forest_leather_vest" : "file(entities/armor/forest_leather_vest)",
+
+      "buffs:guardian:def_1" : "file(jobs/guardian/guardian_buffs/defense_1_buff.json)",
+      "buffs:guardian:dmg_1" : "file(jobs/guardian/guardian_buffs/damage_1_buff.json)",
+
+      "decorations:garden_gnome" : "file(entities/decorations/garden_gnome)",
+
+      "decorations:forest_myth:ancient_pillar_1"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_1)",
+      "decorations:forest_myth:ancient_pillar_2"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_2)",
+      "decorations:forest_myth:ancient_pillar_3"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_3)",
+      "decorations:forest_myth:ancient_pillar_4"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_4)",
+      "decorations:forest_myth:great_ancient_tree" : "file(entities/forest_myth/great_ancient_tree)",
+
+      "effects:forest_magic_glow" : "file(data/effects/forest_magic_glow)",
 
       "forest:dryad"             : "file(entities/forest_myth/dryad)",
       "forest:golem"             : "file(entities/forest_myth/golem)",
@@ -23,62 +39,45 @@
       "forest:mandragora"        : "file(entities/forest_myth/mandragora)",
       "forest:mandragora:voice"  : "file(entities/forest_myth/mandragora/mandragora_voice.json)",
 
-      "air:harpy"        : "file(entities/air_myth/harpy)",
-      "air:harpy:talons" : "file(entities/air_myth/harpy/harpy_talons.json)",
-
-      "spiders:minion"         : "file(entities/spiders/minion)",
-      "spiders:minion:teeth"   : "file(entities/spiders/minion/spider_teeth.json)",
-      "spiders:arachne"        : "file(entities/spiders/arachne)",
-      "spiders:arachne:scythe" : "file(entities/spiders/arachne/scythe.json)",
-      "spiders:spider_egg"    : "file(entities/spiders/spider_egg/spider_egg.json)",
-
-      "skeletons:golem"           : "file(data/rigs/golem)",
-      "skeletons:mandragora"      : "file(data/rigs/mandragora)",
-      "skeletons:harpy"           : "file(data/rigs/harpy)",
-      "skeletons:spiders:arachne" : "file(data/rigs/spiders/arachne)",
-      "skeletons:spiders:minion"  : "file(data/rigs/spiders/minion)",
-      "skeletons:spiders:spider_egg"  : "file(data/rigs/spiders/spider_egg)",
-
-      "armor:forest_leather_vest" : "file(entities/armor/forest_leather_vest)",
-
-      "weapons:spider_scythe" : "file(entities/weapons/spider_scythe)",
-
-      "resources:magical_forest_thread" : "file(entities/resources/magical_forest_thread)",
-      "resources:harpy_feather"         : "file(entities/resources/harpy_feather)",
-      "resources:mandrake_root"         : "file(entities/resources/mandrake_root)",
-      "resources:mandrake_leaves"       : "file(entities/resources/mandrake_leaves)",
-
-      "decorations:garden_gnome" : "file(entities/decorations/garden_gnome)",
-
-      "decorations:forest_myth:great_ancient_tree" : "file(entities/forest_myth/great_ancient_tree)",
-      "decorations:forest_myth:ancient_pillar_1"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_1)",
-      "decorations:forest_myth:ancient_pillar_2"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_2)",
-      "decorations:forest_myth:ancient_pillar_3"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_3)",
-      "decorations:forest_myth:ancient_pillar_4"   : "file(entities/forest_myth/ancient_pillars/ancient_pillar_4)",
-
-      "objects:harpy_cage" : "file(entities/objects/harpy_cage)",
-
       "jobs:guardian" : "file(jobs/guardian/guardian_description.json)",
       "jobs:spirit"   : "file(jobs/spirit/spirit_description.json)",
 
-      "actions:sleep_on_ground_naturally" : "file(ai/actions/sleep_on_ground_naturally_action.lua)",
+      "kingdoms:air_myth"       : "file(data/populations/air_myth_population.json)",
+      "kingdoms:amenities"      : "file(data/amenities.json)",
+      "kingdoms:forest_myth"    : "file(data/populations/forest_myth_population.json)",
+      "kingdoms:spider_myth"    : "file(data/populations/spider_myth_population.json)",
+      "kingdoms:wild_creatures" : "file(data/populations/tmc_wild_creatures.json)",
 
-      "ai_pack:sleeping" : "file(ai/packs/sleeping_ai_pack.json)",
-      "ai_pack:regen"    : "file(ai/packs/regen_ai_pack.json)",
+      "objects:harpy_cage" : "file(entities/objects/harpy_cage)",
 
-      "buffs:guardian:def_1" : "file(jobs/guardian/guardian_buffs/defense_1_buff.json)",
-      "buffs:guardian:dmg_1" : "file(jobs/guardian/guardian_buffs/damage_1_buff.json)",
+      "resources:harpy_feather"         : "file(entities/resources/harpy_feather)",
+      "resources:magical_forest_thread" : "file(entities/resources/magical_forest_thread)",
+      "resources:mandrake_root"         : "file(entities/resources/mandrake_root)",
+      "resources:mandrake_leaves"       : "file(entities/resources/mandrake_leaves)",
 
-      "effects:forest_magic_glow" : "file(data/effects/forest_magic_glow)",
+      "skeletons:golem"              : "file(data/rigs/golem)",
+      "skeletons:harpy"              : "file(data/rigs/harpy)",
+      "skeletons:mandragora"         : "file(data/rigs/mandragora)",
+      "skeletons:spiders:arachne"    : "file(data/rigs/spiders/arachne)",
+      "skeletons:spiders:minion"     : "file(data/rigs/spiders/minion)",
+      "skeletons:spiders:spider_egg" : "file(data/rigs/spiders/spider_egg)",
 
       "sounds:mandragora_scream" : "file(data/sounds/effects/mandragora_scream.wav)",
-      "sounds:wing_flap"         : "file(data/sounds/effects/wing_flap.wav)"
+      "sounds:wing_flap"         : "file(data/sounds/effects/wing_flap.wav)",
+
+      "spiders:arachne"        : "file(entities/spiders/arachne)",
+      "spiders:arachne:scythe" : "file(entities/spiders/arachne/scythe.json)",
+      "spiders:minion"         : "file(entities/spiders/minion)",
+      "spiders:minion:teeth"   : "file(entities/spiders/minion/spider_teeth.json)",
+      "spiders:spider_egg"     : "file(entities/spiders/spider_egg/spider_egg.json)",
+
+      "weapons:spider_scythe" : "file(entities/weapons/spider_scythe)"
    },
 
    "components":
    {
-      "soul_keeper" : "file(components/soul_keeper/soul_keeper_component.lua)",
-      "animation"   : "file(components/animation/animation_component.lua)"
+      "animation"   : "file(components/animation/animation_component.lua)",
+      "soul_keeper" : "file(components/soul_keeper/soul_keeper_component.lua)"
    },
 
    "controllers":
