@@ -2,14 +2,11 @@ local rng = _radiant.math.get_default_rng()
 local ForestTempleScript = class()
 
 function ForestTempleScript:start(ctx, info)
-   self._sv.ctx = ctx
    assert(ctx.enemy_location and ctx.npc_player_id)
    ctx.forest_location = ctx.enemy_location
    ctx.forest_player_id = ctx.npc_player_id
 
    self:_setup_soul_connection(ctx)
-
-   self.__saved_variables:mark_changed()
 end
 
 function ForestTempleScript:_setup_soul_connection(ctx)
