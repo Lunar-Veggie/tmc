@@ -3,25 +3,18 @@ local Point3 = _radiant.csg.Point3
 local GenerateCaptives = class()
 
 function GenerateCaptives:create_piece(piece, ctx, info)
-   self._ctx = ctx
-   self._info = info
-
+   --local log = radiant.log.create_logger('game_master.harpy_captives')
    local ctx_entity_registration_path = info.ctx_entity_registration_path
    local citizens_by_type = {}
    citizens_by_type[info.type] = {}
-   local harpy_cages = {
-      ctx[ctx_entity_registration_path].entities.harpy_cage_1,
-      ctx[ctx_entity_registration_path].entities.harpy_cage_2,
-      ctx[ctx_entity_registration_path].entities.harpy_cage_3
-   }
+   local harpy_cages = ctx[ctx_entity_registration_path].entities.harpy_cages
    local location = info.from_population.location
-   local population = stonehearth.population:get_population(info.captives_player_id)
+   local pop = stonehearth.population:get_population(info.captives_player_id)
 
-   for id,harpy_cage in pairs(harpy_cages) do
+   for _,harpy_cage in pairs(harpy_cages) do
+
       local cage_origin = radiant.entities.get_world_location(harpy_cage) + Point3(location.x, location.y, location.z)
-
-      local harpies = game_master_lib.create_citizens(population, info, cage_origin, ctx)
-
+      local harpies = game_master_lib.create_citizens(pop, info, cage_origin, ctx)
       for _,harpy in pairs(harpies) do
          table.insert(citizens_by_type[info.type], harpy)
 
