@@ -1,17 +1,23 @@
 local NpcGuardianClass = class()
 local job_helper = radiant.mods.require('stonehearth.jobs.job_helper')
+local BaseJob = radiant.mods.require('stonehearth.jobs.base_job')
+radiant.mixin(NpcGuardianClass, BaseJob)
 
 function NpcGuardianClass:initialize(entity)
+   job_helper.initialize(self._sv, entity)
+end
+
+function NpcGuardianClass:create(entity)
    job_helper.initialize(self._sv, entity)
    self:restore()
 end
 
 function NpcGuardianClass:restore()
-   self._job_component = self._sv._entity:get_component('stonehearth:job')
-   if self._sv.is_current_class then
-      self:_create_xp_listeners()
-      self._sv.no_levels = true
+   if not self._sv._entity or not self._sv._entity:is_valid() then
+      return
    end
+
+   self._job_component = self._sv._entity:get_component('stonehearth:job')
 
    self.__saved_variables:mark_changed()
 end
@@ -46,10 +52,6 @@ function NpcGuardianClass:unlock_perk(id)
    self._sv.attained_perks[id] = true
 
    self.__saved_variables:mark_changed()
-end
-
-function NpcGuardianClass:get_worker_defense_participation()
-   return self._sv.worker_defense_participant
 end
 
 function NpcGuardianClass:has_perk(id)
