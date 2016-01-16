@@ -40,6 +40,7 @@
       "forest:mandragora"        : "file(entities/forest_myth/mandragora)",
       "forest:mandragora:voice"  : "file(entities/forest_myth/mandragora/mandragora_voice.json)",
 
+      "jobs:index"        : "file(jobs/index.json)",
       "jobs:npc:guardian" : "file(jobs/npc_jobs/npc_guardian/npc_guardian_description.json)",
       "jobs:npc:spirit"   : "file(jobs/npc_jobs/npc_spirit/npc_spirit_description.json)",
 
@@ -95,7 +96,6 @@
 
       "stonehearth/data/npc_index.json"   : "file(data/populations/npc_index.json)",
       "stonehearth/data/gm/gm_index.json" : "file(data/gm/gm_index.json)",
-      "stonehearth/jobs/index.json"       : "file(jobs/index.json)",
 
       "stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json"               : "file(data/gm/campaigns/ambient_threats/ambient_threats_arc.json)",
       "stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_daily_threat.json" : "file(data/gm/campaigns/ambient_threats/encounters/randomize_daily_threat.json)",
