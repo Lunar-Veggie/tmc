@@ -2,12 +2,7 @@ local game_master_lib = radiant.mods.require('stonehearth.lib.game_master.game_m
 local Point3 = _radiant.csg.Point3
 local GenerateCaptives = class()
 
-function GenerateCaptives:initialize(piece)
-   self._sv.piece = piece
-   self.__saved_variables:mark_changed()
-end
-
-function GenerateCaptives:start(ctx, info)
+function GenerateCaptives:create_piece(piece, ctx, info)
    self._ctx = ctx
    self._info = info
 
