@@ -25,7 +25,7 @@
             "range"    : 3,
             "min"      : 3,
             "max"      : 3,
-            "job"      : "stonehearth:jobs:footman"
+            "job"      : "stonehearth:jobs:npc:footman"
          },
          "unit_info":
          {
