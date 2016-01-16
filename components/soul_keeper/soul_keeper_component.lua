@@ -2,6 +2,7 @@ local SoulKeeperComponent = class()
 
 function SoulKeeperComponent:initialize(entity, json)
    self._entity = entity
+   self._sv.id = nil
    self._sv = self.__saved_variables:get_data()
 
    self._kill_listener = radiant.events.listen_once(entity, 'stonehearth:kill_event', self, self._on_kill_event)

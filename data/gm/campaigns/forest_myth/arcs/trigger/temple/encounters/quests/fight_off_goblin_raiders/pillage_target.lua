@@ -5,6 +5,8 @@ local PillageTarget = class()
 radiant.mixin(PillageTarget, Mission)
 
 function PillageTarget:initialize()
+   self._sv.ctx = nil
+   self._sv.party = nil
 end
 
 function PillageTarget:restore()

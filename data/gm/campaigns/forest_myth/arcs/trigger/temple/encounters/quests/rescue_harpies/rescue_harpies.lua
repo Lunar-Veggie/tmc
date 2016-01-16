@@ -2,6 +2,9 @@ local entity_forms = radiant.mods.require('stonehearth.lib.entity_forms.entity_f
 local RescueHarpiesQuest = class()
 
 function RescueHarpiesQuest:initialize()
+   self._sv.ctx = nil
+   self._sv.quest_data = nil
+   self._sv.prev_captive_and_player_amenity = nil
 end
 
 function RescueHarpiesQuest:restore()
@@ -32,9 +35,9 @@ end
 function RescueHarpiesQuest:_get_amenity(player_id_a, player_id_b)
    local player_service = stonehearth.player
 
-   if player_service:are_players_hostile(player_id_a, player_id_b) then
+   if player_service:are_player_ids_hostile(player_id_a, player_id_b) then
       return 'hostile'
-   elseif player_service:are_players_friendly(player_id_a, player_id_b) then
+   elseif player_service:are_player_ids_friendly(player_id_a, player_id_b) then
       return 'friendly'
    else
       return 'neutral'

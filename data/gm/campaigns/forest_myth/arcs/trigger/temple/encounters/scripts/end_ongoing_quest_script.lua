@@ -1,5 +1,5 @@
 --[[
-This code were taken from Team Radient from their file "destroy_entity_encounter.lua",
+This code were taken from Team Radiant from their file "destroy_entity_encounter.lua",
 there are only a few changes made to reflect what was needed for this mod.
 
 The difference here is that we're also triggering the event which ends any ongoing quest.
@@ -8,6 +8,12 @@ The difference here is that we're also triggering the event which ends any ongoi
 local Entity = _radiant.om.Entity
 local rng    = _radiant.math.get_default_rng()
 local DestroyEntityCustom = class()
+
+function DestroyEntityCustom:initialize()
+   self._sv.num_destroyed = 0
+   self._sv.ctx           = nil
+   self._sv.info          = nil
+end
 
 function DestroyEntityCustom:restore()
    radiant.events.listen_once(radiant, 'radiant:game_loaded',
@@ -23,9 +29,8 @@ end
 
 function DestroyEntityCustom:start(ctx, info)
    assert(info.target_entities)
-   self._sv.num_destroyed = 0
-   self._sv.ctx           = ctx
-   self._sv.info          = info
+   self._sv.ctx  = ctx
+   self._sv.info = info
 
    self:_delete_everything(ctx, info)
 

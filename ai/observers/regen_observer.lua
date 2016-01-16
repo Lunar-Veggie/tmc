@@ -1,19 +1,19 @@
 local RegenObserver = class()
 
-function RegenObserver:__init(entity)
+function RegenObserver:initialize()
+   self._sv.entity = nil
+   self._sv.hour_listener = stonehearth.calendar:set_interval("RegenObserver on_hourly", '1h', function() self:_on_hourly() end)
 end
 
-function RegenObserver:initialize(entity)
+function RegenObserver:create(entity)
    self._sv.entity = entity
-   self._sv.hour_listener = stonehearth.calendar:set_interval("RegenObserver on_hourly", '1h', radiant.bind(self, '_on_hourly'))
 end
 
 function RegenObserver:restore()
 end
 
 function RegenObserver:activate()
-   self._entity = self._sv.entity
-   self._attributes_component = self._entity:add_component('stonehearth:attributes')
+   self._attributes_component = self._sv.entity:add_component('stonehearth:attributes')
 end
 
 function RegenObserver:destroy()

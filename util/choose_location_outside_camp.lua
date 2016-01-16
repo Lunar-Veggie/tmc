@@ -1,60 +1,67 @@
 --[[
-This code were taken from Team Radient from their file choose_location_outside_town.lua,
+This code were taken from Team Radiant from their file "choose_location_outside_town.lua",
 there are only a few changes made to reflect what was needed for this mod.
+
+The differences are that instead of searching for a location relative to the player's location;
+it attempts to find a location relative to a camp's location.
 --]]
 
-local rng                       = _radiant.math.get_default_rng()
-local Point3                    = _radiant.csg.Point3
-local Cube3                     = _radiant.csg.Cube3
-local Region2                   = _radiant.csg.Region2
-local Region3                   = _radiant.csg.Region3
-local ChooseLocationOutsideCamp = class()
+local rng     = _radiant.math.get_default_rng()
+local Point3  = _radiant.csg.Point3
+local Cube3   = _radiant.csg.Cube3
+local Region2 = _radiant.csg.Region2
+local Region3 = _radiant.csg.Region3
 
-function ChooseLocationOutsideCamp:initialize(camp_location, min_range, max_range, callback, target_region) checks('self', 'Point3', 'number', 'number', 'binding')
-   self._sv.camp_location  = camp_location
-   self._sv.min_range      = min_range
-   self._sv.max_range      = max_range
-   self._sv.target_region  = target_region
-   self._sv.callback       = callback
+local ChooseLocationOutsideTown = radiant.mods.require('stonehearth.services.server.game_master.controllers.util.choose_location_outside_town')
+local ChooseLocationOutsideCamp = class()
+radiant.mixin(ChooseLocationOutsideCamp, ChooseLocationOutsideTown)
+
+function ChooseLocationOutsideCamp:initialize()
+   self._sv.camp_location  = nil
+   self._sv.min_range      = nil
+   self._sv.max_range      = nil
+   self._sv.target_region  = nil
+   self._sv.callback       = nil
    self._sv.slop_space     = 1
    self._sv.found_location = false
 end
 
+function ChooseLocationOutsideCamp:create(camp_location, min_range, max_range, callback, target_region) checks('self', 'Point3', 'number', 'number', 'binding')
+   self._sv.camp_location = camp_location
+   self._sv.min_range     = min_range
+   self._sv.max_range     = max_range
+   self._sv.target_region = target_region
+   self._sv.callback      = callback
+end
+
 function ChooseLocationOutsideCamp:activate()
-   self._log = radiant.log.create_logger('game_master.choose_location_outside_towns')
+   self._log = radiant.log.create_logger('game_master.choose_location_outside_camp')
                               :set_prefix('choose loc outside cities and camps')
 
    self:_destroy_find_location_timer()
 
    if not self._sv.found_location then
+      self._log:info('On Activate, try to find a location outside town!')
       self:_try_finding_location()
    end
 end
 
-function ChooseLocationOutsideCamp:_try_finding_location()
-   self._job = radiant.create_background_task('choose location outside town', function() self:_try_finding_location_thread() end)
-end
-
 function ChooseLocationOutsideCamp:_try_finding_location_thread()
    local camp_location = self._sv.camp_location
-   local open          = {}
-   local closed        = Region3()
+
+   local open   = {}
+   local closed = Region3()
 
    local function visit_point(pt, add_to_open) checks('Point3', 'boolean')
-
       local key = pt:key_value()
-
       if not closed:contains(pt) then
          closed:add_point(pt)
          closed:optimize_by_merge('choose location outside town closed set')
          if add_to_open then
             self._log:info('adding point %s as a location', radiant.util.tostring(pt))
-            table.insert(open, {location=pt, distance=pt:distance_to(camp_location)})
-            return true
+            table.insert(open, { location=pt, distance=pt:distance_to(camp_location) })
          end
       end
-
-      return false
    end
 
    local function get_first_open_node()
@@ -72,6 +79,7 @@ function ChooseLocationOutsideCamp:_try_finding_location_thread()
       end
    end
 
+   -- Find a point differently here, since radiant's own method attempted to find a point relating to the player's position
    local point, found = radiant.terrain.find_placement_point(self._sv.camp_location, self._sv.min_range, self._sv.max_range)
 
    if found then
@@ -121,59 +129,13 @@ function ChooseLocationOutsideCamp:_try_finding_location_thread()
    self:_try_later()
 end
 
-function ChooseLocationOutsideCamp:_try_location(location)
-   local camp_region
-
-   if self._sv.target_region then
-      camp_region        = self._sv.target_region:translated(location)
-      local intersection = radiant.terrain.intersect_region(camp_region)
-
-      if not intersection:empty() then
-         self._log:info('location %s intersects terrain (intersection:%s).  trying again', location, intersection:get_bounds())
-         return false
-      end
-
-      intersection = radiant.terrain.intersect_region(camp_region:translated(-Point3.unit_y))
-      if intersection:get_area() ~= camp_region:get_area() then
-         self._log:info('location %s not flat.  trying again (supported area:%d   test area:%d)', location, intersection:get_area(), camp_region:get_area())
-         return false
-      end
-
-      if self._sv.callback then
-         if not radiant.invoke(self._sv.callback, 'check_location', location, camp_region) then
-            return false
-         end
-      end
-   end
-
-   self._log:info('found location %s', location)
-   self:_finalize_location(location, camp_region)
-   return true
-end
-
-function ChooseLocationOutsideCamp:_finalize_location(location, camp_region)
-   self:_destroy_find_location_timer()
-   self._sv.found_location = true
-   self.__saved_variables:mark_changed()
-
-   if self._sv.callback then
-      radiant.invoke(self._sv.callback, 'set_location', location, camp_region)
-      self._sv.callback = nil
-   end
-end
-
-function ChooseLocationOutsideCamp:_destroy_find_location_timer()
-   if self._find_location_timer then
-      self._find_location_timer:destroy()
-      self._find_location_timer = nil
-   end
-end
-
 function ChooseLocationOutsideCamp:_try_later()
    self._sv.slop_space = self._sv.slop_space + 1
    self:_destroy_find_location_timer()
 
-   self._find_location_timer = radiant.set_realtime_timer("ChooseLocationOutsideCamp try_later", 5000, function() self:_try_finding_location() end)
+   self._find_location_timer = radiant.set_realtime_timer("ChooseLocationOutsideCamp try_later", 5000, function()
+         self:_try_finding_location()
+      end)
 end
 
 return ChooseLocationOutsideCamp

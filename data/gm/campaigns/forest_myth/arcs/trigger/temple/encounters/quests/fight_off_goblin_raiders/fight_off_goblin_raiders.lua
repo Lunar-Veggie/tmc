@@ -2,6 +2,8 @@ local entity_forms = radiant.mods.require('stonehearth.lib.entity_forms.entity_f
 local GoblinRaidersQuest = class()
 
 function GoblinRaidersQuest:initialize()
+   self._sv.ctx = nil
+   self._sv.quest_data = nil
 end
 
 function GoblinRaidersQuest:restore()

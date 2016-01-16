@@ -1,5 +1,5 @@
 --[[
-This code were taken from Team Radient from their file "wait_encounter.lua",
+This code were taken from Team Radiant from their file "wait_encounter.lua",
 there are only a few changes made to reflect what was needed for this mod.
 
 The difference here is that we're listening in on the dryad;
@@ -8,8 +8,14 @@ if she dies then this stops prematurely.
 
 local WaitToIssueQuest = class()
 
+function WaitToIssueQuest:initialize()
+   self._sv.ctx   = nil
+   self._sv.info  = nil
+   self._sv.timer = nil
+end
+
 function WaitToIssueQuest:activate()
-   self._log = radiant.log.create_logger('game_master.encounter.wait_to_issue_quest')
+   self._log = radiant.log.create_logger('game_master.wait_to_issue_quest_script')
 
    if self._sv.timer then
       self._sv.timer:bind(
@@ -35,7 +41,7 @@ function WaitToIssueQuest:start(ctx, info)
 
    self._sv.ctx   = ctx
    self._sv.info  = info
-   self._sv.timer = stonehearth.calendar:set_timer("WaitEncounterCustom wait timer", timeout, radiant.bind(self, '_timer_callback'))
+   self._sv.timer = stonehearth.calendar:set_timer("WaitEncounterCustom wait timer", timeout, function() self:_timer_callback() end)
 
    self._kill_listener = radiant.events.listen(ctx.forest_temple.boss, 'stonehearth:kill_event', self, self.stop)
 
