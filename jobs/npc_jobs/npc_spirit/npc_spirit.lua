@@ -1,32 +1,34 @@
 local NpcSpiritClass = class()
 local job_helper = radiant.mods.require('stonehearth.jobs.job_helper')
+local BaseJob = radiant.mods.require('stonehearth.jobs.base_job')
+radiant.mixin(NpcSpiritClass, BaseJob)
 
 function NpcSpiritClass:initialize(entity)
+   job_helper.initialize(self._sv, nil)
+   self._sv.no_levels = true
+   self._sv.is_max_level = true
+end
+
+function NpcSpiritClass:create(entity)
    job_helper.initialize(self._sv, entity)
-   self:restore()
 end
 
 function NpcSpiritClass:restore()
-   self._job_component = self._sv._entity:get_component('stonehearth:job')
-   if self._sv.is_current_class then
-      self:_create_xp_listeners()
-      self._sv.no_levels = true
-   end
-
-   self.__saved_variables:mark_changed()
 end
 
 function NpcSpiritClass:promote(json, options)
    job_helper.promote(self._sv, json)
-   self:_create_xp_listeners()
+   
+   local player_id = radiant.entities.get_player_id(self._sv._entity)
+   local population = stonehearth.population:get_population(player_id)
+   -- upon promotion to worker, add to militia
+   population:update_militia_command({}, {}, self._sv._entity:get_id(), true)
 
    self.__saved_variables:mark_changed()
 end
 
 function NpcSpiritClass:demote()
-   self:_remove_xp_listeners()
    self._sv.is_current_class = false
-
    self.__saved_variables:mark_changed()
 end
 
@@ -42,30 +44,8 @@ function NpcSpiritClass:get_level_data()
    return nil
 end
 
-function NpcSpiritClass:unlock_perk(id)
-   --self._sv.attained_perks[id] = true
-
-   self.__saved_variables:mark_changed()
-end
-
 function NpcSpiritClass:has_perk(id)
    return false
-end
-
-function NpcSpiritClass:level_up()
-   job_helper.level_up(self._sv)
-
-   self.__saved_variables:mark_changed()
-end
-
-function NpcSpiritClass:get_worker_defense_participation()
-   return self._sv.worker_defense_participant
-end
-
-function NpcSpiritClass:_create_xp_listeners()
-end
-
-function NpcSpiritClass:_remove_xp_listeners()
 end
 
 return NpcSpiritClass
