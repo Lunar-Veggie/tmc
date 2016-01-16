@@ -4,7 +4,11 @@
    "rarity"         : "common",
 
    "in_edge"  : "create_forest_temple",
-   "out_edge" : [ "wait_to_issue_quest", "wait_for_spirit_death" ],
+   "out_edge":
+   {
+      "type"      : "trigger_many",
+      "out_edges" : [ "wait_to_issue_quest", "wait_for_spirit_death" ]
+   },
 
    "create_camp_info":
    {

@@ -4,7 +4,11 @@
    "rarity"         : "common",
 
    "in_edge"  : "issue_quest",
-   "out_edge" : [ "rescue_harpies_dialog", "create_harpy_captives_camp" ],
+   "out_edge":
+   {
+      "type"      : "trigger_many",
+      "out_edges" : [ "rescue_harpies_dialog", "create_harpy_captives_camp" ]
+   },
 
    "script_info":
    {

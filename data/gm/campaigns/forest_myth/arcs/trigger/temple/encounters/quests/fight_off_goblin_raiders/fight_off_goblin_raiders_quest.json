@@ -4,7 +4,11 @@
    "rarity"         : "common",
 
    "in_edge"  : "issue_quest",
-   "out_edge" : [ "fight_off_goblin_raiders_dialog", "create_goblin_raiding_camp" ],
+   "out_edge":
+   {
+      "type"      : "trigger_many",
+      "out_edges" : [ "fight_off_goblin_raiders_dialog", "create_goblin_raiding_camp" ]
+   },
 
    "script_info":
    {

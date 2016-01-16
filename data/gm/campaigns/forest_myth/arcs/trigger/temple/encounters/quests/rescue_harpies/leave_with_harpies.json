@@ -3,7 +3,11 @@
    "encounter_type" : "destroy_entity",
 
    "in_edge"  : "leave_with_harpies",
-   "out_edge" : [ "rescue_harpies_fail_dialog", "destroy_goblin_captivators_misc" ],
+   "out_edge":
+   {
+      "type"      : "trigger_many",
+      "out_edges" : [ "rescue_harpies_fail_dialog", "destroy_goblin_captivators_misc" ]
+   },
 
    "destroy_entity_info":
    {
