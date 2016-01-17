@@ -10,7 +10,7 @@
       "script" : "file(../../scripts/create_camp_custom.lua)",
       "data":
       {
-         "out_edge" : [ "wait_for_cage_1_destruction", "wait_for_cage_2_destruction", "wait_for_cage_3_destruction", "wait_for_harpy_cages_destruction", "wait_until_leaving" ],
+         "out_edge" : [ "check_captives_status" ],
 
          "npc_player_id"                : "goblins",
          "amenity_with_player"          : "hostile",

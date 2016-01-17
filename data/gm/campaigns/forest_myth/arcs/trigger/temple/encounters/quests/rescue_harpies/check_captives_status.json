@@ -1,0 +1,25 @@
+{
+   "type"           : "encounter",
+   "encounter_type" : "script",
+   "rarity"         : "common",
+
+   "in_edge" : "check_captives_status",
+
+   "script_info":
+   {
+      "script" : "file(../../scripts/wait_for_event_timed.lua)",
+      "data":
+      {
+         "time_limit" : "24h",
+         "event"      : "radiant:entity:pre_destroy",
+         "source"     : "harpy_captives_camp.entities.harpy_cages",
+
+         "events_met_out_edge":
+         {
+            "type"      : "trigger_many",
+            "out_edges" : [ "rescue_harpies_success_dialog", "destroy_goblin_captivators_stockpiles" ]
+         },
+         "time_out_out_edge" : "leave_with_harpies"
+      }
+   }
+}
