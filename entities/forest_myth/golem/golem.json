@@ -99,6 +99,22 @@
             { "uri" : "stonehearth:resources:silver:ore",          "weight" : 1 },
             { "uri" : "stonehearth:resources:gold:ore",            "weight" : 1 }
          ]
+      },
+
+      "stonehearth:portrait":
+      {
+         "portrait_types":
+         {
+            "headshot":
+            {
+               "camera":
+               {
+                  "pos"     : [ 20, 4.3, -27 ],
+                  "look_at" : [  0, 4.8,   0 ],
+                  "fov"     : 75
+               }
+            }
+         }
       }
    }
 }
