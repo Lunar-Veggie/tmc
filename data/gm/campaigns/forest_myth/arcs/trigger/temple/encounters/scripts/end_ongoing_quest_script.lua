@@ -11,10 +11,6 @@ local DestroyEntityEncounter = radiant.mods.require('stonehearth.services.server
 local DestroyEntityCustom = class()
 radiant.mixin(DestroyEntityCustom, DestroyEntityEncounter)
 
-function DestroyEntityCustom:get_out_edge()
-   return self._sv.info.out_edge or {}
-end
-
 local _old_delete_everything = DestroyEntityEncounter._delete_everything
 function DestroyEntityCustom:_delete_everything(ctx, info)
    radiant.events.trigger(ctx.forest_temple.boss, 'tmc:forest_gm:quest:finished', { successful = false })
