@@ -3,9 +3,8 @@ local Point3 = _radiant.csg.Point3
 local SpawnMandragoras = class()
 
 function SpawnMandragoras:initialize()
-end
-
-function SpawnMandragoras:restore()
+   self._sv.data     = nil
+   self._sv.searcher = nil
 end
 
 function SpawnMandragoras:start(ctx, data)

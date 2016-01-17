@@ -1,15 +1,10 @@
-local IsHostile = class()
+local AreHostile = class()
 
-function IsHostile:initialize(piece)
-   self._sv.piece = piece
-   self.__saved_variables:mark_changed()
-end
-
-function IsHostile:start(ctx, data)
+function AreHostile:start(ctx, data)
    assert(data.npc_player_id)
    assert(data.out_edge)
 
-   if stonehearth.player:are_players_hostile(ctx.player_id, data.npc_player_id) then
+   if stonehearth.player:are_player_ids_hostile(ctx.player_id, data.npc_player_id) then
       -- Continue with the campaign
       local out_edge = data.out_edge
 
@@ -18,7 +13,7 @@ function IsHostile:start(ctx, data)
          return
       end
       if type(out_edge) == 'string' then
-         out_edge = {out_edge}
+         out_edge = { out_edge }
       end
       
       for _,edge in pairs(out_edge) do
@@ -27,4 +22,4 @@ function IsHostile:start(ctx, data)
    end
 end
 
-return IsHostile
+return AreHostile
