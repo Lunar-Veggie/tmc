@@ -25,7 +25,7 @@
                      {
                         "msg1":
                         {
-                           "bulletin_title"   : "[name(i18n_data.boss)] is Defeated!",
+                           "bulletin_title"   : "[name(i18n_data.boss)] is defeated!",
                            "dialog_title"     : "[name(i18n_data.boss)]",
                            "bulletin_message" : { "000" : "Can't let... Nature... lose..." }
                         }
