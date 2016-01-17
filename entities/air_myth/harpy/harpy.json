@@ -2,8 +2,6 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:monster",
 
-   "init_script" : "file(harpy_init_script.lua)",
-
    "components":
    {
       "model_variants":
@@ -56,6 +54,11 @@
             "type"  : "basic",
             "value" : 100
          }
+      },
+
+      "stonehearth:equipment":
+      {
+         "items" : [ "tmc:air:harpy:talons" ]
       },
 
       "stonehearth:combat_state":

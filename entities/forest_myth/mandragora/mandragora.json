@@ -2,8 +2,6 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:monster",
 
-   "init_script" : "file(mandragora_init_script.lua)",
-
    "components":
    {
       "render_info":
@@ -30,8 +28,6 @@
       {
          "tags" : "plant"
       },
-
-      "stonehearth:equipment" : {},
 
       "stonehearth:attributes":
       {
@@ -60,6 +56,11 @@
             "type"  : "basic",
             "value" : 50
          }
+      },
+
+      "stonehearth:equipment":
+      {
+         "items" : [ "tmc:forest:mandragora:voice" ]
       }
    },
 

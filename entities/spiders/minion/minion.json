@@ -53,6 +53,11 @@
             "type"  : "basic",
             "value" : 100
          }
+      },
+
+      "stonehearth:equipment":
+      {
+         "items" : [ "tmc:spiders:minion:teeth" ]
       }
    },
 

@@ -2,8 +2,6 @@
    "type"   : "entity",
    "mixins" : "stonehearth:mixins:monster",
 
-   "init_script" : "file(golem_init_script.lua)",
-
    "components":
    {
       "render_info":
@@ -60,6 +58,11 @@
             "type"  : "basic",
             "value" : 70
          }
+      },
+
+      "stonehearth:equipment":
+      {
+         "items" : [ "tmc:forest:golem:stone_hands" ]
       }
    },
 
