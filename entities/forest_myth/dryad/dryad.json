@@ -72,6 +72,11 @@
             "type" : "random_range", 
             "base" : 4,
             "max"  : 8
+         },
+         "sleep_duration":
+         {
+            "type"  : "basic",
+            "value" : 180
          }
       },
 
