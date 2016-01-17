@@ -1,22 +1,18 @@
 {
    "type"           : "encounter",
-   "encounter_type" : "script",
+   "encounter_type" : "wait_for_event",
+   "rarity"         : "common",
 
    "in_edge" : "wait_for_harpy_cages_destruction",
-
-   "script_info":
+   "out_edge":
    {
-      "script" : "file(../../scripts/wait_for_events.lua)",
-      "data":
-      {
-         "event" : "radiant:entity:pre_destroy",
-         "sources":
-         [
-            "harpy_captives_camp.entities.harpy_cages.harpy_cage_1",
-            "harpy_captives_camp.entities.harpy_cages.harpy_cage_2",
-            "harpy_captives_camp.entities.harpy_cages.harpy_cage_3"
-         ],
-         "out_edge" : [ "rescue_harpies_success_dialog", "destroy_goblin_captivators_stockpiles" ]
-      }
+      "type"      : "trigger_many",
+      "out_edges" : [ "rescue_harpies_success_dialog", "destroy_goblin_captivators_stockpiles" ]
+   },
+
+   "wait_for_event_info":
+   {
+      "event"  : "radiant:entity:pre_destroy",
+      "source" : "harpy_captives_camp.entities.harpy_cages"
    }
 }
