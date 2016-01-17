@@ -58,7 +58,7 @@ function ChooseLocationOutsideCamp:_try_finding_location_thread()
          closed:add_point(pt)
          closed:optimize_by_merge('choose location outside town closed set')
          if add_to_open then
-            self._log:info('adding point %s as a location', radiant.util.tostring(pt))
+            self._log:spam('adding point %s as a location', radiant.util.tostring(pt))
             table.insert(open, { location=pt, distance=pt:distance_to(camp_location) })
          end
       end
