@@ -7,6 +7,12 @@
 
    "dialog_tree_info":
    {
+      "i18n_data":
+      {
+         "boss_display_name" : "forest_temple.boss:get_component('unit_info'):get_display_name()",
+         "boss_custom_name"  : "forest_temple.boss:get_component('unit_info'):get_custom_name()"
+      },
+
       "start_node" : "msg1",
       "nodes":
       {
