@@ -3,7 +3,7 @@
    {
       "name"        : "The Mythical Creatures",
       "description" : "Adds creatures from various mythologies",
-      "version"     : 1
+      "version"     : 2
    },
 
    "default_locale"     : "en",
